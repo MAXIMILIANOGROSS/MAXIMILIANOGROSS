@@ -3,7 +3,7 @@ on:
   schedule: [{cron: "47 4 * * *"}]
   workflow_dispatch:
   push:
-    paths: ["data/projects.json", "templates/**", "scripts/build.py"]
+    paths: ["data/projects.json", "templates/**", "scripts/build.py", "scripts/i18n.py"]
 permissions:
   contents: write
 concurrency: {group: profile-writes, cancel-in-progress: false}

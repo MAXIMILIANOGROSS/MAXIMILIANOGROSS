@@ -1,25 +1,24 @@
-<!-- GENERATED FILE: edit templates/README.tpl.md and data/*.json, then run `python3 scripts/build.py`. -->
+<!-- GENERATED FILE: edit templates/README.tpl.md, scripts/i18n.py and data/*.json, then run `python3 scripts/build.py`. -->
 <div align="center">
+
+{{LANGBAR}}
 
 <img src="assets/branding/hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
-<a href="#about"><img src="https://img.shields.io/badge/ABOUT-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF"></a>
-<a href="#products"><img src="https://img.shields.io/badge/PRODUCTS-00D4FF?style=for-the-badge&logo=github&logoColor=black"></a>
-<a href="#radar"><img src="https://img.shields.io/badge/RADAR-161B22?style=for-the-badge&logo=target&logoColor=00D4FF"></a>
-<a href="#building"><img src="https://img.shields.io/badge/BUILDING-161B22?style=for-the-badge&logo=rocket&logoColor=00D4FF"></a>
-<a href="#metrics"><img src="https://img.shields.io/badge/METRICS-161B22?style=for-the-badge&logo=graphql&logoColor=00D4FF"></a>
-<a href="#connect"><img src="https://img.shields.io/badge/CONNECT-161B22?style=for-the-badge&logo=linkedin&logoColor=00D4FF"></a>
+{{NAV}}
 
-**I turn ideas into software.**<br>
-Applications · desktop software · web platforms · AI & automation — from concept to deployment.
+**{{t.t1}}**<br>
+{{t.t2}}
 
 <br><br>
 <img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
 
 </div>
 
+{{DIR_OPEN}}
+
 <a id="about"></a>
-<img src="assets/sections/about.svg" alt="01 About" width="100%">
+<img src="assets/sections/{{SD}}about.svg" alt="01 About" width="100%">
 
 <table>
 <tr>
@@ -30,9 +29,9 @@ Applications · desktop software · web platforms · AI & automation — from co
 </td>
 <td valign="top">
 
-I'm an independent software developer and product builder. I don't ship isolated features — I ship **complete products**: idea, interface, application, backend, integrations, testing, documentation and release.
+{{t.about1}}
 
-My background is aerospace-grade quality — technical service at **SR Technics**, quality at **Bureau Veritas**, NDT inspection on rocket components at **PLD Space**, and ISO 9001 internal auditing — so I build with a *zero-tolerance* mindset: traceability, verification, reproducible results.
+{{t.about2}}
 
 </td>
 </tr>
@@ -42,51 +41,47 @@ My background is aerospace-grade quality — technical service at **SR Technics*
 <tr>
 <td width="50%" valign="top">
 
-**WHAT I BUILD**
+**{{t.what_h}}**
 
-- Mobile apps (iOS · Android)
-- Desktop software (macOS · Windows)
-- Web platforms
-- AI tools & voice agents
-- Automation & software ecosystems
+{{t.what_li}}
 
 </td>
 <td width="50%" valign="top">
 
-**HOW I WORK**
+**{{t.how_h}}**
 
-`Think → Design → Build → Test → Deploy → Improve`
+`{{t.how_flow}}`
 
-Independent, documented, shipped. I learn by creating real products.
+{{t.how_p}}
 
 </td>
 </tr>
 </table>
 
 <details open>
-<summary><b>🌐 The Island Crew ecosystem — talent, AI office, restaurants, academy, media</b></summary>
+<summary><b>{{t.eco_sum}}</b></summary>
 
 <br>
 
 <div align="center">
 
-<img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem: Talent, Maya, Opportunity Radar, World, Business Tools, AI Office with Maxi OS, Academy, Restaurant OS, Media, Technology and Local Infrastructure" width="100%">
+<img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
-<sub>One ecosystem for people, business and innovation in the Canary Islands — Maxi OS coordinates an AI Office of 60 agents in 16 departments.</sub>
+<sub>{{t.eco_cap}}</sub>
 
 </div>
 
 </details>
 
 <a id="products"></a>
-<img src="assets/sections/products.svg" alt="02 Product lab" width="100%">
+<img src="assets/sections/{{SD}}products.svg" alt="02 Product lab" width="100%">
 
 <div align="center">
 
 {{GRID}}
 
 <details open>
-<summary><b>📱 On the App Store — my published iPhone & iPad apps</b></summary>
+<summary><b>{{t.store_sum}}</b></summary>
 
 <br>
 
@@ -94,21 +89,21 @@ Independent, documented, shipped. I learn by creating real products.
 
 </details>
 
-<sub>Status labels are honest: they come from <code>data/projects.json</code>. Private source means the product exists, the code is not public.</sub>
+<sub>{{t.status_note}}</sub>
 
 </div>
 
 <a id="radar"></a>
-<img src="assets/sections/radar.svg" alt="03 Project radar" width="100%">
+<img src="assets/sections/{{SD}}radar.svg" alt="03 Project radar" width="100%">
 
 <div align="center">
 
-<img src="assets/generated/radar.svg" alt="Project radar: building now, published, open source and labs, next" width="100%">
+<img src="assets/generated/radar.svg" alt="Project radar" width="100%">
 
 </div>
 
 <a id="building"></a>
-<img src="assets/sections/building.svg" alt="04 Currently building" width="100%">
+<img src="assets/sections/{{SD}}building.svg" alt="04 Currently building" width="100%">
 
 <div align="center">
 
@@ -116,10 +111,10 @@ Independent, documented, shipped. I learn by creating real products.
 
 </div>
 
-**Island Crew IA — Call Center Software & Hardware.** A phone switchboard with an AI voice receptionist: it answers calls, books appointments, drafts client emails that the owner approves, and reports through dashboards. Installers for macOS and Windows.
+{{t.call_p}}
 
 <details>
-<summary><b>📸 Call-center gallery — interface, hardware concept & marketing</b></summary>
+<summary><b>{{t.gal_sum}}</b></summary>
 
 <br>
 
@@ -138,29 +133,23 @@ Independent, documented, shipped. I learn by creating real products.
 </tr>
 </table>
 
-<sub>Hardware and marketing images are design concepts; the interface is the working software.</sub>
+<sub>{{t.gal_note}}</sub>
 
 </div>
 
 </details>
 
 <details>
-<summary><b>⚡ Areas of exploration & roadmap</b></summary>
+<summary><b>{{t.road_sum}}</b></summary>
 
 <br>
 
-| Area | Direction |
-|---|---|
-| Mobile | Evolve the published apps; Carbonuxis Android in QA testing |
-| Desktop | Downloadable cross-platform software with one-click installers |
-| AI | Useful, real integrations: voice agents, summaries, scheduling |
-| Automation | Remove repetitive work, keep a human approving what matters |
-| Infrastructure | Reliability, architecture, release automation |
+{{t.road_tbl}}
 
 </details>
 
 <a id="pipeline"></a>
-<img src="assets/sections/pipeline.svg" alt="05 Engineering pipeline" width="100%">
+<img src="assets/sections/{{SD}}pipeline.svg" alt="05 Engineering pipeline" width="100%">
 
 <div align="center">
 
@@ -169,7 +158,7 @@ Independent, documented, shipped. I learn by creating real products.
 </div>
 
 <details>
-<summary><b>▸ Pipeline as a diagram (Mermaid)</b></summary>
+<summary><b>{{t.pipe_sum}}</b></summary>
 
 ```mermaid
 flowchart LR
@@ -180,19 +169,16 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>▸ Engineering principles</b></summary>
+<summary><b>{{t.prin_sum}}</b></summary>
 
 <br>
 
-- **Verify, don't assume.** Every claim is tested before I report it as done.
-- **Traceability.** From the NDT world: every output can be traced to its source.
-- **Human in the loop.** Automation proposes; the owner approves what leaves the building.
-- **Ship small, ship real.** A working release beats a perfect plan.
+{{t.prin}}
 
 </details>
 
 <a id="stack"></a>
-<img src="assets/sections/stack.svg" alt="06 Tech stack" width="100%">
+<img src="assets/sections/{{SD}}stack.svg" alt="06 Tech stack" width="100%">
 
 <div align="center">
 
@@ -201,7 +187,7 @@ flowchart LR
 </div>
 
 <details>
-<summary><b>▸ Stack as icons</b></summary>
+<summary><b>{{t.icons_sum}}</b></summary>
 
 <br>
 
@@ -217,12 +203,12 @@ flowchart LR
 
 <div align="center">
 
-<sub>Only technologies that appear in my actual repositories.</sub>
+<sub>{{t.stack_note}}</sub>
 
 </div>
 
 <a id="metrics"></a>
-<img src="assets/sections/metrics.svg" alt="07 Verified metrics" width="100%">
+<img src="assets/sections/{{SD}}metrics.svg" alt="07 Verified metrics" width="100%">
 
 <div align="center">
 
@@ -233,25 +219,24 @@ flowchart LR
 </div>
 
 <details>
-<summary><b>📦 Public repositories (auto-generated)</b></summary>
+<summary><b>{{t.repos_sum}}</b></summary>
 
 <br>
 
 {{REPOS}}
 
-<sub>Last refreshed by GitHub Actions: {{UPDATED}}</sub>
+<sub>{{t.refreshed}} {{UPDATED}}</sub>
 
 </details>
 
 <a id="lab"></a>
-<img src="assets/sections/lab.svg" alt="08 Open source and labs" width="100%">
+<img src="assets/sections/{{SD}}lab.svg" alt="08 Open source and labs" width="100%">
 
-| Project | Status | What it is | |
-|---|---|---|---|
+{{t.lab_hdr}}
 {{LAB}}
 
 <details>
-<summary><b>🎧 Beyond software</b></summary>
+<summary><b>{{t.beyond_sum}}</b></summary>
 
 <br>
 
@@ -261,11 +246,9 @@ flowchart LR
 
 </div>
 
-Music production, sound design, visual concepts and branding — including **Cabra Beats**, an AI-assisted music creation tool for business jingles and songs. Technical thinking combined with creativity.
+{{t.beyond_p}}
 
-<a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/CABRA_BEATS_·_YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a> <sub>Automated channel — songs and jingles published by Cabra Beats.</sub>
-
-
+<a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/CABRA_BEATS_·_YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a> <sub>{{t.yt_note}}</sub>
 
 </details>
 
@@ -287,12 +270,12 @@ Access granted.
 </details>
 
 <a id="connect"></a>
-<img src="assets/sections/connect.svg" alt="09 Connect" width="100%">
+<img src="assets/sections/{{SD}}connect.svg" alt="09 Connect" width="100%">
 
 <div align="center">
 
-**Interested in building something meaningful together?**<br>
-Open to remote opportunities, software collaborations and interesting projects — Greece / EU.
+**{{t.c_q}}**<br>
+{{t.c_p}}
 
 <a href="{{LINKEDIN}}"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://github.com/{{OWNER}}"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"></a>
@@ -304,3 +287,5 @@ Open to remote opportunities, software collaborations and interesting projects �
 <img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
+
+{{DIR_CLOSE}}

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
+import re
 """Generates every SVG asset + README.md from data/*.json. No external services needed for assets."""
 import json, math, pathlib, textwrap, datetime, random
 from xml.sax.saxutils import escape as esc
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-import sys; sys.path.insert(0, str(ROOT / "scripts")); import anim
+import sys; sys.path.insert(0, str(ROOT / "scripts")); import anim, i18n
 P = json.loads((ROOT / "data/projects.json").read_text())
 try: R = json.loads((ROOT / "data/repos.json").read_text())
 except FileNotFoundError: R = {"generated": "", "public_repos": [], "languages": {}}
@@ -198,24 +199,48 @@ def repo_table():
     return "\n".join(rows)
 
 def main():
+    from urllib.parse import quote
     write("assets/branding/logo.svg", logo(False)); write("assets/branding/logo-animated.svg", logo(True))
     write("assets/branding/hero.svg", hero()); write("assets/branding/footer.svg", footer())
-    secs = [("01", "ABOUT", "WHO · WHAT · HOW", "about"), ("02", "PRODUCT LAB", "PRODUCTS I BUILD", "products"), ("03", "PROJECT RADAR", "WHAT IS LIVE · WHAT IS NEXT", "radar"),
-            ("04", "CURRENTLY BUILDING", "CONTROL PANEL", "building"), ("05", "ENGINEERING PIPELINE", "HOW I SHIP", "pipeline"), ("06", "TECH STACK", "ONLY WHAT SHIPS", "stack"),
-            ("07", "VERIFIED METRICS", "REAL DATA · NO VANITY", "metrics"), ("08", "OPEN SOURCE & LABS", "EXPERIMENTS", "lab"), ("09", "CONNECT", "REMOTE · COLLABORATIONS", "connect")]
-    for n, t, r, f in secs: write(f"assets/sections/{f}.svg", section(n, t, r))
-    for p in P["projects"]: write(f"assets/projects/{p['id']}.svg", card(p))
+    order = [("01", "about"), ("02", "products"), ("03", "radar"), ("04", "building"), ("05", "pipeline"), ("06", "stack"), ("07", "metrics"), ("08", "lab"), ("09", "connect")]
+    for lg, _, _ in i18n.LANGS:
+        for n, k in order:
+            t, r = i18n.SEC[k][lg]
+            write(("assets/sections/" if lg == "en" else f"assets/sections/{lg}/") + f"{k}.svg", section(n, t, r))
+    base_p = [dict(p) for p in P["projects"]]
+    for lg, _, _ in i18n.LANGS:
+        for p in base_p:
+            q = dict(p)
+            if lg != "en" and p["id"] in i18n.PROJ: q["tagline"], q["access"] = i18n.PROJ[p["id"]][lg]
+            write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
     write("assets/generated/ticker.svg", anim.ticker([f"{sum(1 for q in P['projects'] if q['ring']=='published')} APPS PUBLISHED", "iOS", "ANDROID IN QA", "macOS", "WINDOWS", "AI VOICE AGENTS", "CALL-CENTER SOFTWARE & HARDWARE", "AUTOMATION", "FROM CONCEPT TO DEPLOYMENT"]))
     write("assets/generated/pipeline.svg", anim.pipeline()); write("assets/generated/orbit.svg", anim.orbit())
     write("assets/generated/radar.svg", radar()); write("assets/generated/terminal.svg", terminal()); write("assets/generated/stats.svg", stats())
-    cards = [P["projects"][i:i+2] for i in range(0, len(P["projects"]), 2)]
-    grid = "<table>\n" + "".join("<tr>\n" + "".join(f'<td width="50%" valign="top"><img src="assets/projects/{p["id"]}.svg" alt="{esc(p["name"])} — {p["status"]}" width="100%"><br>{("<a href=" + chr(34) + p["url"] + chr(34) + "><b>Open " + p["name"].split(" ·")[0].title() + " →</b></a>") if p["url"] else "<sub>private source</sub>"}</td>\n' for p in row) + "</tr>\n" for row in cards) + "</table>"
-    lab = "\n".join(f"| **{l['name']}** | `{l['status']}` | {l['text']} | [{'site' if l.get('url') else 'repo'}]({l.get('url') or 'https://github.com/' + P['owner'] + '/' + l['repo']}) |" for l in P["lab"])
     snake = ""
     if (ROOT / "assets/generated/snake.svg").exists() and (ROOT / "assets/generated/snake-dark.svg").exists():
         snake = '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg"><img alt="Contribution snake" src="assets/generated/snake.svg" width="100%"></picture>'
-    tpl = (ROOT / "templates/README.tpl.md").read_text(encoding="utf-8")
-    for k, v in {"{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
-                 "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): tpl = tpl.replace(k, v)
-    write("README.md", tpl); print("built")
+    tpl0 = (ROOT / "templates/README.tpl.md").read_text(encoding="utf-8")
+    for lg, short, fname in i18n.LANGS:
+        T = i18n.T[lg]; pd = "" if lg == "en" else lg + "/"
+        cards = [P["projects"][i:i+2] for i in range(0, len(P["projects"]), 2)]
+        def cell(p):
+            link = (f'<a href="{p["url"]}"><b>{T["open"].format(p["name"].split(" ·")[0].title())}</b></a>') if p["url"] else f'<sub>{T["private"]}</sub>'
+            return f'<td width="50%" valign="top"><img src="assets/projects/{pd}{p["id"]}.svg" alt="{esc(p["name"])} — {p["status"]}" width="100%"><br>{link}</td>\n'
+        grid = "<table>\n" + "".join("<tr>\n" + "".join(cell(p) for p in row) + "</tr>\n" for row in cards) + "</table>"
+        lab = "\n".join(f"| **{l['name']}** | `{l['status']}` | {i18n.LABT.get(l['name'], {}).get(lg, l['text'])} | [{T['site'] if l.get('url') else T['repo']}]({l.get('url') or 'https://github.com/' + P['owner'] + '/' + l['repo']}) |" for l in P["lab"])
+        navk = [("about", "n_about", "161B22", "githubsponsors", "00D4FF"), ("products", "n_products", "00D4FF", "github", "black"), ("radar", "n_radar", "161B22", "target", "00D4FF"), ("building", "n_building", "161B22", "rocket", "00D4FF"), ("metrics", "n_metrics", "161B22", "graphql", "00D4FF"), ("connect", "n_connect", "161B22", "linkedin", "00D4FF")]
+        nav = "\n".join(f'<a href="#{a}"><img src="https://img.shields.io/badge/{quote(T[k].replace("-", "--").replace("_", "__"))}-{bg}?style=for-the-badge&logo={lo}&logoColor={lc}" alt="{T[k]}"></a>' for a, k, bg, lo, lc in navk)
+        bar = ["<p>🌐"]
+        for l2, sh, f2 in i18n.LANGS:
+            nm = i18n.NAMES[l2]; col = "00D4FF" if l2 == lg else "161B22"; fc = "black" if l2 == lg else "00D4FF"
+            bar.append(f'<a href="{f2}"><img src="https://img.shields.io/badge/{quote(nm)}-{col}?style=flat-square&labelColor=0D1117&logoColor={fc}" alt="{nm}"></a>')
+        bar.append("</p>")
+        rtl = lg == "ar"
+        out = tpl0
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/",
+                     "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
+                     "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
+        out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)
+        write(fname, out)
+    print("built", len(i18n.LANGS), "languages")
 main()

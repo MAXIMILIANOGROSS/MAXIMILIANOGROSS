@@ -1,14 +1,16 @@
-<!-- GENERATED FILE: edit templates/README.tpl.md and data/*.json, then run `python3 scripts/build.py`. -->
+<!-- GENERATED FILE: edit templates/README.tpl.md, scripts/i18n.py and data/*.json, then run `python3 scripts/build.py`. -->
 <div align="center">
+
+<p>🌐 <a href="README.md"><img src="https://img.shields.io/badge/English-00D4FF?style=flat-square&labelColor=0D1117&logoColor=black" alt="English"></a> <a href="README.es.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Español"></a> <a href="README.de.md"><img src="https://img.shields.io/badge/Deutsch-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Deutsch"></a> <a href="README.it.md"><img src="https://img.shields.io/badge/Italiano-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Italiano"></a> <a href="README.fr.md"><img src="https://img.shields.io/badge/Fran%C3%A7ais-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Français"></a> <a href="README.zh.md"><img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="中文"></a> <a href="README.ar.md"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="العربية"></a> </p>
 
 <img src="assets/branding/hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
-<a href="#about"><img src="https://img.shields.io/badge/ABOUT-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF"></a>
-<a href="#products"><img src="https://img.shields.io/badge/PRODUCTS-00D4FF?style=for-the-badge&logo=github&logoColor=black"></a>
-<a href="#radar"><img src="https://img.shields.io/badge/RADAR-161B22?style=for-the-badge&logo=target&logoColor=00D4FF"></a>
-<a href="#building"><img src="https://img.shields.io/badge/BUILDING-161B22?style=for-the-badge&logo=rocket&logoColor=00D4FF"></a>
-<a href="#metrics"><img src="https://img.shields.io/badge/METRICS-161B22?style=for-the-badge&logo=graphql&logoColor=00D4FF"></a>
-<a href="#connect"><img src="https://img.shields.io/badge/CONNECT-161B22?style=for-the-badge&logo=linkedin&logoColor=00D4FF"></a>
+<a href="#about"><img src="https://img.shields.io/badge/ABOUT-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF" alt="ABOUT"></a>
+<a href="#products"><img src="https://img.shields.io/badge/PRODUCTS-00D4FF?style=for-the-badge&logo=github&logoColor=black" alt="PRODUCTS"></a>
+<a href="#radar"><img src="https://img.shields.io/badge/RADAR-161B22?style=for-the-badge&logo=target&logoColor=00D4FF" alt="RADAR"></a>
+<a href="#building"><img src="https://img.shields.io/badge/BUILDING-161B22?style=for-the-badge&logo=rocket&logoColor=00D4FF" alt="BUILDING"></a>
+<a href="#metrics"><img src="https://img.shields.io/badge/METRICS-161B22?style=for-the-badge&logo=graphql&logoColor=00D4FF" alt="METRICS"></a>
+<a href="#connect"><img src="https://img.shields.io/badge/CONNECT-161B22?style=for-the-badge&logo=linkedin&logoColor=00D4FF" alt="CONNECT"></a>
 
 **I turn ideas into software.**<br>
 Applications · desktop software · web platforms · AI & automation — from concept to deployment.
@@ -17,6 +19,8 @@ Applications · desktop software · web platforms · AI & automation — from co
 <img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
 
 </div>
+
+
 
 <a id="about"></a>
 <img src="assets/sections/about.svg" alt="01 About" width="100%">
@@ -70,7 +74,7 @@ Independent, documented, shipped. I learn by creating real products.
 
 <div align="center">
 
-<img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem: Talent, Maya, Opportunity Radar, World, Business Tools, AI Office with Maxi OS, Academy, Restaurant OS, Media, Technology and Local Infrastructure" width="100%">
+<img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>One ecosystem for people, business and innovation in the Canary Islands — Maxi OS coordinates an AI Office of 60 agents in 16 departments.</sub>
 
@@ -119,7 +123,7 @@ Independent, documented, shipped. I learn by creating real products.
 
 <div align="center">
 
-<img src="assets/generated/radar.svg" alt="Project radar: building now, published, open source and labs, next" width="100%">
+<img src="assets/generated/radar.svg" alt="Project radar" width="100%">
 
 </div>
 
@@ -292,8 +296,6 @@ Music production, sound design, visual concepts and branding — including **Cab
 
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/CABRA_BEATS_·_YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a> <sub>Automated channel — songs and jingles published by Cabra Beats.</sub>
 
-
-
 </details>
 
 <details>
@@ -331,3 +333,5 @@ Open to remote opportunities, software collaborations and interesting projects �
 <img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
+
+

@@ -3,7 +3,8 @@
 import json, pathlib, re, sys, xml.etree.ElementTree as ET
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 errs = []
-readme = (ROOT / "README.md").read_text(encoding="utf-8")
+FILES = ["README.md"] + [f"README.{c}.md" for c in ("es","de","it","fr","zh","ar")]
+readme = "\n".join((ROOT / f).read_text(encoding="utf-8") for f in FILES)
 for ref in re.findall(r'(?:src|srcset)="(assets/[^"]+)"', readme):
     if not (ROOT / ref).exists(): errs.append(f"missing asset: {ref}")
 for f in ROOT.glob("assets/**/*.svg"):
