@@ -77,15 +77,15 @@ Independent, documented, shipped. I learn by creating real products.
 
 <div align="center">
 
-<img src="assets/generated/journey-caa22be7.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/journey-e2a19589.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
-<img src="assets/generated/cstats-ae39c712.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/cstats-b6c38dd3.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
 
 </div>
 
-NDT has been my craft since 2007: welds, aircraft engines and rocket structures, in Argentina, Spain and Switzerland. At **PLD Space** I worked on **Miura 1** — Spain's first domestically built rocket — and became the first Argentine radiographer to perform radiographic testing on it. At **SR Technics** I carried out **300+ inspections on critical aircraft components with zero safety escapes**. About a year ago I started the transition to software: I taught myself Swift and SwiftUI and shipped **ENODEUS**, a native iOS app that automates inspection work I used to do by hand. Same discipline, new material.
+NDT has been my craft since 2007: welds, aircraft engines and rocket structures, in Argentina, Spain and Switzerland. At **PLD Space** I worked on **Miura 1** — Spain's first domestically built rocket — and became the first Argentine radiographer to perform radiographic testing on it. At **SR Technics** I carried out **300+ inspections on critical aircraft components**. About a year ago I started the transition to software: I taught myself Swift and SwiftUI and shipped **ENODEUS**, a native iOS app that automates inspection work I used to do by hand. Same discipline, new material.
 
 - Hands-on VT, PT, MT, RT and UT across aerospace, energy and manufacturing
 - Worked under EASA, EN 4179, ISO 9001 and ASME requirements: reports, non-conformities, root-cause analysis, audits
@@ -94,7 +94,7 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 <div align="center">
 
 <b>Standards & credentials</b><br>
-<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
 <img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
 
 <br><br>

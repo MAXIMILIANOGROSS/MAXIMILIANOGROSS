@@ -425,6 +425,14 @@ def pulse():
          f'<path d="{d}" fill="none" stroke="{C["cyan"]}" stroke-width="3" stroke-dasharray="120 1400" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="1520" to="0" dur="4s" repeatCount="indefinite"/></path>'
          f'<circle r="5" fill="#7cecff"><animateMotion path="{d}" dur="4s" repeatCount="indefinite"/></circle>')
     return svg(W, H, b, "pulse divider")
+def prune_assets():
+    import re as _re
+    refs = "".join((ROOT / f).read_text(encoding="utf-8") for _, _, f in i18n.LANGS)
+    for d in ("assets/generated", "assets/sections", "assets/branding", "assets/projects"):
+        for f in (ROOT / d).rglob("*.svg"):
+            if _re.search(r"-[0-9a-f]{8}\.svg$", f.name) and f.name not in refs: f.unlink()
+    for f in (ROOT / "assets/generated").rglob("career-*.svg"): f.unlink()
+
 def main():
     global LG
     from urllib.parse import quote
@@ -484,4 +492,4 @@ def main():
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)
         write(fname, out)
     print("built", len(i18n.LANGS), "languages")
-main()
+main(); prune_assets()

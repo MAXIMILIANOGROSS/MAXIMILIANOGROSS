@@ -77,15 +77,15 @@ Independiente, documentado, entregado. Aprendo creando productos reales.
 
 <div align="center">
 
-<img src="assets/generated/es/journey-0a07a81d.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/es/journey-6e02b182.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
-<img src="assets/generated/es/cstats-aa9a7ddb.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/es/cstats-8b0b8e67.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
 
 </div>
 
-El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras de cohete, en Argentina, España y Suiza. En **PLD Space** trabajé en **Miura 1** — el primer cohete fabricado en España — y fui el primer radiógrafo argentino en realizar ensayos radiográficos en él. En **SR Technics** hice **más de 300 inspecciones a componentes críticos de aeronaves sin ningún fallo de seguridad**. Hace aproximadamente un año empecé la transición al software: aprendí Swift y SwiftUI por mi cuenta y publiqué **ENODEUS**, una app iOS nativa que automatiza el trabajo de inspección que antes hacía a mano. Misma disciplina, nuevo material.
+El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras de cohete, en Argentina, España y Suiza. En **PLD Space** trabajé en **Miura 1** — el primer cohete fabricado en España — y fui el primer radiógrafo argentino en realizar ensayos radiográficos en él. En **SR Technics** hice **más de 300 inspecciones a componentes críticos de aeronaves**. Hace aproximadamente un año empecé la transición al software: aprendí Swift y SwiftUI por mi cuenta y publiqué **ENODEUS**, una app iOS nativa que automatiza el trabajo de inspección que antes hacía a mano. Misma disciplina, nuevo material.
 
 - VT, PT, MT, RT y UT en la práctica, en aeroespacial, energía e industria
 - Trabajo bajo requisitos EASA, EN 4179, ISO 9001 y ASME: informes, no conformidades, análisis de causa raíz, auditorías
@@ -94,7 +94,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 <div align="center">
 
 <b>Normas y credenciales</b><br>
-<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
 <img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
 
 <br><br>

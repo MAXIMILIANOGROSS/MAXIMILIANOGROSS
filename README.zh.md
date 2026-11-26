@@ -77,15 +77,15 @@
 
 <div align="center">
 
-<img src="assets/generated/zh/journey-931e02eb.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/zh/journey-8b45bd34.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
-<img src="assets/generated/zh/cstats-b16e88cc.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/zh/cstats-440880f9.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
 
 </div>
 
-自 2007 年起，无损检测就是我的本行：焊缝、飞机发动机和火箭结构，足迹遍及阿根廷、西班牙和瑞士。在 **PLD Space**，我参与了西班牙首枚本土制造火箭 **Miura 1**，并成为第一位对其进行射线检测的阿根廷射线检测员。在 **SR Technics**，我对关键飞机部件完成了 **300 多次检测，零安全漏检**。大约一年前，我开始转向软件：自学 Swift 和 SwiftUI，并发布了 **ENODEUS** —— 一款原生 iOS 应用，把我过去手工完成的检测工作自动化。同样的纪律，全新的材料。
+自 2007 年起，无损检测就是我的本行：焊缝、飞机发动机和火箭结构，足迹遍及阿根廷、西班牙和瑞士。在 **PLD Space**，我参与了西班牙首枚本土制造火箭 **Miura 1**，并成为第一位对其进行射线检测的阿根廷射线检测员。在 **SR Technics**，我对关键飞机部件完成了 **300 多次检测**。大约一年前，我开始转向软件：自学 Swift 和 SwiftUI，并发布了 **ENODEUS** —— 一款原生 iOS 应用，把我过去手工完成的检测工作自动化。同样的纪律，全新的材料。
 
 - 在航空航天、能源和制造业实操 VT、PT、MT、RT 和 UT
 - 依据 EASA、EN 4179、ISO 9001 和 ASME 要求工作：报告、不合格项、根因分析、审核
@@ -94,7 +94,7 @@
 <div align="center">
 
 <b>标准与资质</b><br>
-<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
 <img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
 
 <br><br>

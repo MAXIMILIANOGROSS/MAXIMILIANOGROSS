@@ -77,15 +77,15 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 
 <div align="center">
 
-<img src="assets/generated/it/journey-a51730cf.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/it/journey-e6219d44.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
-<img src="assets/generated/it/cstats-7665f42e.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/it/cstats-66fded47.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
 
 </div>
 
-I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture di razzi, in Argentina, Spagna e Svizzera. In **PLD Space** ho lavorato su **Miura 1** — il primo razzo costruito in Spagna — e sono stato il primo radiografo argentino a eseguire controlli radiografici su di esso. In **SR Technics** ho eseguito **oltre 300 ispezioni su componenti critici di aeromobili senza alcuna falla di sicurezza**. Circa un anno fa ho iniziato la transizione al software: ho imparato Swift e SwiftUI da solo e ho pubblicato **ENODEUS**, un'app iOS nativa che automatizza il lavoro di ispezione che facevo a mano. Stessa disciplina, nuovo materiale.
+I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture di razzi, in Argentina, Spagna e Svizzera. In **PLD Space** ho lavorato su **Miura 1** — il primo razzo costruito in Spagna — e sono stato il primo radiografo argentino a eseguire controlli radiografici su di esso. In **SR Technics** ho eseguito **oltre 300 ispezioni su componenti critici di aeromobili**. Circa un anno fa ho iniziato la transizione al software: ho imparato Swift e SwiftUI da solo e ho pubblicato **ENODEUS**, un'app iOS nativa che automatizza il lavoro di ispezione che facevo a mano. Stessa disciplina, nuovo materiale.
 
 - VT, PT, MT, RT e UT sul campo, in aerospaziale, energia e manifattura
 - Lavoro secondo requisiti EASA, EN 4179, ISO 9001 e ASME: report, non conformità, analisi delle cause radice, audit
@@ -94,7 +94,7 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 <div align="center">
 
 <b>Norme e credenziali</b><br>
-<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
 <img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
 
 <br><br>
