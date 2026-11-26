@@ -69,6 +69,34 @@
 </table>
 
 <details open>
+<summary><b>🚀 软件之前 —— PLD Space 无损检测研究员（Miura 火箭）</b></summary>
+
+<br>
+
+在写代码之前，我从事航空航天质量工作。在 **PLD Space**，我是**无损检测研究员和工业焊缝射线检测员**，也是第一位对西班牙火箭进行射线检测的阿根廷射线检测员。这种纪律——检查、记录、追溯、绝不假设——正是我今天构建软件的方式。
+
+- 火箭结构焊缝的工业射线检测
+- 无损检测研究与工艺程序
+- 可追溯、基于标准的报告——ENODEUS 的根源
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>我在 PLD Space 期间的照片：检查储箱段、车间和一次火箭发射。</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 Island Crew 生态系统 —— 人才、AI 办公室、餐厅、学院、媒体</b></summary>
 
 <br>

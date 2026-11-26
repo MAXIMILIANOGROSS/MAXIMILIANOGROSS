@@ -69,6 +69,34 @@
 </table>
 
 <details open>
+<summary><b>🚀 قبل البرمجيات — باحث اختبارات غير إتلافية في PLD Space (صاروخ Miura)</b></summary>
+
+<br>
+
+قبل أن أكتب الشيفرة عملت في جودة الطيران والفضاء. في **PLD Space** كنت **باحثًا في الاختبارات غير الإتلافية ومصوّرًا إشعاعيًا صناعيًا للحامات**، وأول مصوّر إشعاعي أرجنتيني يصوّر صاروخًا إسبانيًا بالأشعة. هذا الانضباط — افحص، ووثّق، وتتبّع، ولا تفترض أبدًا — هو بالضبط طريقتي في بناء البرمجيات اليوم.
+
+- التصوير الإشعاعي الصناعي للحامات في هياكل الصواريخ
+- أبحاث وإجراءات الاختبارات غير الإتلافية
+- تقارير قابلة للتتبّع ومبنية على المعايير — جذر ENODEUS
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>صور من فترة عملي في PLD Space: فحص جزء من خزان، والورشة، وإطلاق صاروخ.</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 منظومة Island Crew — المواهب، المكتب الذكي، المطاعم، الأكاديمية، الإعلام</b></summary>
 
 <br>

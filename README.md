@@ -69,6 +69,34 @@ Independent, documented, shipped. I learn by creating real products.
 </table>
 
 <details open>
+<summary><b>🚀 Before software — NDT researcher at PLD Space (Miura rocket)</b></summary>
+
+<br>
+
+Before writing code I worked in aerospace quality. At **PLD Space** I was a **Non-Destructive Testing researcher and industrial weld radiographer**, and I became the first Argentine radiographer to X-ray a Spanish rocket. That discipline — inspect, document, trace, never assume — is exactly how I build software today.
+
+- Industrial radiography of welds on rocket structures
+- Non-destructive testing research and procedures
+- Traceable, standards-based reporting — the root of ENODEUS
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Photos from my time at PLD Space: inspecting a tank section, the workshop, and a rocket launch.</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 The Island Crew ecosystem — talent, AI office, restaurants, academy, media</b></summary>
 
 <br>

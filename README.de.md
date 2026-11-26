@@ -69,6 +69,34 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 </table>
 
 <details open>
+<summary><b>🚀 Vor der Software — ZfP-Forscher bei PLD Space (Miura-Rakete)</b></summary>
+
+<br>
+
+Bevor ich Code schrieb, arbeitete ich in der Luft- und Raumfahrtqualität. Bei **PLD Space** war ich **Forscher für zerstörungsfreie Prüfung und industrieller Schweißnaht-Radiograf** und der erste argentinische Radiograf, der eine spanische Rakete durchleuchtet hat. Diese Disziplin — prüfen, dokumentieren, zurückverfolgen, nie annehmen — ist genau so, wie ich heute Software baue.
+
+- Industrielle Radiografie von Schweißnähten an Raketenstrukturen
+- Forschung und Verfahren der zerstörungsfreien Prüfung
+- Rückverfolgbare, normbasierte Berichte — die Wurzel von ENODEUS
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Fotos aus meiner Zeit bei PLD Space: Prüfung eines Tankabschnitts, die Werkstatt und ein Raketenstart.</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 Das Island-Crew-Ökosystem — Talente, KI-Büro, Restaurants, Akademie, Medien</b></summary>
 
 <br>

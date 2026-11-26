@@ -69,6 +69,34 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 </table>
 
 <details open>
+<summary><b>🚀 Prima del software — ricercatore CND in PLD Space (razzo Miura)</b></summary>
+
+<br>
+
+Prima di scrivere codice lavoravo nella qualità aerospaziale. In **PLD Space** sono stato **ricercatore in controlli non distruttivi e radiografo industriale di saldature**, e sono il primo radiografo argentino ad aver radiografato un razzo spagnolo. Quella disciplina — ispezionare, documentare, tracciare, mai supporre — è esattamente come costruisco software oggi.
+
+- Radiografia industriale delle saldature su strutture di razzi
+- Ricerca e procedure di controlli non distruttivi
+- Report tracciabili e basati su norme — la radice di ENODEUS
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Foto del mio periodo in PLD Space: ispezione di una sezione di serbatoio, l'officina e un lancio di razzo.</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 L'ecosistema Island Crew — talenti, ufficio IA, ristoranti, accademia, media</b></summary>
 
 <br>

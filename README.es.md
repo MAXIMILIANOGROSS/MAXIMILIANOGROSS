@@ -69,6 +69,34 @@ Independiente, documentado, entregado. Aprendo creando productos reales.
 </table>
 
 <details open>
+<summary><b>🚀 Antes del software — investigador END en PLD Space (cohete Miura)</b></summary>
+
+<br>
+
+Antes de programar trabajé en calidad aeroespacial. En **PLD Space** fui **investigador en Ensayos No Destructivos y radiógrafo industrial de soldaduras**, y fui el primer radiógrafo argentino en radiografiar un cohete español. Esa disciplina — inspeccionar, documentar, trazar, nunca suponer — es exactamente cómo construyo software hoy.
+
+- Radiografía industrial de soldaduras en estructuras de cohete
+- Investigación y procedimientos de ensayos no destructivos
+- Informes trazables y basados en normas — la raíz de ENODEUS
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Fotos de mi etapa en PLD Space: inspeccionando una sección de depósito, el taller y un lanzamiento de cohete.</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 El ecosistema Island Crew — talento, oficina IA, restaurantes, academia, medios</b></summary>
 
 <br>

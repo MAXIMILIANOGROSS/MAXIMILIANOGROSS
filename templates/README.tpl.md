@@ -60,6 +60,32 @@
 </table>
 
 <details open>
+<summary><b>{{t.pld_sum}}</b></summary>
+
+<br>
+
+{{t.pld_p}}
+
+{{t.pld_li}}
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>{{t.pld_cap}}</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>{{t.eco_sum}}</b></summary>
 
 <br>

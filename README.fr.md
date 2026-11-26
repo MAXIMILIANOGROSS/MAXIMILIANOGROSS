@@ -69,6 +69,34 @@ Indépendant, documenté, livré. J'apprends en créant de vrais produits.
 </table>
 
 <details open>
+<summary><b>🚀 Avant le logiciel — chercheur CND chez PLD Space (fusée Miura)</b></summary>
+
+<br>
+
+Avant de coder, je travaillais dans la qualité aérospatiale. Chez **PLD Space**, j'étais **chercheur en contrôle non destructif et radiographe industriel de soudures**, et je suis le premier radiographe argentin à avoir radiographié une fusée espagnole. Cette discipline — inspecter, documenter, tracer, ne jamais supposer — c'est exactement ma façon de construire des logiciels aujourd'hui.
+
+- Radiographie industrielle des soudures sur des structures de fusée
+- Recherche et procédures de contrôle non destructif
+- Rapports traçables et fondés sur des normes — la racine d'ENODEUS
+
+<div align="center">
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Photos de mon passage chez PLD Space : inspection d'une section de réservoir, l'atelier et un lancement de fusée.</sub>
+
+</div>
+
+</details>
+
+<details open>
 <summary><b>🌐 L'écosystème Island Crew — talents, bureau IA, restaurants, académie, médias</b></summary>
 
 <br>
