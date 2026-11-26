@@ -1,0 +1,39 @@
+{
+  "owner": "MAXIMILIANOGROSS",
+  "name": "MAXIMILIANO OLMOS SÁNCHEZ",
+  "monogram": "MO",
+  "projects": [
+    {"id": "enodeus", "name": "ENODEUS", "category": "INDUSTRIAL SOFTWARE", "status": "PUBLISHED", "ring": "published",
+     "tagline": "Digital inspection and quality management for NDT: structured reports, traceability and verification instead of spreadsheets and paper.",
+     "tech": ["Swift", "Firebase", "Python"], "url": "https://enodeus.ch", "access": "iOS app · website public · source private"},
+    {"id": "island-crew", "name": "ISLAND CREW", "category": "TALENT PLATFORM", "status": "PUBLISHED", "ring": "published",
+     "tagline": "Employment matching platform that connects hospitality workers and businesses through a modern digital experience.",
+     "tech": ["TypeScript", "Next.js", "Supabase"], "url": "https://island-crew-web.vercel.app", "access": "app + web · source private"},
+    {"id": "lebenslaufy", "name": "LEBENSLAUFY", "category": "MOBILE · DOCUMENTS", "status": "PUBLISHED", "ring": "published",
+     "tagline": "Mobile app that simplifies professional CV creation and job applications.",
+     "tech": ["Swift"], "url": "", "access": "iOS app · source private"},
+    {"id": "hydrata", "name": "HYDRATA", "category": "MOBILE · HEALTH UTILITY", "status": "PUBLISHED", "ring": "published",
+     "tagline": "Hydration companion that makes daily water-intake tracking simple and engaging.",
+     "tech": ["Swift"], "url": "", "access": "iOS app · source private"},
+    {"id": "carbonuxis", "name": "CARBONUXIS", "category": "SUSTAINABILITY", "status": "PUBLISHED", "ring": "published",
+     "tagline": "Carbon, water and waste footprint calculations with AI-assisted reduction plans. Android version in testing.",
+     "tech": ["Swift", "Kotlin"], "url": "", "access": "iOS app · Android in QA · source private"},
+    {"id": "ai-office", "name": "ISLAND CREW IA · CALL CENTER", "category": "AI · DESKTOP · TELEPHONY", "status": "BUILDING", "ring": "building",
+     "tagline": "Call-center software and hardware: AI voice receptionist, appointments, owner-approved emails and dashboards. Mac and Windows installers.",
+     "tech": ["Python", "FastAPI", "Asterisk"], "url": "", "access": "private repo · installers built"}
+  ],
+  "radar_extra": [
+    {"name": "CABRA BEATS", "ring": "building"},
+    {"name": "CARBONUXIS ANDROID", "ring": "building"},
+    {"name": "MYBRAIN", "ring": "open"},
+    {"name": "VIRTUAL OFFICE", "ring": "open"},
+    {"name": "ISLAND CREW SUITE", "ring": "open"},
+    {"name": "NEXT BUILD", "ring": "next"}
+  ],
+  "lab": [
+    {"name": "MyBrain", "repo": "MyBrain", "status": "OPEN SOURCE · MIT", "text": "A second self: observes real data, proposes one action a day, waits for approval, learns."},
+    {"name": "Virtual Office", "repo": "virtual-office", "status": "OPEN SOURCE", "text": "3D virtual office with 43 AI agents. Blank template on Next.js + Supabase."},
+    {"name": "Island Crew Suite", "repo": "island-crew-downloads", "status": "RELEASE", "text": "Self-installing Mac / Windows marketing suite for restaurants. Downloads published as releases."}
+  ],
+  "contact": {"linkedin": "https://www.linkedin.com/in/maximiliano-olmos-sanchez", "github": "https://github.com/MAXIMILIANOGROSS", "site": "https://enodeus.ch"}
+}

@@ -1,0 +1,99 @@
+{
+ "generated": "2026-11-26 12:11 UTC",
+ "public_repos": [
+  {
+   "name": "island-crew-downloads",
+   "description": "island-crew-downloads",
+   "language": "HTML",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-11-23T11:50:06Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/island-crew-downloads",
+   "license": "NOASSERTION",
+   "release": {
+    "tag": "island-crew-suite-v1.0.0-macos-arm64",
+    "name": "Island Crew Suite 1.0.0 para Mac (Apple Silicon)",
+    "url": "https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64",
+    "date": "2026-11-23T01:06:21Z"
+   }
+  },
+  {
+   "name": "islandcrewsuite",
+   "description": "suite marketing",
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-11-15T20:16:36Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/islandcrewsuite",
+   "license": "",
+   "release": null
+  },
+  {
+   "name": "meeting-booker-repo",
+   "description": "",
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-11-01T15:46:00Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/meeting-booker-repo",
+   "license": "",
+   "release": null
+  },
+  {
+   "name": "MyBrain",
+   "description": "Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT",
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-10-28T14:02:02Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/MyBrain",
+   "license": "MIT",
+   "release": null
+  },
+  {
+   "name": "virtual-office",
+   "description": "Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase.",
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-10-23T16:31:16Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/virtual-office",
+   "license": "NOASSERTION",
+   "release": null
+  },
+  {
+   "name": "carbon-is-android",
+   "description": "carbonáis para android",
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-09-24T23:27:59Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/carbon-is-android",
+   "license": "",
+   "release": null
+  },
+  {
+   "name": "island-crew-legal",
+   "description": "",
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "pushed_at": "2026-09-21T10:04:39Z",
+   "url": "https://github.com/MAXIMILIANOGROSS/island-crew-legal",
+   "license": "",
+   "release": null
+  }
+ ],
+ "languages": {
+  "Python": 1044990,
+  "TypeScript": 690888,
+  "JavaScript": 325876,
+  "HTML": 267463,
+  "PLpgSQL": 81614,
+  "Shell": 36552,
+  "Swift": 18953,
+  "PowerShell": 4537,
+  "Batchfile": 363,
+  "CSS": 262
+ }
+}
