@@ -6,17 +6,17 @@
     {
       "id": "enodeus",
       "name": "ENODEUS",
-      "category": "INDUSTRIAL SOFTWARE",
+      "category": "SaaS SUITE · INDUSTRY",
       "status": "PUBLISHED",
       "ring": "published",
-      "tagline": "Digital inspection and quality management for NDT: structured reports, traceability and verification instead of spreadsheets and paper.",
+      "tagline": "SaaS suite for companies that digitalizes quality processes and inspections across 15 industry fields. Structured reports, traceability and verification.",
       "tech": [
         "Swift",
         "Firebase",
         "Python"
       ],
       "url": "https://enodeus.ch",
-      "access": "iOS app · website public · source private"
+      "access": "iOS app + SaaS · enodeus.ch · source private"
     },
     {
       "id": "island-crew",
@@ -131,6 +131,12 @@
     }
   ],
   "lab": [
+    {
+      "name": "ENODEUS",
+      "url": "https://enodeus.ch",
+      "status": "SaaS SUITE",
+      "text": "SaaS suite for companies: digitalizes processes and quality inspections for 15 industry fields."
+    },
     {
       "name": "MyBrain",
       "repo": "MyBrain",

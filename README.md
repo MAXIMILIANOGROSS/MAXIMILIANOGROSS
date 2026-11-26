@@ -272,6 +272,7 @@ flowchart LR
 
 | Project | Status | What it is | |
 |---|---|---|---|
+| **ENODEUS** | `SaaS SUITE` | SaaS suite for companies: digitalizes processes and quality inspections for 15 industry fields. | [site](https://enodeus.ch) |
 | **MyBrain** | `OPEN SOURCE · MIT` | A second self: observes real data, proposes one action a day, waits for approval, learns. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `OPEN SOURCE` | 3D virtual office with 43 AI agents. Blank template on Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `RELEASE` | Self-installing Mac / Windows marketing suite for restaurants. Downloads published as releases. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |

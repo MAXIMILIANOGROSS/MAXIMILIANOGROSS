@@ -210,7 +210,7 @@ def main():
     write("assets/generated/radar.svg", radar()); write("assets/generated/terminal.svg", terminal()); write("assets/generated/stats.svg", stats())
     cards = [P["projects"][i:i+2] for i in range(0, len(P["projects"]), 2)]
     grid = "<table>\n" + "".join("<tr>\n" + "".join(f'<td width="50%" valign="top"><img src="assets/projects/{p["id"]}.svg" alt="{esc(p["name"])} — {p["status"]}" width="100%"><br>{("<a href=" + chr(34) + p["url"] + chr(34) + "><b>Open " + p["name"].split(" ·")[0].title() + " →</b></a>") if p["url"] else "<sub>private source</sub>"}</td>\n' for p in row) + "</tr>\n" for row in cards) + "</table>"
-    lab = "\n".join(f"| **{l['name']}** | `{l['status']}` | {l['text']} | [repo](https://github.com/{P['owner']}/{l['repo']}) |" for l in P["lab"])
+    lab = "\n".join(f"| **{l['name']}** | `{l['status']}` | {l['text']} | [{'site' if l.get('url') else 'repo'}]({l.get('url') or 'https://github.com/' + P['owner'] + '/' + l['repo']}) |" for l in P["lab"])
     snake = ""
     if (ROOT / "assets/generated/snake.svg").exists() and (ROOT / "assets/generated/snake-dark.svg").exists():
         snake = '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg"><img alt="Contribution snake" src="assets/generated/snake.svg" width="100%"></picture>'
