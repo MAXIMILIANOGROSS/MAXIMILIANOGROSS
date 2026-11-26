@@ -289,6 +289,8 @@ flowchart LR
 
 Music production, sound design, visual concepts and branding — including **Cabra Beats**, an AI-assisted music creation tool for business jingles and songs. Technical thinking combined with creativity.
 
+<a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/CABRA_BEATS_·_YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a> <sub>Automated channel — songs and jingles published by Cabra Beats.</sub>
+
 
 
 </details>
@@ -322,6 +324,7 @@ Open to remote opportunities, software collaborations and interesting projects �
 <a href="https://github.com/MAXIMILIANOGROSS"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://enodeus.ch"><img src="https://img.shields.io/badge/ENODEUS-00D4FF?style=for-the-badge&logo=googlechrome&logoColor=black"></a>
 <a href="https://islandcrew.es"><img src="https://img.shields.io/badge/ISLANDCREW.ES-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00D4FF"></a>
+<a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
 <img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
