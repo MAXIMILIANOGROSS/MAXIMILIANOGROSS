@@ -3,7 +3,7 @@
 
 <p>🌐 <a href="README.md"><img src="https://img.shields.io/badge/English-00D4FF?style=flat-square&labelColor=0D1117&logoColor=black" alt="English"></a> <a href="README.es.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Español"></a> <a href="README.de.md"><img src="https://img.shields.io/badge/Deutsch-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Deutsch"></a> <a href="README.it.md"><img src="https://img.shields.io/badge/Italiano-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Italiano"></a> <a href="README.fr.md"><img src="https://img.shields.io/badge/Fran%C3%A7ais-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Français"></a> <a href="README.zh.md"><img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="中文"></a> <a href="README.ar.md"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="العربية"></a> </p>
 
-<img src="assets/branding/hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
+<img src="assets/branding/hero-e21427ce.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
 <a href="#about"><img src="https://img.shields.io/badge/ABOUT-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF" alt="ABOUT"></a>
 <a href="#products"><img src="https://img.shields.io/badge/PRODUCTS-00D4FF?style=for-the-badge&logo=github&logoColor=black" alt="PRODUCTS"></a>
@@ -221,7 +221,7 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/generated/orbit.svg" alt="Technology orbit" width="100%">
+<img src="assets/generated/orbit-5bc2bb75.svg" alt="Technology orbit" width="100%">
 
 </div>
 

@@ -244,14 +244,19 @@ def main():
             q = dict(p)
             if lg != "en" and p["id"] in i18n.PROJ: q["tagline"], q["access"] = i18n.PROJ[p["id"]][lg]
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
-    write("assets/generated/orbit.svg", anim.orbit())
-    write("assets/generated/pulse.svg", pulse())
+        write("assets/generated/pulse.svg", pulse())
     global LG
+    HERO, ORB = {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
-        write(bd + "hero.svg", hero())
+        import hashlib, glob
+        def hashed(d, base, content):
+            for f in glob.glob(str(ROOT / d / (base + "*.svg"))): pathlib.Path(f).unlink()
+            name = f"{base}-{hashlib.md5(content.encode()).hexdigest()[:8]}.svg"; write(d + name, content); return d + name
+        HERO[lg] = hashed(bd, "hero", hero())
         npub = sum(1 for q in P['projects'] if q['ring'] == 'published')
         write(gd + "ticker.svg", anim.ticker([t.format(n=npub) for t in Xt()["ticker"]]))
+        ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
         write(gd + "pipeline.svg", anim.pipeline(Xt()["p_subs"]))
         write(gd + "radar.svg", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
     snake = ""
@@ -275,7 +280,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

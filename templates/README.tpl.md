@@ -3,7 +3,7 @@
 
 {{LANGBAR}}
 
-<img src="{{BD}}hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
+<img src="{{HERO}}" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
 {{NAV}}
 
@@ -187,7 +187,7 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/generated/orbit.svg" alt="Technology orbit" width="100%">
+<img src="{{ORBIT}}" alt="Technology orbit" width="100%">
 
 </div>
 
