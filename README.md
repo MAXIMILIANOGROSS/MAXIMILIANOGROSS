@@ -147,7 +147,7 @@ flowchart LR
 
 <img src="assets/generated/stats.svg" alt="Verified GitHub metrics generated from the GitHub API" width="100%">
 
-
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg"><img alt="Contribution snake" src="assets/generated/snake.svg" width="100%"></picture>
 
 </div>
 

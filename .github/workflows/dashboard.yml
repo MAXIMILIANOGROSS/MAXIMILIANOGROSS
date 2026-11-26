@@ -6,7 +6,7 @@ on:
     paths: ["data/projects.json", "templates/**", "scripts/build.py"]
 permissions:
   contents: write
-concurrency: {group: dashboard, cancel-in-progress: true}
+concurrency: {group: profile-writes, cancel-in-progress: false}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,4 +24,4 @@ jobs:
         run: |
           git config user.name "profile-bot"; git config user.email "profile-bot@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || (git commit -m "chore: refresh profile dashboard" && git push)
+          git diff --cached --quiet || (git commit -m "chore: refresh profile dashboard" && git pull --rebase -q && git push)
