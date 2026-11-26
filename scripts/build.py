@@ -437,6 +437,15 @@ def standards(lg):
     o.append(f'<rect x="0" y="{H-3}" width="{W}" height="3" fill="url(#ac)" opacity=".5"/>')
     return svg(W, H, "".join(o), i18n.T[lg]["std_h"])
 
+def navchip(label, num, col):
+    w = max(120, int(len(label) * 10.5 + 70)) if all(ord(c) < 0x2e80 for c in label) else max(120, len(label) * 20 + 70)
+    h = 44
+    body = (f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="#0b1220" stroke="{col}" stroke-opacity=".6" stroke-width="1.5"/>'
+            f'<text x="14" y="{h/2+4}" font-family="{MONO}" font-size="11" fill="{col}">{num}</text>'
+            f'<text x="{w/2+8}" y="{h/2+5}" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="14" fill="#e6f6ff">{esc(label)}</text>'
+            f'<rect x="12" y="{h-5}" width="22" height="2" rx="1" fill="{col}"><animate attributeName="width" values="22;{w-24};22" dur="6s" repeatCount="indefinite"/></rect>')
+    return svg(w, h, body, label), w
+
 def pulse():
     W, H = 1200, 40
     d = "M0 20 H300 l10 -14 l12 28 l10 -24 l8 10 H700 l10 -14 l12 28 l10 -24 l8 10 H1200"
@@ -497,7 +506,13 @@ def main():
         grid = "<table>\n" + "".join("<tr>\n" + "".join(cell(p) for p in row) + "</tr>\n" for row in cards) + "</table>"
         lab = "\n".join(f"| **{l['name']}** | `{i18n.ST.get(l['status'],{}).get(lg,l['status'])}` | {i18n.LABT.get(l['name'], {}).get(lg, l['text'])} | [{T['site'] if l.get('url') else T['repo']}]({l.get('url') or 'https://github.com/' + P['owner'] + '/' + l['repo']}) |" for l in P["lab"])
         navk = [("about", "n_about", "161B22", "githubsponsors", "00D4FF"), ("products", "n_products", "00D4FF", "github", "black"), ("radar", "n_radar", "161B22", "target", "00D4FF"), ("building", "n_building", "161B22", "rocket", "00D4FF"), ("metrics", "n_metrics", "161B22", "graphql", "00D4FF"), ("connect", "n_connect", "161B22", "linkedin", "00D4FF")]
-        nav = "\n".join(f'<a href="#{a}"><img src="https://img.shields.io/badge/{quote(T[k].replace("-", "--").replace("_", "__"))}-{bg}?style=for-the-badge&logo={lo}&logoColor={lc}" alt="{T[k]}"></a>' for a, k, bg, lo, lc in navk)
+        _nk = [("about", "n_about"), ("products", "n_products"), ("radar", "n_radar"), ("building", "n_building"), ("career", "n_career"), ("metrics", "n_metrics"), ("connect", "n_connect")]
+        _nv = []
+        for _i, (_a, _k) in enumerate(_nk):
+            _s, _w = navchip(T[_k], f"{_i+1:02d}", C["cyan"])
+            _p = hashed("assets/generated/" + ("" if lg == "en" else lg + "/"), f"nav-{_a}", _s)
+            _nv.append(f'<a href="#{_a}"><img src="{_p}" alt="{T[_k]}" height="44"></a>')
+        nav = "&nbsp;".join(_nv)
         bar = ["<p>🌐"]
         for l2, sh, f2 in i18n.LANGS:
             nm = i18n.NAMES[l2]; col = "00D4FF" if l2 == lg else "161B22"; fc = "black" if l2 == lg else "00D4FF"

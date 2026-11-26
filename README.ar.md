@@ -5,12 +5,7 @@
 
 <img src="assets/branding/ar/hero-60c16161.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
-<a href="#about"><img src="https://img.shields.io/badge/%D9%86%D8%A8%D8%B0%D8%A9-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF" alt="نبذة"></a>
-<a href="#products"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-00D4FF?style=for-the-badge&logo=github&logoColor=black" alt="المنتجات"></a>
-<a href="#radar"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D8%B1%D8%A7%D8%AF%D8%A7%D8%B1-161B22?style=for-the-badge&logo=target&logoColor=00D4FF" alt="الرادار"></a>
-<a href="#building"><img src="https://img.shields.io/badge/%D9%82%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-161B22?style=for-the-badge&logo=rocket&logoColor=00D4FF" alt="قيد البناء"></a>
-<a href="#metrics"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%8A%D9%8A%D8%B3-161B22?style=for-the-badge&logo=graphql&logoColor=00D4FF" alt="المقاييس"></a>
-<a href="#connect"><img src="https://img.shields.io/badge/%D8%AA%D9%88%D8%A7%D8%B5%D9%84-161B22?style=for-the-badge&logo=linkedin&logoColor=00D4FF" alt="تواصل"></a>
+<a href="#about"><img src="assets/generated/ar/nav-about-d6435fea.svg" alt="نبذة" height="44"></a>&nbsp;<a href="#products"><img src="assets/generated/ar/nav-products-8d0995e6.svg" alt="المنتجات" height="44"></a>&nbsp;<a href="#radar"><img src="assets/generated/ar/nav-radar-73f42002.svg" alt="الرادار" height="44"></a>&nbsp;<a href="#building"><img src="assets/generated/ar/nav-building-7fdec118.svg" alt="قيد البناء" height="44"></a>&nbsp;<a href="#career"><img src="assets/generated/ar/nav-career-7dbe207f.svg" alt="المسار" height="44"></a>&nbsp;<a href="#metrics"><img src="assets/generated/ar/nav-metrics-be94df94.svg" alt="المقاييس" height="44"></a>&nbsp;<a href="#connect"><img src="assets/generated/ar/nav-connect-8156f250.svg" alt="تواصل" height="44"></a>
 
 **أحوّل الأفكار إلى برمجيات.**<br>
 تطبيقات · برامج سطح المكتب · منصات ويب · ذكاء اصطناعي وأتمتة — من الفكرة إلى الإطلاق.

@@ -5,12 +5,7 @@
 
 <img src="assets/branding/zh/hero-e2440647.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
-<a href="#about"><img src="https://img.shields.io/badge/%E5%85%B3%E4%BA%8E%E6%88%91-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF" alt="关于我"></a>
-<a href="#products"><img src="https://img.shields.io/badge/%E4%BA%A7%E5%93%81-00D4FF?style=for-the-badge&logo=github&logoColor=black" alt="产品"></a>
-<a href="#radar"><img src="https://img.shields.io/badge/%E9%9B%B7%E8%BE%BE-161B22?style=for-the-badge&logo=target&logoColor=00D4FF" alt="雷达"></a>
-<a href="#building"><img src="https://img.shields.io/badge/%E5%9C%A8%E5%BB%BA%E9%A1%B9%E7%9B%AE-161B22?style=for-the-badge&logo=rocket&logoColor=00D4FF" alt="在建项目"></a>
-<a href="#metrics"><img src="https://img.shields.io/badge/%E6%8C%87%E6%A0%87-161B22?style=for-the-badge&logo=graphql&logoColor=00D4FF" alt="指标"></a>
-<a href="#connect"><img src="https://img.shields.io/badge/%E8%81%94%E7%B3%BB-161B22?style=for-the-badge&logo=linkedin&logoColor=00D4FF" alt="联系"></a>
+<a href="#about"><img src="assets/generated/zh/nav-about-0df3c9fa.svg" alt="关于我" height="44"></a>&nbsp;<a href="#products"><img src="assets/generated/zh/nav-products-2494aec2.svg" alt="产品" height="44"></a>&nbsp;<a href="#radar"><img src="assets/generated/zh/nav-radar-716afc4d.svg" alt="雷达" height="44"></a>&nbsp;<a href="#building"><img src="assets/generated/zh/nav-building-c1abe3e2.svg" alt="在建项目" height="44"></a>&nbsp;<a href="#career"><img src="assets/generated/zh/nav-career-2f1716e5.svg" alt="履历" height="44"></a>&nbsp;<a href="#metrics"><img src="assets/generated/zh/nav-metrics-18ed16f6.svg" alt="指标" height="44"></a>&nbsp;<a href="#connect"><img src="assets/generated/zh/nav-connect-1f1f9433.svg" alt="联系" height="44"></a>
 
 **我把想法变成软件。**<br>
 应用 · 桌面软件 · 网络平台 · AI 与自动化 —— 从概念到上线。

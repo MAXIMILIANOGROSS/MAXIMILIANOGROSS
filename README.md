@@ -5,12 +5,7 @@
 
 <img src="assets/branding/hero-e21427ce.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
-<a href="#about"><img src="https://img.shields.io/badge/ABOUT-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF" alt="ABOUT"></a>
-<a href="#products"><img src="https://img.shields.io/badge/PRODUCTS-00D4FF?style=for-the-badge&logo=github&logoColor=black" alt="PRODUCTS"></a>
-<a href="#radar"><img src="https://img.shields.io/badge/RADAR-161B22?style=for-the-badge&logo=target&logoColor=00D4FF" alt="RADAR"></a>
-<a href="#building"><img src="https://img.shields.io/badge/BUILDING-161B22?style=for-the-badge&logo=rocket&logoColor=00D4FF" alt="BUILDING"></a>
-<a href="#metrics"><img src="https://img.shields.io/badge/METRICS-161B22?style=for-the-badge&logo=graphql&logoColor=00D4FF" alt="METRICS"></a>
-<a href="#connect"><img src="https://img.shields.io/badge/CONNECT-161B22?style=for-the-badge&logo=linkedin&logoColor=00D4FF" alt="CONNECT"></a>
+<a href="#about"><img src="assets/generated/nav-about-be208a7b.svg" alt="ABOUT" height="44"></a>&nbsp;<a href="#products"><img src="assets/generated/nav-products-81d20bb1.svg" alt="PRODUCTS" height="44"></a>&nbsp;<a href="#radar"><img src="assets/generated/nav-radar-f5d9c80f.svg" alt="RADAR" height="44"></a>&nbsp;<a href="#building"><img src="assets/generated/nav-building-fa693f70.svg" alt="BUILDING" height="44"></a>&nbsp;<a href="#career"><img src="assets/generated/nav-career-b34e6851.svg" alt="CAREER" height="44"></a>&nbsp;<a href="#metrics"><img src="assets/generated/nav-metrics-ef26276f.svg" alt="METRICS" height="44"></a>&nbsp;<a href="#connect"><img src="assets/generated/nav-connect-1a7bd80a.svg" alt="CONNECT" height="44"></a>
 
 **I turn ideas into software.**<br>
 Applications · desktop software · web platforms · AI & automation — from concept to deployment.
