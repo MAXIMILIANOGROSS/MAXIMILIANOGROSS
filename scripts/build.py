@@ -17,9 +17,13 @@ DEFS = f'''<defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b12"/><stop offset=".55" stop-color="#0c1726"/><stop offset="1" stop-color="#070b12"/></linearGradient>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="{C['line']}" stroke-width="1" opacity=".5"/></pattern>
 </defs>'''
+import json as _json, datetime as _dt
+METRICS = _json.loads((ROOT / "data/metrics.json").read_text(encoding="utf-8"))
+
 def svg(w, h, body, label):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(label)}">{DEFS}{body}</svg>'
 def write(rel, content):
+    if "/ar/" in rel and rel.endswith(".svg"): content = re.sub(r' letter-spacing="[^"]*"', '', content)
     p = ROOT / rel; p.parent.mkdir(parents=True, exist_ok=True); p.write_text(content, encoding="utf-8")
 def hexpts(cx, cy, r): return " ".join(f"{cx + r*math.cos(math.radians(60*k-30)):.1f},{cy + r*math.sin(math.radians(60*k-30)):.1f}" for k in range(6))
 def pill(x, y, t, c, h=30):
@@ -161,8 +165,6 @@ def radar():
     o.append(f'<circle cx="{cx}" cy="{cy}" r="{R0}" fill="none" stroke="{C["cyan"]}" stroke-opacity=".25"/>')
     for k, lab, r, c in rings:
         o.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{c}" fill-opacity=".035" stroke="{c}" stroke-opacity=".55" stroke-dasharray="2 7"/>')
-        # ring label on the vertical axis
-        o.append(f'<text x="{cx-6}" y="{cy-r+13}" text-anchor="end" font-family="{MONO}" font-size="9.5" fill="{c}" fill-opacity=".85" letter-spacing="2">{esc(lab)}</text>')
     o.append(f'<line x1="{cx-R0}" y1="{cy}" x2="{cx+R0}" y2="{cy}" stroke="{C["line"]}"/><line x1="{cx}" y1="{cy-R0}" x2="{cx}" y2="{cy+R0}" stroke="{C["line"]}"/>')
     for d in (45, 135):
         a = math.radians(d); o.append(f'<line x1="{cx-R0*math.cos(a):.1f}" y1="{cy-R0*math.sin(a):.1f}" x2="{cx+R0*math.cos(a):.1f}" y2="{cy+R0*math.sin(a):.1f}" stroke="{C["line"]}" stroke-opacity=".5" stroke-dasharray="2 8"/>')
@@ -402,7 +404,7 @@ def mapping(lg):
     return svg(W, H, "".join(o), title)
 
 def cstats(lg):
-    W, H = 1200, 190; tiles = i18n.S[lg]; cols = [C["cyan"], C["green"], "#a78bfa", C["amber"], "#fb7185"]
+    W, H = 1200, 190; tiles = list(i18n.S[lg]); tiles[0] = (f"{_dt.date.today().year - METRICS['ndt_since']}+", tiles[0][1]); tiles[1] = (METRICS["aircraft_inspections"], tiles[1][1]); tiles[2] = (str(METRICS["countries_ndt"]), tiles[2][1]); tiles[4] = (str(METRICS["appstore_apps"]), tiles[4][1]); cols = [C["cyan"], C["green"], "#a78bfa", C["amber"], "#fb7185"]
     o = [f'<defs><clipPath id="sc5"><rect width="{W}" height="{H}" rx="14"/></clipPath><filter id="sg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g clip-path="url(#sc5)">',
          f'<rect width="{W}" height="{H}" fill="{C["panel"]}"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".55"/>']
     tw = (W - 60 - 4 * 16) / 5
@@ -418,6 +420,23 @@ def cstats(lg):
         for k, ln in enumerate(ls[:3]): o.append(f'<text x="{x+20:.0f}" y="{110+k*16}" font-family="{MONO}" font-size="11.5" fill="#9fb6cc" letter-spacing="1.2">{esc(ln)}</text>')
     o.append(f'<rect y="{H-4}" width="{W}" height="4" fill="url(#ac)" opacity=".55"/><rect y="{H-4}" width="240" height="4" fill="#fff" opacity=".85"><animate attributeName="x" from="-240" to="{W}" dur="4s" repeatCount="indefinite"/></rect></g><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
     return svg(W, H, "".join(o), "career stats")
+def standards(lg):
+    W, H = 1200, 150
+    QL = {"en": "QUALIFICATIONS", "es": "CUALIFICACIONES", "de": "QUALIFIKATIONEN", "it": "QUALIFICHE", "fr": "QUALIFICATIONS", "zh": "资质", "ar": "المؤهلات"}
+    rows = [(i18n.T[lg]["std_h"].upper(), ["EASA", "EN 4179", "EN 9100", "ISO 9001", "ASME", "VCA"], C["mute"]),
+            (QL[lg], ["PT · LEVEL 2", "MT · LEVEL 1+2", "CSN · RADIATION OPERATOR · 2023–2028"], C["cyan"])]
+    o = [f'<rect width="{W}" height="{H}" rx="12" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="12" fill="url(#grid)" opacity=".5"/>']
+    for r, (lab, chips, col) in enumerate(rows):
+        y = 40 + r * 56
+        o.append(f'<text x="28" y="{y-14}" font-family="{MONO}" font-size="11" fill="{col}" letter-spacing="3">{esc(lab)}</text>')
+        x = 28
+        for k, ch in enumerate(chips):
+            w = int(len(ch) * 8.6 + 28)
+            o.append(f'<rect x="{x}" y="{y-4}" width="{w}" height="30" rx="8" fill="#0b1220" stroke="{col}" stroke-opacity=".7"/><text x="{x+w/2}" y="{y+16}" text-anchor="middle" font-family="{MONO}" font-weight="700" font-size="13" fill="#e6f6ff">{esc(ch)}</text>')
+            x += w + 10
+    o.append(f'<rect x="0" y="{H-3}" width="{W}" height="3" fill="url(#ac)" opacity=".5"/>')
+    return svg(W, H, "".join(o), i18n.T[lg]["std_h"])
+
 def pulse():
     W, H = 1200, 40
     d = "M0 20 H300 l10 -14 l12 28 l10 -24 l8 10 H700 l10 -14 l12 28 l10 -24 l8 10 H1200"
@@ -451,7 +470,7 @@ def main():
             if lg != "en" and p["id"] in i18n.PROJ: q["tagline"], q["access"] = i18n.PROJ[p["id"]][lg]
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
         write("assets/generated/pulse.svg", pulse())
-    HERO, ORB, CAR, MAP, CST, RAD = {}, {}, {}, {}, {}, {}
+    HERO, ORB, CAR, MAP, CST, RAD, STD = {}, {}, {}, {}, {}, {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
         import hashlib, glob
@@ -459,9 +478,9 @@ def main():
             for f in glob.glob(str(ROOT / d / (base + "*.svg"))): pathlib.Path(f).unlink()
             name = f"{base}-{hashlib.md5(content.encode()).hexdigest()[:8]}.svg"; write(d + name, content); return d + name
         HERO[lg] = hashed(bd, "hero", hero())
-        CAR[lg] = hashed(gd, "journey", journey(lg)); MAP[lg] = hashed(gd, "mapping", mapping(lg)); CST[lg] = hashed(gd, "cstats", cstats(lg))
+        CAR[lg] = hashed(gd, "journey", journey(lg)); MAP[lg] = hashed(gd, "mapping", mapping(lg)); STD[lg] = hashed(gd, "standards", standards(lg)); CST[lg] = hashed(gd, "cstats", cstats(lg))
         npub = sum(1 for q in P['projects'] if q['ring'] == 'published')
-        write(gd + "ticker.svg", anim.ticker([t.format(n=npub) for t in Xt()["ticker"]]))
+        write(gd + "ticker.svg", anim.ticker([t.format(n=METRICS["appstore_apps"]) for t in Xt()["ticker"]]))
         ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
         write(gd + "pipeline.svg", anim.pipeline(Xt()["p_subs"]))
         RAD[lg] = hashed(gd, "radar", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
@@ -486,7 +505,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{STANDARDS}}": STD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

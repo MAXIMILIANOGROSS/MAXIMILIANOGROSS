@@ -93,9 +93,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 
 <div align="center">
 
-<b>Normas y credenciales</b><br>
-<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
-<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+<img src="assets/generated/es/standards-10aacc2a.svg" alt="Normas y credenciales" width="100%">
 
 <br><br>
 
@@ -190,7 +188,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 
 <div align="center">
 
-<img src="assets/generated/es/radar-740e2f17.svg" alt="Project radar" width="100%">
+<img src="assets/generated/es/radar-a9ed9563.svg" alt="Project radar" width="100%">
 
 </div>
 

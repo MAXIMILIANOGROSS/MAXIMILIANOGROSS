@@ -93,9 +93,7 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 
 <div align="center">
 
-<b>Normes et habilitations</b><br>
-<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
-<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+<img src="assets/generated/fr/standards-ae2b6fdf.svg" alt="Normes et habilitations" width="100%">
 
 <br><br>
 
@@ -190,7 +188,7 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 
 <div align="center">
 
-<img src="assets/generated/fr/radar-7bf5f35f.svg" alt="Project radar" width="100%">
+<img src="assets/generated/fr/radar-24ddfb83.svg" alt="Project radar" width="100%">
 
 </div>
 
