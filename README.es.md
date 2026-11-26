@@ -325,7 +325,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>Última actualización por GitHub Actions: 2026-11-26 20:26 UTC</sub>
+<sub>Última actualización por GitHub Actions: 2026-11-26 20:56 UTC</sub>
 
 </details>
 
@@ -338,6 +338,12 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 | **MyBrain** | `CÓDIGO ABIERTO · MIT` | Un segundo yo: observa datos reales, propone una acción al día, espera aprobación y aprende. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `CÓDIGO ABIERTO` | Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco sobre Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `VERSIÓN` | Suite de marketing autoinstalable para Mac / Windows para restaurantes. Descargas publicadas como releases. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+
+<img src="assets/generated/es/gravity-70b82d86.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="assets/generated/es/devlog-58a3f6bd.svg" alt="Development log" width="100%">
+
+<img src="assets/generated/es/telemetry-55240b38.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 Más allá del software</b></summary>

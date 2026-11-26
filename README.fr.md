@@ -325,7 +325,7 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>Dernière mise à jour par GitHub Actions : 2026-11-26 20:26 UTC</sub>
+<sub>Dernière mise à jour par GitHub Actions : 2026-11-26 20:56 UTC</sub>
 
 </details>
 
@@ -338,6 +338,12 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 | **MyBrain** | `OPEN SOURCE · MIT` | Un second soi : observe des données réelles, propose une action par jour, attend la validation et apprend. | [dépôt](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `OPEN SOURCE` | Bureau virtuel 3D avec 43 agents IA. Modèle vierge sur Next.js + Supabase. | [dépôt](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `VERSION` | Suite marketing auto-installable Mac / Windows pour restaurants. Téléchargements publiés en releases. | [dépôt](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+
+<img src="assets/generated/fr/gravity-1bd881e0.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="assets/generated/fr/devlog-e4d0b3f1.svg" alt="Development log" width="100%">
+
+<img src="assets/generated/fr/telemetry-35fc5bc4.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 Au-delà du logiciel</b></summary>

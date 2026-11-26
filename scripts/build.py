@@ -434,6 +434,83 @@ def standards(lg):
     o.append(f'<rect x="0" y="{H-3}" width="{W}" height="3" fill="url(#ac)" opacity=".5"/>')
     return svg(W, H, "".join(o), i18n.T[lg]["std_h"])
 
+TL = {"en": ("DEVELOPMENT TELEMETRY", "COMMITS · LAST 12 WEEKS", "ACTIVE REPOS · 30D", "RELEASES", "TOP LANGUAGES", "SNAPSHOT · REFRESHED DAILY"),
+      "es": ("TELEMETRÍA DE DESARROLLO", "COMMITS · ÚLTIMAS 12 SEMANAS", "REPOS ACTIVOS · 30D", "RELEASES", "LENGUAJES", "INSTANTÁNEA · ACTUALIZADA A DIARIO"),
+      "de": ("ENTWICKLUNGS-TELEMETRIE", "COMMITS · LETZTE 12 WOCHEN", "AKTIVE REPOS · 30T", "RELEASES", "SPRACHEN", "SNAPSHOT · TÄGLICH AKTUALISIERT"),
+      "it": ("TELEMETRIA DI SVILUPPO", "COMMIT · ULTIME 12 SETTIMANE", "REPO ATTIVI · 30G", "RELEASE", "LINGUAGGI", "SNAPSHOT · AGGIORNATO OGNI GIORNO"),
+      "fr": ("TÉLÉMÉTRIE DE DÉVELOPPEMENT", "COMMITS · 12 DERNIÈRES SEMAINES", "DÉPÔTS ACTIFS · 30J", "RELEASES", "LANGAGES", "INSTANTANÉ · MIS À JOUR CHAQUE JOUR"),
+      "zh": ("开发遥测", "提交 · 最近12周", "活跃仓库 · 30天", "发布", "语言", "快照 · 每日更新"),
+      "ar": ("قياسات التطوير", "الالتزامات · آخر 12 أسبوعًا", "المستودعات النشطة · 30 يومًا", "الإصدارات", "اللغات", "لقطة · تُحدَّث يوميًا")}
+def telemetry(lg):
+    W, H = 1200, 330; t = TL[lg]; repos = R.get("public_repos", [])
+    wk = [sum((r.get("weekly") or [0]*12)[i] for r in repos) for i in range(12)]
+    mx = max(wk + [1]); now = _dt.datetime.now(_dt.timezone.utc)
+    active = sum(1 for r in repos if (now - _dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))).days <= 30)
+    rels = sum(1 for r in repos if r.get("release"))
+    langs = list(R.get("languages", {}).items())[:4]; tot = sum(R.get("languages", {}).values()) or 1
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".5"/>',
+         f'<text x="30" y="40" font-family="{MONO}" font-weight="700" font-size="16" fill="{C["cyan"]}" letter-spacing="3">{esc(t[0])}</text>',
+         f'<circle cx="{W-34}" cy="34" r="5" fill="{C["green"]}"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle><text x="{W-50}" y="39" text-anchor="end" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{esc(t[5])} · {esc(R.get("generated",""))}</text>',
+         f'<text x="30" y="82" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="2">{esc(t[1])}</text>']
+    bw, gap, x0, base, ch = 38, 14, 34, 280, 150
+    for i, v in enumerate(wk):
+        h = max(3, v / mx * ch) if v else 3; x = x0 + i * (bw + gap)
+        col = C["cyan"] if v else C["line"]
+        o.append(f'<rect x="{x}" y="{base-h:.0f}" width="{bw}" height="{h:.0f}" rx="5" fill="{col}" opacity=".9"><animate attributeName="height" from="0" to="{h:.0f}" dur="1.2s" begin="{i*0.08:.2f}s" fill="freeze"/><animate attributeName="y" from="{base}" to="{base-h:.0f}" dur="1.2s" begin="{i*0.08:.2f}s" fill="freeze"/></rect>')
+        if v: o.append(f'<text x="{x+bw/2}" y="{base-h-8:.0f}" text-anchor="middle" font-family="{MONO}" font-weight="700" font-size="13" fill="#e6f6ff">{v}</text>')
+    o.append(f'<line x1="30" y1="{base+4}" x2="{x0+12*(bw+gap)-gap+4}" y2="{base+4}" stroke="{C["line"]}" stroke-width="2"/>')
+    kx = 760
+    for j, (lab, val, col) in enumerate([(t[2], active, C["green"]), (t[3], rels, C["amber"])]):
+        x = kx + j * 210
+        o.append(f'<rect x="{x}" y="70" width="190" height="104" rx="12" fill="#0b1220" stroke="{col}" stroke-opacity=".6" stroke-width="2"/><text x="{x+18}" y="125" font-family="{SANS}" font-weight="800" font-size="46" fill="{col}">{val}</text><text x="{x+18}" y="154" font-family="{MONO}" font-size="11" fill="#9fb6cc" letter-spacing="1.2">{esc(lab)}</text>')
+    o.append(f'<text x="{kx}" y="212" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="2">{esc(t[4])}</text>')
+    for j, (n, v) in enumerate(langs):
+        y = 232 + j * 22; pct = v / tot; w = max(4, pct * 260)
+        o.append(f'<text x="{kx}" y="{y+11}" font-family="{MONO}" font-size="12" fill="#cfe6f7">{esc(n)}</text><rect x="{kx+110}" y="{y}" width="260" height="12" rx="6" fill="{C["line"]}"/><rect x="{kx+110}" y="{y}" width="{w:.0f}" height="12" rx="6" fill="url(#ac)"/><text x="{kx+382}" y="{y+11}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{pct*100:.0f}%</text>')
+    return svg(W, H, "".join(o), t[0])
+GT = {"en": "SOFTWARE GRAVITY · EACH PUBLIC REPOSITORY IS A BODY", "es": "GRAVEDAD DE SOFTWARE · CADA REPOSITORIO PÚBLICO ES UN CUERPO", "de": "SOFTWARE-GRAVITATION · JEDES ÖFFENTLICHE REPO IST EIN KÖRPER", "it": "GRAVITÀ DEL SOFTWARE · OGNI REPO PUBBLICO È UN CORPO", "fr": "GRAVITÉ LOGICIELLE · CHAQUE DÉPÔT PUBLIC EST UN CORPS", "zh": "软件引力 · 每个公开仓库都是一个天体", "ar": "جاذبية البرمجيات · كل مستودع عام جرم سماوي"}
+GL = {"en": ("closer = more recent", "size = commits, 12 weeks", "dots = languages"), "es": ("más cerca = más reciente", "tamaño = commits, 12 semanas", "puntos = lenguajes"), "de": ("näher = aktueller", "Größe = Commits, 12 Wochen", "Punkte = Sprachen"), "it": ("più vicino = più recente", "dimensione = commit, 12 settimane", "punti = linguaggi"), "fr": ("plus proche = plus récent", "taille = commits, 12 semaines", "points = langages"), "zh": ("越近 = 越新", "大小 = 提交数，12周", "圆点 = 语言"), "ar": ("الأقرب = الأحدث", "الحجم = الالتزامات، 12 أسبوعًا", "النقاط = اللغات")}
+LCOL = ["#00d4ff", "#34d399", "#fbbf24", "#a78bfa", "#fb7185", "#60a5fa", "#f97316", "#e879f9"]
+def gravity(lg):
+    import hashlib
+    W, H = 1200, 560; cx, cy = 600, 292; repos = R.get("public_repos", []); now = _dt.datetime.now(_dt.timezone.utc)
+    alll = list(R.get("languages", {}).keys()); col = {k: LCOL[i % len(LCOL)] for i, k in enumerate(alll)}
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="#060a11" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".35"/>',
+         f'<text x="30" y="38" font-family="{MONO}" font-weight="700" font-size="14" fill="{C["cyan"]}" letter-spacing="3">{esc(GT[lg])}</text>']
+    days = [max(0, (now - _dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))).days) for r in repos]
+    dmax = max(days + [1]); n = max(1, len(repos))
+    for rr in (110, 170, 230):
+        o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rr*1.9:.0f}" ry="{rr:.0f}" fill="none" stroke="{C["line"]}" stroke-width="1.2" stroke-dasharray="3 7" opacity=".8"/>')
+    o.append(f'<circle cx="{cx}" cy="{cy}" r="30" fill="url(#ac)" opacity=".9"><animate attributeName="r" values="28;33;28" dur="4s" repeatCount="indefinite"/></circle><circle cx="{cx}" cy="{cy}" r="46" fill="none" stroke="{C["cyan"]}" stroke-opacity=".35"/><text x="{cx}" y="{cy+5}" text-anchor="middle" font-family="{MONO}" font-weight="800" font-size="13" fill="#04101a">MG</text>')
+    for i, r in enumerate(sorted(range(n), key=lambda k: days[k])):
+        p = repos[r]; seed = int(hashlib.md5(p["name"].encode()).hexdigest()[:6], 16)
+        ring = 70 + (days[r] / dmax) ** .6 * 160; ang = (i / n) * 2 * math.pi + (seed % 100) / 100 * .5
+        wk = sum(p.get("weekly") or [0]); pr = 9 + min(wk, 40) ** .5 * 2.2
+        rx, ry = ring * 1.9, ring; dur = 40 + ring * .5 + i * 3
+        px, py = cx + rx * math.cos(ang), cy + ry * math.sin(ang)
+        o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx:.0f}" ry="{ry:.0f}" fill="none" stroke="{C["cyan"]}" stroke-opacity=".12"/>')
+        lg_ = list((p.get("langs") or {}).items()); lt = sum(v for _, v in lg_) or 1
+        sat = "".join(f'<circle cx="{(pr+9+k*7):.0f}" cy="0" r="3" fill="{col.get(nm, "#999")}"/>' for k, (nm, v) in enumerate(lg_[:4]))
+        o.append(f'<g transform="translate({px:.1f},{py:.1f})"><a href="{esc(p["url"])}"><circle r="{pr+7:.0f}" fill="{C["cyan"]}" opacity=".08"/><circle r="{pr:.1f}" fill="#0b1626" stroke="{C["cyan"]}" stroke-width="2"/><circle r="{pr*.45:.1f}" fill="{C["cyan"]}" opacity=".85"/><g>{sat}<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="{6+i}s" repeatCount="indefinite"/></g><text y="{pr+22:.0f}" text-anchor="middle" font-family="{MONO}" font-size="13" font-weight="700" fill="#e6f6ff" stroke="#060a11" stroke-width="4" paint-order="stroke">{esc(p["name"])}</text></a></g>')
+    x = 30
+    for k, t in enumerate(GL[lg]):
+        o.append(f'<text x="{x}" y="{H-22}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{esc(t)}</text>'); x += 300
+    for k, (nm, c_) in enumerate(list(col.items())[:4]):
+        o.append(f'<circle cx="{W-30-k*100}" cy="{H-26}" r="4" fill="{c_}"/><text x="{W-40-k*100}" y="{H-22}" text-anchor="end" font-family="{MONO}" font-size="11" fill="#9fb6cc">{esc(nm)}</text>')
+    return svg(W, H, "".join(o), GT[lg])
+DL = {"en": ("DEVELOPMENT LOG · LATEST REAL SIGNALS", "COMMIT", "RELEASE"), "es": ("REGISTRO DE DESARROLLO · ÚLTIMAS SEÑALES REALES", "COMMIT", "RELEASE"), "de": ("ENTWICKLUNGSPROTOKOLL · AKTUELLE ECHTE SIGNALE", "COMMIT", "RELEASE"), "it": ("REGISTRO DI SVILUPPO · ULTIMI SEGNALI REALI", "COMMIT", "RELEASE"), "fr": ("JOURNAL DE DÉVELOPPEMENT · DERNIERS SIGNAUX RÉELS", "COMMIT", "RELEASE"), "zh": ("开发日志 · 最新真实信号", "提交", "发布"), "ar": ("سجل التطوير · أحدث الإشارات الحقيقية", "التزام", "إصدار")}
+def devlog(lg):
+    ev = []
+    for r in R.get("public_repos", []):
+        for c in r.get("recent") or []: ev.append((c["date"], "c", r["name"], c["msg"], c["url"]))
+        if r.get("release"): ev.append((r["release"]["date"], "r", r["name"], r["release"]["name"][:90], r["release"]["url"]))
+    ev = sorted(set(ev), reverse=True)[:7]; t = DL[lg]; W = 1200; H = 80 + 44 * max(1, len(ev))
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><text x="30" y="40" font-family="{MONO}" font-weight="700" font-size="15" fill="{C["cyan"]}" letter-spacing="3">{esc(t[0])}</text>',
+         f'<line x1="44" y1="64" x2="44" y2="{H-24}" stroke="{C["line"]}" stroke-width="2"/><circle r="5" fill="#fff"><animateMotion dur="6s" repeatCount="indefinite" path="M44 64 V{H-24}"/></circle>']
+    for i, (d, k, n, m, u) in enumerate(ev):
+        y = 90 + i * 44; col = C["amber"] if k == "r" else C["cyan"]
+        o.append(f'<a href="{esc(u)}"><circle cx="44" cy="{y}" r="6" fill="{col}"/><text x="68" y="{y+5}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{esc(d[:10])}</text><rect x="160" y="{y-11}" width="82" height="22" rx="6" fill="none" stroke="{col}" stroke-opacity=".7"/><text x="201" y="{y+4}" text-anchor="middle" font-family="{MONO}" font-size="11" font-weight="700" fill="{col}">{esc(t[2] if k == "r" else t[1])}</text><text x="260" y="{y+5}" font-family="{MONO}" font-size="13" font-weight="700" fill="#e6f6ff">{esc(n)}</text><text x="500" y="{y+5}" font-family="{MONO}" font-size="13" fill="#b8cde0">{esc(m if len(m) <= 68 else m[:67] + "…")}</text></a>')
+    return svg(W, H, "".join(o), t[0])
 def navchip(label, num, col):
     w = max(120, int(len(label) * 10.5 + 70)) if all(ord(c) < 0x2e80 for c in label) else max(120, len(label) * 20 + 70)
     h = 44
@@ -476,7 +553,7 @@ def main():
             if lg != "en" and p["id"] in i18n.PROJ: q["tagline"], q["access"] = i18n.PROJ[p["id"]][lg]
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
         write("assets/generated/pulse.svg", pulse())
-    HERO, ORB, CAR, MAP, CST, RAD, STD = {}, {}, {}, {}, {}, {}, {}
+    HERO, ORB, CAR, MAP, CST, RAD, STD, TEL, GRV, DLG = {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
         import hashlib, glob
@@ -489,7 +566,7 @@ def main():
         write(gd + "ticker.svg", anim.ticker([t.format(n=METRICS["appstore_apps"]) for t in Xt()["ticker"]]))
         ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
         write(gd + "pipeline.svg", anim.pipeline(Xt()["p_subs"]))
-        RAD[lg] = hashed(gd, "radar", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
+        TEL[lg] = hashed(gd, "telemetry", telemetry(lg)); GRV[lg] = hashed(gd, "gravity", gravity(lg)); DLG[lg] = hashed(gd, "devlog", devlog(lg)); RAD[lg] = hashed(gd, "radar", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
     snake = ""
     if (ROOT / "assets/generated/snake.svg").exists() and (ROOT / "assets/generated/snake-dark.svg").exists():
         snake = '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg"><img alt="Contribution snake" src="assets/generated/snake.svg" width="100%"></picture>'
@@ -517,7 +594,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{STANDARDS}}": STD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{TELE}}": TEL[lg], "{{GRAV}}": GRV[lg], "{{DEVLOG}}": DLG[lg], "{{STANDARDS}}": STD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

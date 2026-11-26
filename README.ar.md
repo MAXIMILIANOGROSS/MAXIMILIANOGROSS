@@ -325,7 +325,7 @@ flowchart LR
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>آخر تحديث بواسطة GitHub Actions: 2026-11-26 20:26 UTC</sub>
+<sub>آخر تحديث بواسطة GitHub Actions: 2026-11-26 20:56 UTC</sub>
 
 </details>
 
@@ -338,6 +338,12 @@ flowchart LR
 | **MyBrain** | `مفتوح المصدر · MIT` | ذات ثانية: تراقب البيانات الحقيقية وتقترح إجراءً واحدًا يوميًا وتنتظر الموافقة وتتعلم. | [المستودع](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `مفتوح المصدر` | مكتب افتراضي ثلاثي الأبعاد بـ 43 وكيل ذكاء اصطناعي. قالب فارغ على Next.js + Supabase. | [المستودع](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `إصدار` | حزمة تسويق ذاتية التثبيت لنظامي Mac وWindows للمطاعم. التنزيلات منشورة كإصدارات. | [المستودع](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+
+<img src="assets/generated/ar/gravity-ecfc2cce.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="assets/generated/ar/devlog-0f0d20a0.svg" alt="Development log" width="100%">
+
+<img src="assets/generated/ar/telemetry-97976051.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 ما وراء البرمجيات</b></summary>

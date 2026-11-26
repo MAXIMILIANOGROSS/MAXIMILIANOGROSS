@@ -325,7 +325,7 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>Last refreshed by GitHub Actions: 2026-11-26 20:26 UTC</sub>
+<sub>Last refreshed by GitHub Actions: 2026-11-26 20:56 UTC</sub>
 
 </details>
 
@@ -338,6 +338,12 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 | **MyBrain** | `OPEN SOURCE · MIT` | A second self: observes real data, proposes one action a day, waits for approval, learns. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `OPEN SOURCE` | 3D virtual office with 43 AI agents. Blank template on Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `RELEASE` | Self-installing Mac / Windows marketing suite for restaurants. Downloads published as releases. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+
+<img src="assets/generated/gravity-32b4f4ec.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="assets/generated/devlog-2505ef65.svg" alt="Development log" width="100%">
+
+<img src="assets/generated/telemetry-45be4b35.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 Beyond software</b></summary>

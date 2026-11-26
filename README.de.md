@@ -325,7 +325,7 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-26 20:26 UTC</sub>
+<sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-26 20:56 UTC</sub>
 
 </details>
 
@@ -338,6 +338,12 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 | **MyBrain** | `OPEN SOURCE · MIT` | Ein zweites Ich: beobachtet echte Daten, schlägt täglich eine Aktion vor, wartet auf Freigabe, lernt. | [Repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `OPEN SOURCE` | 3D-Virtualbüro mit 43 KI-Agenten. Leere Vorlage auf Next.js + Supabase. | [Repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `RELEASE` | Selbstinstallierende Marketing-Suite für Mac / Windows für Restaurants. Downloads als Releases. | [Repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+
+<img src="assets/generated/de/gravity-a4970201.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="assets/generated/de/devlog-edb45d04.svg" alt="Development log" width="100%">
+
+<img src="assets/generated/de/telemetry-d4b55b25.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 Jenseits der Software</b></summary>

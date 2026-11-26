@@ -296,6 +296,12 @@ flowchart LR
 {{t.lab_hdr}}
 {{LAB}}
 
+<img src="{{GRAV}}" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="{{DEVLOG}}" alt="Development log" width="100%">
+
+<img src="{{TELE}}" alt="Development telemetry" width="100%">
+
 <details>
 <summary><b>{{t.beyond_sum}}</b></summary>
 

@@ -325,7 +325,7 @@ flowchart LR
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>GitHub Actions 最近更新： 2026-11-26 20:26 UTC</sub>
+<sub>GitHub Actions 最近更新： 2026-11-26 20:56 UTC</sub>
 
 </details>
 
@@ -338,6 +338,12 @@ flowchart LR
 | **MyBrain** | `开源 · MIT` | 第二个自己：观察真实数据，每天提出一项行动，等待批准并持续学习。 | [仓库](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `开源` | 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 | [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `发行版` | 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 | [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+
+<img src="assets/generated/zh/gravity-e24c3089.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+
+<img src="assets/generated/zh/devlog-f8a509b3.svg" alt="Development log" width="100%">
+
+<img src="assets/generated/zh/telemetry-30394c0d.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 软件之外</b></summary>
