@@ -109,11 +109,11 @@ def hero():
 
 # ---------- section headers ----------
 def section(num, title, right):
-    W, H = 1200, 64
+    W, H = 900, 64
     b = (f'<rect width="{W}" height="{H}" rx="10" fill="{C["bg"]}"/><rect x="14" y="22" width="14" height="14" fill="{C["cyan"]}"/>'
-         f'<text x="44" y="36" font-family="{MONO}" font-size="20" fill="{C["cyan"]}" letter-spacing="3">{num}</text>'
-         f'<text x="96" y="36" font-family="{SANS}" font-weight="800" font-size="24" fill="{C["txt"]}" letter-spacing="2">{esc(title)}</text>'
-         f'<text x="{W-16}" y="36" text-anchor="end" font-family="{MONO}" font-size="13" fill="{C["mute"]}" letter-spacing="2">{esc(right)}</text>'
+         f'<text x="44" y="38" font-family="{MONO}" font-size="18" fill="{C["cyan"]}" letter-spacing="2">{num}</text>'
+         f'<text x="88" y="38" font-family="{SANS}" font-weight="800" font-size="28" fill="{C["txt"]}" letter-spacing="1">{esc(title)}</text>'
+         f'<text x="{W-16}" y="38" text-anchor="end" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="1">{esc(right)}</text>'
          f'<line x1="14" y1="54" x2="{W-14}" y2="54" stroke="{C["line"]}" stroke-width="2"/><rect x="14" y="52" width="220" height="4" fill="url(#ac)"/><rect x="14" y="51" width="90" height="6" rx="3" fill="#7cecff" opacity=".95"><animate attributeName="x" from="14" to="{W-104}" dur="4s" repeatCount="indefinite"/></rect><rect x="14" y="22" width="14" height="14" fill="#00d4ff"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></rect>')
     return svg(W, H, b, f"{num} {title}")
 

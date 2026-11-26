@@ -9,14 +9,14 @@ DEFS = f'''<defs><linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offse
 def wrap(w, h, body, label): return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(label)}">{DEFS}{body}</svg>'
 
 def ticker(items):
-    W, H = 1200, 44; text = "   ◆   ".join(items) + "   ◆   "; cw = 8.6; L = len(text) * cw
-    g = "".join(f'<text x="{k*L:.0f}" y="28" font-family="{MONO}" font-size="14" fill="#9fd8ee" xml:space="preserve">{esc(text)}</text>' for k in range(3))
+    W, H = 800, 46; text = "   ◆   ".join(items) + "   ◆   "; cw = 11.1; L = len(text) * cw
+    g = "".join(f'<text x="{k*L:.0f}" y="30" font-family="{MONO}" font-size="18" fill="#9fd8ee" xml:space="preserve">{esc(text)}</text>' for k in range(3))
     b = (f'<clipPath id="tk"><rect width="{W}" height="{H}" rx="8"/></clipPath><rect width="{W}" height="{H}" rx="8" fill="{PANEL}" stroke="{LINE}" stroke-width="2"/>'
-         f'<g clip-path="url(#tk)"><g>{g}<animateTransform attributeName="transform" type="translate" from="0 0" to="-{L:.0f} 0" dur="{max(20, L/45):.0f}s" repeatCount="indefinite"/></g>'
-         f'<rect width="90" height="{H}" fill="url(#fl)"/><rect x="{W-90}" width="90" height="{H}" fill="url(#fr)"/></g>'
+         f'<g clip-path="url(#tk)"><g>{g}<animateTransform attributeName="transform" type="translate" from="0 0" to="-{L:.0f} 0" dur="{max(20, L/60):.0f}s" repeatCount="indefinite"/></g>'
+         f'<rect width="70" height="{H}" fill="url(#fl)"/><rect x="{W-70}" width="70" height="{H}" fill="url(#fr)"/></g>'
          f'<linearGradient id="fl" x1="0" x2="1"><stop offset="0" stop-color="{PANEL}"/><stop offset="1" stop-color="{PANEL}" stop-opacity="0"/></linearGradient>'
          f'<linearGradient id="fr" x1="0" x2="1"><stop offset="0" stop-color="{PANEL}" stop-opacity="0"/><stop offset="1" stop-color="{PANEL}"/></linearGradient>'
-         f'<circle cx="18" cy="22" r="5" fill="{GRN}"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>')
+         f'<circle cx="20" cy="23" r="6" fill="{GRN}"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>')
     return wrap(W, H, b, "Live status ticker")
 
 def pipeline(subs=None):
