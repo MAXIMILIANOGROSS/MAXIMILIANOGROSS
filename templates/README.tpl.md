@@ -10,6 +10,8 @@
 **{{t.t1}}**<br>
 {{t.t2}}
 
+<sub><i>{{t.sig}}</i></sub>
+
 <br><br>
 <img src="{{GD}}ticker.svg" alt="Live status ticker" width="100%">
 <img src="assets/generated/pulse.svg" alt="" width="100%">
@@ -66,13 +68,29 @@
 
 <div align="center">
 
-<img src="{{CAREER}}" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="{{CAREER}}" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="{{CSTATS}}" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
 {{t.pld_p}}
 
 {{t.pld_li}}
+
+<div align="center">
+
+<b>{{t.std_h}}</b><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+
+<br><br>
+
+<img src="{{MAPPING}}" alt="What NDT methods taught me about code" width="100%">
+
+</div>
 
 <sub>{{t.pld_legend}}</sub>
 

@@ -15,6 +15,8 @@
 **أحوّل الأفكار إلى برمجيات.**<br>
 تطبيقات · برامج سطح المكتب · منصات ويب · ذكاء اصطناعي وأتمتة — من الفكرة إلى الإطلاق.
 
+<sub><i>فحصتُ حامات ومحركات طائرات وصواريخ. والآن أفحص الشيفرة.</i></sub>
+
 <br><br>
 <img src="assets/generated/ar/ticker.svg" alt="Live status ticker" width="100%">
 <img src="assets/generated/pulse.svg" alt="" width="100%">
@@ -37,7 +39,7 @@
 
 أنا مطوّر برمجيات مستقل وصانع منتجات. لا أسلّم ميزات منفردة، بل **منتجات متكاملة**: الفكرة والواجهة والتطبيق والخادم والتكاملات والاختبار والتوثيق والإطلاق.
 
-خلفيتي هي الجودة بمعايير قطاع الطيران والفضاء — خدمة فنية في **SR Technics**، وجودة في **Bureau Veritas**، وفحص بالاختبارات غير الإتلافية لمكونات الصواريخ في **PLD Space**، وتدقيق داخلي وفق ISO 9001 — ولذلك أعمل بعقلية *عدم التسامح*: تتبّع، وتحقق، ونتائج قابلة للتكرار.
+خلفيتي هي الجودة بمعايير الطيران والفضاء: اختبارات غير إتلافية منذ 2007، و**PLD Space** (Miura 1)، وتدقيق في **Bureau Veritas**، و**SR Technics** — ولذلك أعمل بعقلية *عدم التسامح*: تتبّع وتحقق ونتائج قابلة للتكرار.
 
 </td>
 </tr>
@@ -69,21 +71,37 @@
 </table>
 
 <details open>
-<summary><b>✈️ قبل البرمجيات — الاختبارات غير الإتلافية في الطيران: SR Technics وPLD Space</b></summary>
+<summary><b>🧬 من مفتش اختبارات غير إتلافية إلى صانع برمجيات — طريقي</b></summary>
 
 <br>
 
 <div align="center">
 
-<img src="assets/generated/ar/career-7f1178af.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/ar/journey-8b709cfc.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/ar/cstats-c04201ac.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
-بدأت من جودة الطيران والفضاء. في **SR Technics** (زيورخ) عملت **أخصائي اختبارات غير إتلافية — PT وMT وVT — بأكثر من 300 فحص لمحركات طائرات تجارية**. وفي **PLD Space** كنت **باحثًا في الاختبارات غير الإتلافية ومصوّرًا إشعاعيًا صناعيًا للحامات (RT)**، وأول مصوّر إشعاعي أرجنتيني يصوّر صاروخًا إسبانيًا بالأشعة. هذا الانضباط — افحص ووثّق وتتبّع ولا تفترض أبدًا — هو طريقتي في بناء البرمجيات اليوم.
+الاختبارات غير الإتلافية هي حرفتي منذ 2007: حامات ومحركات طائرات وهياكل صواريخ، في الأرجنتين وإسبانيا وسويسرا. في **PLD Space** عملت على **Miura 1** — أول صاروخ مصنَّع محليًا في إسبانيا — وكنت أول مصوّر إشعاعي أرجنتيني يجري عليه الفحص الإشعاعي. وفي **SR Technics** نفّذت **أكثر من 300 فحص لمكونات طائرات حرجة دون أي ثغرة سلامة**. قبل نحو عام بدأت الانتقال إلى البرمجيات: تعلّمت Swift وSwiftUI بنفسي ونشرت **ENODEUS**، تطبيق iOS أصلي يؤتمت أعمال الفحص التي كنت أنجزها يدويًا. الانضباط نفسه، والمادة جديدة.
 
-- فحص بالسوائل المتخللة الفلورية والجسيمات المغناطيسية والفحص البصري لمكونات المحركات
-- التصوير الإشعاعي الصناعي للحامات في هياكل الصواريخ
-- تقارير قابلة للتتبّع ومبنية على المعايير — جذر ENODEUS
+- خبرة ميدانية في VT وPT وMT وRT وUT في الطيران والطاقة والتصنيع
+- العمل وفق متطلبات EASA وEN 4179 وISO 9001 وASME: تقارير وحالات عدم مطابقة وتحليل جذور وتدقيق
+- الآن: Swift وSwiftUI وFirebase والامتثال لمتطلبات App Store — عادات إطلاق منتج حقيقي
+
+<div align="center">
+
+<b>المعايير والاعتمادات</b><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+
+<br><br>
+
+<img src="assets/generated/ar/mapping-ffe702c0.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
 
 <sub>PT = السوائل المتخللة · MT = الجسيمات المغناطيسية · VT = بصري · RT = التصوير الإشعاعي</sub>
 

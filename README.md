@@ -15,6 +15,8 @@
 **I turn ideas into software.**<br>
 Applications · desktop software · web platforms · AI & automation — from concept to deployment.
 
+<sub><i>I've inspected welds, aircraft engines and rockets. Now I inspect code.</i></sub>
+
 <br><br>
 <img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
 <img src="assets/generated/pulse.svg" alt="" width="100%">
@@ -37,7 +39,7 @@ Applications · desktop software · web platforms · AI & automation — from co
 
 I'm an independent software developer and product builder. I don't ship isolated features — I ship **complete products**: idea, interface, application, backend, integrations, testing, documentation and release.
 
-My background is aerospace-grade quality — technical service at **SR Technics**, quality at **Bureau Veritas**, NDT inspection on rocket components at **PLD Space**, and ISO 9001 internal auditing — so I build with a *zero-tolerance* mindset: traceability, verification, reproducible results.
+My background is aerospace-grade quality: NDT since 2007, **PLD Space** (Miura 1), **Bureau Veritas** audits and **SR Technics** — so I build with a *zero-tolerance* mindset: traceability, verification, reproducible results.
 
 </td>
 </tr>
@@ -69,21 +71,37 @@ Independent, documented, shipped. I learn by creating real products.
 </table>
 
 <details open>
-<summary><b>✈️ Before software — aerospace NDT: SR Technics & PLD Space</b></summary>
+<summary><b>🧬 From NDT inspector to software builder — my path</b></summary>
 
 <br>
 
 <div align="center">
 
-<img src="assets/generated/career-f8d6a4c9.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/journey-f60544a3.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/cstats-fa814937.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
-I started in aerospace quality. At **SR Technics** (Zürich) I worked as an **NDT specialist — PT, MT and VT — with more than 300 inspections on commercial aircraft engines**. At **PLD Space** I was an **NDT researcher and industrial weld radiographer (RT)**, and I became the first Argentine radiographer to X-ray a Spanish rocket. That discipline — inspect, document, trace, never assume — is how I build software today.
+NDT has been my craft since 2007: welds, aircraft engines and rocket structures, in Argentina, Spain and Switzerland. At **PLD Space** I worked on **Miura 1** — Spain's first domestically built rocket — and became the first Argentine radiographer to perform radiographic testing on it. At **SR Technics** I carried out **300+ inspections on critical aircraft components with zero safety escapes**. About a year ago I started the transition to software: I taught myself Swift and SwiftUI and shipped **ENODEUS**, a native iOS app that automates inspection work I used to do by hand. Same discipline, new material.
 
-- Fluorescent penetrant, magnetic particle and visual inspection of engine components
-- Industrial radiography of welds on rocket structures
-- Traceable, standards-based reporting — the root of ENODEUS
+- Hands-on VT, PT, MT, RT and UT across aerospace, energy and manufacturing
+- Worked under EASA, EN 4179, ISO 9001 and ASME requirements: reports, non-conformities, root-cause analysis, audits
+- Now: Swift, SwiftUI, Firebase and App Store compliance — the habits of shipping a real product
+
+<div align="center">
+
+<b>Standards & credentials</b><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+
+<br><br>
+
+<img src="assets/generated/mapping-cc1a6469.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
 
 <sub>PT = liquid penetrant · MT = magnetic particle · VT = visual · RT = radiography</sub>
 

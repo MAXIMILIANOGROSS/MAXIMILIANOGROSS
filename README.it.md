@@ -15,6 +15,8 @@
 **Trasformo le idee in software.**<br>
 App · software desktop · piattaforme web · IA e automazione — dal concept al rilascio.
 
+<sub><i>Ho ispezionato saldature, motori di aerei e razzi. Ora ispeziono il codice.</i></sub>
+
 <br><br>
 <img src="assets/generated/it/ticker.svg" alt="Live status ticker" width="100%">
 <img src="assets/generated/pulse.svg" alt="" width="100%">
@@ -37,7 +39,7 @@ App · software desktop · piattaforme web · IA e automazione — dal concept a
 
 Sono uno sviluppatore software indipendente e costruttore di prodotti. Non consegno funzioni isolate: consegno **prodotti completi**: idea, interfaccia, applicazione, backend, integrazioni, test, documentazione e rilascio.
 
-Vengo dalla qualità di livello aerospaziale — assistenza tecnica in **SR Technics**, qualità in **Bureau Veritas**, controlli non distruttivi su componenti di razzi in **PLD Space** e audit interni ISO 9001 — per questo lavoro con una mentalità di *tolleranza zero*: tracciabilità, verifica, risultati riproducibili.
+Vengo dalla qualità di livello aerospaziale: CND dal 2007, **PLD Space** (Miura 1), audit in **Bureau Veritas** e **SR Technics** — per questo lavoro con mentalità di *tolleranza zero*: tracciabilità, verifica, risultati riproducibili.
 
 </td>
 </tr>
@@ -69,21 +71,37 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 </table>
 
 <details open>
-<summary><b>✈️ Prima del software — CND aerospaziali: SR Technics e PLD Space</b></summary>
+<summary><b>🧬 Da ispettore CND a costruttore di software — il mio percorso</b></summary>
 
 <br>
 
 <div align="center">
 
-<img src="assets/generated/it/career-31d0088b.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/it/journey-e58b87a3.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/it/cstats-aaf806a7.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
-Sono partito dalla qualità aerospaziale. In **SR Technics** (Zurigo) sono stato **specialista CND — PT, MT e VT — con più di 300 ispezioni su motori di aeromobili commerciali**. In **PLD Space** sono stato **ricercatore CND e radiografo industriale di saldature (RT)**, e il primo radiografo argentino ad aver radiografato un razzo spagnolo. Quella disciplina — ispezionare, documentare, tracciare, mai supporre — è come costruisco software oggi.
+I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture di razzi, in Argentina, Spagna e Svizzera. In **PLD Space** ho lavorato su **Miura 1** — il primo razzo costruito in Spagna — e sono stato il primo radiografo argentino a eseguire controlli radiografici su di esso. In **SR Technics** ho eseguito **oltre 300 ispezioni su componenti critici di aeromobili senza alcuna falla di sicurezza**. Circa un anno fa ho iniziato la transizione al software: ho imparato Swift e SwiftUI da solo e ho pubblicato **ENODEUS**, un'app iOS nativa che automatizza il lavoro di ispezione che facevo a mano. Stessa disciplina, nuovo materiale.
 
-- Controllo con liquidi penetranti fluorescenti, particelle magnetiche e visivo su componenti di motore
-- Radiografia industriale delle saldature su strutture di razzi
-- Report tracciabili e basati su norme — la radice di ENODEUS
+- VT, PT, MT, RT e UT sul campo, in aerospaziale, energia e manifattura
+- Lavoro secondo requisiti EASA, EN 4179, ISO 9001 e ASME: report, non conformità, analisi delle cause radice, audit
+- Ora: Swift, SwiftUI, Firebase e conformità App Store — le abitudini di rilasciare un prodotto reale
+
+<div align="center">
+
+<b>Norme e credenziali</b><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+
+<br><br>
+
+<img src="assets/generated/it/mapping-3cfc3769.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
 
 <sub>PT = liquidi penetranti · MT = particelle magnetiche · VT = visivo · RT = radiografia</sub>
 

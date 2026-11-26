@@ -15,6 +15,8 @@
 **我把想法变成软件。**<br>
 应用 · 桌面软件 · 网络平台 · AI 与自动化 —— 从概念到上线。
 
+<sub><i>我检测过焊缝、飞机发动机和火箭。现在，我检测代码。</i></sub>
+
 <br><br>
 <img src="assets/generated/zh/ticker.svg" alt="Live status ticker" width="100%">
 <img src="assets/generated/pulse.svg" alt="" width="100%">
@@ -37,7 +39,7 @@
 
 我是独立软件开发者和产品构建者。我交付的不是零散功能，而是**完整的产品**：创意、界面、应用、后端、集成、测试、文档和发布。
 
-我的背景是航空航天级质量——在 **SR Technics** 从事技术服务，在 **Bureau Veritas** 负责质量，在 **PLD Space** 对火箭部件进行无损检测，并担任 ISO 9001 内部审核员——因此我以*零容忍*的态度做事：可追溯、可验证、结果可复现。
+我的背景是航空航天级质量：2007 年起从事无损检测，经历 **PLD Space**（Miura 1）、**Bureau Veritas** 审核和 **SR Technics** —— 因此我以*零容忍*的态度做事：可追溯、可验证、结果可复现。
 
 </td>
 </tr>
@@ -69,21 +71,37 @@
 </table>
 
 <details open>
-<summary><b>✈️ 软件之前 —— 航空航天无损检测：SR Technics 与 PLD Space</b></summary>
+<summary><b>🧬 从无损检测员到软件构建者 —— 我的路径</b></summary>
 
 <br>
 
 <div align="center">
 
-<img src="assets/generated/zh/career-ac4fc55d.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/zh/journey-b9447b32.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/zh/cstats-d54a6c38.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
-我从航空航天质量工作起步。在 **SR Technics**（苏黎世），我是**无损检测专家——PT、MT 和 VT——对商用飞机发动机完成了 300 多次检测**。在 **PLD Space**，我是**无损检测研究员和工业焊缝射线检测员（RT）**，也是第一位对西班牙火箭进行射线检测的阿根廷射线检测员。这种纪律——检查、记录、追溯、绝不假设——正是我今天构建软件的方式。
+自 2007 年起，无损检测就是我的本行：焊缝、飞机发动机和火箭结构，足迹遍及阿根廷、西班牙和瑞士。在 **PLD Space**，我参与了西班牙首枚本土制造火箭 **Miura 1**，并成为第一位对其进行射线检测的阿根廷射线检测员。在 **SR Technics**，我对关键飞机部件完成了 **300 多次检测，零安全漏检**。大约一年前，我开始转向软件：自学 Swift 和 SwiftUI，并发布了 **ENODEUS** —— 一款原生 iOS 应用，把我过去手工完成的检测工作自动化。同样的纪律，全新的材料。
 
-- 发动机部件的荧光渗透、磁粉和目视检测
-- 火箭结构焊缝的工业射线检测
-- 可追溯、基于标准的报告——ENODEUS 的根源
+- 在航空航天、能源和制造业实操 VT、PT、MT、RT 和 UT
+- 依据 EASA、EN 4179、ISO 9001 和 ASME 要求工作：报告、不合格项、根因分析、审核
+- 现在：Swift、SwiftUI、Firebase 与 App Store 合规 —— 交付真实产品的习惯
+
+<div align="center">
+
+<b>标准与资质</b><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+
+<br><br>
+
+<img src="assets/generated/zh/mapping-0ef77c10.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
 
 <sub>PT = 渗透检测 · MT = 磁粉检测 · VT = 目视检测 · RT = 射线检测</sub>
 

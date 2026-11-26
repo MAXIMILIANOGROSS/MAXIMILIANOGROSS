@@ -292,6 +292,98 @@ def career(lg):
     o.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
     return svg(W, H, "".join(o), title)
 
+
+def journey(lg):
+    title, nt, st, roles, places, sw1, sw2, miura, srx = i18n.J[lg]
+    W, H = 1200, 450
+    X = lambda y: 70 + (y - 2007) / 19.95 * 1060
+    segs = [("ENOD SRL", 2007.0, 2010.1, places[0], "VT·PT·MT·UT·RT", roles[0], C["amber"], "A", None),
+            ("MOTOMECÁNICA", 2010.1, 2016.2, places[0], "VT·MT", roles[1], C["green"], "B", None),
+            ("CONUAR", 2016.2, 2019.2, places[0], "PT·MT", roles[2], "#60a5fa", "A", None),
+            ("PLD SPACE", 2019.2, 2023.1, places[1], "RT·PT·VT", roles[3], "#a78bfa", "B", miura),
+            ("BUREAU VERITAS", 2023.1, 2024.9, places[1], "QA·AUDIT", roles[4], "#fb7185", "B", None),
+            ("SR TECHNICS", 2024.9, 2026.4, places[2], "PT·MT·VT", roles[5], C["cyan"], "A", srx)]
+    o = [f'<defs><filter id="jg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><defs><clipPath id="jc"><rect width="{W}" height="{H}" rx="14"/></clipPath></defs><g clip-path="url(#jc)">',
+         f'<rect width="{W}" height="{H}" fill="{C["panel"]}"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".55"/>',
+         f'<text x="30" y="38" font-family="{MONO}" font-size="16" fill="{C["cyan"]}" letter-spacing="4">{esc(title)}</text><rect x="30" y="48" width="160" height="3" fill="url(#ac)"><animate attributeName="width" values="60;460;60" dur="5s" repeatCount="indefinite"/></rect>']
+    for yr in [2007, 2010, 2013, 2016, 2019, 2022, 2025]:
+        x = X(yr); o.append(f'<line x1="{x:.0f}" y1="72" x2="{x:.0f}" y2="193" stroke="{C["line"]}" stroke-dasharray="2 6"/><text x="{x:.0f}" y="68" text-anchor="middle" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{yr}</text>')
+    yb = 205
+    o.append(f'<text x="30" y="{yb-22}" font-family="{MONO}" font-size="11" fill="{C["mute"]}" letter-spacing="3">{esc(nt)}</text>')
+    o.append(f'<rect x="{X(2007)-4:.0f}" y="{yb+10}" width="{X(2026.5)-X(2007)+8:.0f}" height="4" rx="2" fill="{C["line"]}"/>')
+    for k, (name, a, b, place, meth, role, col, row, extra) in enumerate(segs):
+        x1, x2 = X(a), X(b); w = x2 - x1
+        o.append(f'<rect x="{x1+1:.0f}" y="{yb-12}" width="{w-2:.0f}" height="24" rx="8" fill="{col}" fill-opacity=".22" stroke="{col}" stroke-width="2"/>'
+                 f'<rect x="{x1+1:.0f}" y="{yb-12}" width="{w-2:.0f}" height="24" rx="8" fill="{col}" opacity="0"><animate attributeName="opacity" values="0;0;.45;0;0" keyTimes="0;{max(a-2007,0)/20-.02:.3f};{(a+b)/2-2007:.0f};{min((b-2007)/20+.03,.999):.3f};1" dur="12s" repeatCount="indefinite"/></rect>')
+        cx = (x1 + x2) / 2
+        if row == "U":
+            o.append(f'<line x1="{cx:.0f}" y1="{yb-12}" x2="{cx:.0f}" y2="170" stroke="{col}" stroke-opacity=".6"/>')
+            tx, anc, ty = 1048, "end", 108
+            o += [f'<text x="{tx}" y="{ty+60}" text-anchor="{anc}" font-family="{SANS}" font-weight="800" font-size="15" fill="{C["txt"]}">{esc(name)}</text>',
+                  f'<text x="{tx}" y="{ty+77}" text-anchor="{anc}" font-family="{MONO}" font-size="11" fill="{col}" letter-spacing="1">{esc(place)} · {meth}</text>',
+                  f'<text x="{tx}" y="{ty+93}" text-anchor="{anc}" font-family="{SANS}" font-size="12.5" fill="#9fb6cc">{esc(role)}</text>']
+            # nudge: place BV block between bar and software label
+            continue
+        base = 262 if row == "A" else 350
+        anc = "start"; tx = x1
+        if name == "SR TECHNICS": anc = "end"; tx = 1142
+        o.append(f'<line x1="{cx:.0f}" y1="{yb+12}" x2="{cx:.0f}" y2="{base-16}" stroke="{col}" stroke-opacity=".55" stroke-dasharray="3 4"/><circle cx="{cx:.0f}" cy="{base-16}" r="3.5" fill="{col}" filter="url(#jg)"/>')
+        o += [f'<text x="{tx:.0f}" y="{base}" text-anchor="{anc}" font-family="{SANS}" font-weight="800" font-size="16" fill="{C["txt"]}">{esc(name)}</text>',
+              f'<text x="{tx:.0f}" y="{base+18}" text-anchor="{anc}" font-family="{MONO}" font-size="11.5" fill="{col}" letter-spacing="1">{esc(place)} · {meth}</text>',
+              f'<text x="{tx:.0f}" y="{base+35}" text-anchor="{anc}" font-family="{SANS}" font-size="13" fill="#9fb6cc">{esc(role)}</text>']
+        if extra: o.append(f'<text x="{tx:.0f}" y="{base+54}" text-anchor="{anc}" font-family="{SANS}" font-weight="700" font-size="13" fill="{C["amber"]}">{esc(extra)}</text>')
+    # scanner + packet
+    o.append(f'<line y1="72" y2="{yb+14}" stroke="{C["cyan"]}" stroke-width="2" opacity=".8" filter="url(#jg)"><animate attributeName="x1" from="{X(2007):.0f}" to="{X(2026.5):.0f}" dur="12s" repeatCount="indefinite"/><animate attributeName="x2" from="{X(2007):.0f}" to="{X(2026.5):.0f}" dur="12s" repeatCount="indefinite"/></line>')
+    o.append(f'<circle r="5" cy="{yb}" fill="#fff" filter="url(#jg)"><animate attributeName="cx" from="{X(2007):.0f}" to="{X(2026.5):.0f}" dur="12s" repeatCount="indefinite"/></circle>')
+    # software track (top right)
+    sx = X(2025.8); yt = 130
+    o.append(f'<line x1="{sx:.0f}" y1="{yb-12}" x2="{sx:.0f}" y2="{yt+12}" stroke="{C["amber"]}" stroke-width="2" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1s" repeatCount="indefinite"/></line><circle r="4" fill="#fff" filter="url(#jg)"><animateMotion path="M{sx:.0f} {yb-12} L{sx:.0f} {yt+12}" dur="1.6s" repeatCount="indefinite"/></circle>')
+    o.append(f'<rect x="{sx:.0f}" y="{yt-12}" width="{X(2026.95)-sx:.0f}" height="24" rx="8" fill="{C["amber"]}" fill-opacity=".25" stroke="{C["amber"]}" stroke-width="2" filter="url(#jg)"><animate attributeName="fill-opacity" values=".15;.5;.15" dur="2.4s" repeatCount="indefinite"/></rect>')
+    o.append(f'<path d="M{sx+10:.0f} {yt-6} l8 6 l-8 6 M{sx+26:.0f} {yt-6} l8 6 l-8 6" fill="none" stroke="#fff" stroke-width="2.5"><animate attributeName="opacity" values=".3;1;.3" dur="1.2s" repeatCount="indefinite"/></path>')
+    o += [f'<text x="{sx-14:.0f}" y="{yt-20}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{C["amber"]}" letter-spacing="3">{esc(st)}</text>',
+          f'<text x="{sx-14:.0f}" y="{yt-2}" text-anchor="end" font-family="{SANS}" font-weight="800" font-size="15" fill="{C["txt"]}">{esc(sw1)}</text>',
+          f'<text x="{sx-14:.0f}" y="{yt+16}" text-anchor="end" font-family="{MONO}" font-size="11.5" fill="#9fb6cc">{esc(sw2)}</text>']
+    o.append(f'<rect y="{H-5}" width="{W}" height="5" fill="url(#ac)" opacity=".55"/><rect y="{H-5}" width="260" height="5" fill="#fff" opacity=".85"><animate attributeName="x" from="-260" to="{W}" dur="4s" repeatCount="indefinite"/></rect></g><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
+    return svg(W, H, "".join(o), title)
+
+def mapping(lg):
+    title, hl, hr, L, R = i18n.M[lg]
+    W, H = 1200, 520; cols = [C["cyan"], C["green"], "#a78bfa", C["amber"], "#fb7185", "#60a5fa", C["cyan"]]
+    o = [f'<defs><clipPath id="mc"><rect width="{W}" height="{H}" rx="14"/></clipPath><filter id="mg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g clip-path="url(#mc)">',
+         f'<rect width="{W}" height="{H}" fill="{C["panel"]}"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".55"/>',
+         f'<text x="30" y="38" font-family="{MONO}" font-size="16" fill="{C["cyan"]}" letter-spacing="4">{esc(title)}</text><rect x="30" y="48" width="160" height="3" fill="url(#ac)"><animate attributeName="width" values="60;460;60" dur="5s" repeatCount="indefinite"/></rect>',
+         f'<text x="60" y="88" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="3">{esc(hl)}</text><text x="{W-60}" y="88" text-anchor="end" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="3">{esc(hr)}</text>']
+    n = len(L); y0 = 104; rh = 58
+    for i in range(n):
+        y = y0 + i * rh; col = cols[i]; mid = y + 23
+        o.append(f'<rect x="40" y="{y}" width="{W-80}" height="46" rx="12" fill="#0b1220" stroke="{col}" stroke-opacity=".35"/>'
+                 f'<rect x="40" y="{y}" width="{W-80}" height="46" rx="12" fill="{col}" opacity="0"><animate attributeName="opacity" values="0;0;.22;0;0" keyTimes="0;{i/n:.3f};{(i+.5)/n:.3f};{(i+1)/n:.3f};1" dur="14s" repeatCount="indefinite"/></rect>')
+        o.append(f'<circle cx="64" cy="{mid}" r="5" fill="{col}" filter="url(#mg)"/><text x="82" y="{mid+6}" font-family="{MONO}" font-weight="700" font-size="17" fill="#e6f6ff">{esc(L[i])}</text>')
+        x1, x2 = 470, 730
+        o.append(f'<line x1="{x1}" y1="{mid}" x2="{x2}" y2="{mid}" stroke="{col}" stroke-opacity=".5" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/></line>'
+                 f'<path d="M{x2-12} {mid-7} l12 7 l-12 7" fill="none" stroke="{col}" stroke-width="3"/><circle r="4" fill="#fff" filter="url(#mg)"><animateMotion path="M{x1} {mid} L{x2} {mid}" dur="1.8s" begin="{i*.25:.2f}s" repeatCount="indefinite"/></circle>')
+        o.append(f'<text x="{W-64}" y="{mid+6}" text-anchor="end" font-family="{SANS}" font-weight="800" font-size="19" fill="{col}">{esc(R[i])}</text>')
+    o.append(f'<rect x="40" y="{y0-6}" width="{W-80}" height="4" fill="{C["cyan"]}" opacity=".7" filter="url(#mg)"><animate attributeName="y" values="{y0-6};{y0+n*rh-8};{y0-6}" dur="14s" repeatCount="indefinite"/></rect>')
+    o.append(f'<rect y="{H-5}" width="{W}" height="5" fill="url(#ac)" opacity=".55"/><rect y="{H-5}" width="260" height="5" fill="#fff" opacity=".85"><animate attributeName="x" from="-260" to="{W}" dur="4s" repeatCount="indefinite"/></rect></g><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
+    return svg(W, H, "".join(o), title)
+
+def cstats(lg):
+    W, H = 1200, 190; tiles = i18n.S[lg]; cols = [C["cyan"], C["green"], "#a78bfa", C["amber"], "#fb7185"]
+    o = [f'<defs><clipPath id="sc5"><rect width="{W}" height="{H}" rx="14"/></clipPath><filter id="sg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g clip-path="url(#sc5)">',
+         f'<rect width="{W}" height="{H}" fill="{C["panel"]}"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".55"/>']
+    tw = (W - 60 - 4 * 16) / 5
+    import textwrap as tw_
+    for i, (v, lab) in enumerate(tiles):
+        x = 30 + i * (tw + 16); col = cols[i]
+        o.append(f'<rect x="{x:.0f}" y="22" width="{tw:.0f}" height="146" rx="14" fill="#0b1220" stroke="{col}" stroke-opacity=".6" stroke-width="2"/><rect x="{x:.0f}" y="22" width="{tw:.0f}" height="4" fill="{col}"/>')
+        r = 14; cx_, cy_ = x + tw - 30, 44
+        o.append(f'<circle cx="{cx_:.0f}" cy="{cy_}" r="{r}" fill="none" stroke="{C["line"]}" stroke-width="4"/><circle cx="{cx_:.0f}" cy="{cy_}" r="{r}" fill="none" stroke="{col}" stroke-width="4" stroke-linecap="round" stroke-dasharray="{2*3.1416*r*.28:.0f} {2*3.1416*r:.0f}"><animateTransform attributeName="transform" type="rotate" from="0 {cx_:.0f} {cy_}" to="360 {cx_:.0f} {cy_}" dur="{4+i}s" repeatCount="indefinite"/></circle><circle cx="{cx_:.0f}" cy="{cy_}" r="4" fill="{col}" filter="url(#sg)"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>')
+        fs = 44 if len(v) <= 3 else 34
+        o.append(f'<text x="{x+20:.0f}" y="78" font-family="{SANS}" font-weight="800" font-size="{fs}" fill="{col}" filter="url(#sg)">{esc(v)}</text>')
+        ls = [lab[k:k+13] for k in range(0, len(lab), 13)] if " " not in lab else tw_.wrap(lab, 19)
+        for k, ln in enumerate(ls[:3]): o.append(f'<text x="{x+20:.0f}" y="{110+k*16}" font-family="{MONO}" font-size="11.5" fill="#9fb6cc" letter-spacing="1.2">{esc(ln)}</text>')
+    o.append(f'<rect y="{H-4}" width="{W}" height="4" fill="url(#ac)" opacity=".55"/><rect y="{H-4}" width="240" height="4" fill="#fff" opacity=".85"><animate attributeName="x" from="-240" to="{W}" dur="4s" repeatCount="indefinite"/></rect></g><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
+    return svg(W, H, "".join(o), "career stats")
 def pulse():
     W, H = 1200, 40
     d = "M0 20 H300 l10 -14 l12 28 l10 -24 l8 10 H700 l10 -14 l12 28 l10 -24 l8 10 H1200"
@@ -316,7 +408,7 @@ def main():
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
         write("assets/generated/pulse.svg", pulse())
     global LG
-    HERO, ORB, CAR = {}, {}, {}
+    HERO, ORB, CAR, MAP, CST = {}, {}, {}, {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
         import hashlib, glob
@@ -324,7 +416,7 @@ def main():
             for f in glob.glob(str(ROOT / d / (base + "*.svg"))): pathlib.Path(f).unlink()
             name = f"{base}-{hashlib.md5(content.encode()).hexdigest()[:8]}.svg"; write(d + name, content); return d + name
         HERO[lg] = hashed(bd, "hero", hero())
-        CAR[lg] = hashed(gd, "career", career(lg))
+        CAR[lg] = hashed(gd, "journey", journey(lg)); MAP[lg] = hashed(gd, "mapping", mapping(lg)); CST[lg] = hashed(gd, "cstats", cstats(lg))
         npub = sum(1 for q in P['projects'] if q['ring'] == 'published')
         write(gd + "ticker.svg", anim.ticker([t.format(n=npub) for t in Xt()["ticker"]]))
         ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
@@ -351,7 +443,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

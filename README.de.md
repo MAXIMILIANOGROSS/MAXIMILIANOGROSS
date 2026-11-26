@@ -15,6 +15,8 @@
 **Ich verwandle Ideen in Software.**<br>
 Apps · Desktop-Software · Webplattformen · KI & Automatisierung — vom Konzept bis zum Einsatz.
 
+<sub><i>Ich habe Schweißnähte, Flugzeugtriebwerke und Raketen geprüft. Jetzt prüfe ich Code.</i></sub>
+
 <br><br>
 <img src="assets/generated/de/ticker.svg" alt="Live status ticker" width="100%">
 <img src="assets/generated/pulse.svg" alt="" width="100%">
@@ -37,7 +39,7 @@ Apps · Desktop-Software · Webplattformen · KI & Automatisierung — vom Konze
 
 Ich bin unabhängiger Softwareentwickler und Produktbauer. Ich liefere keine Einzelfunktionen, sondern **komplette Produkte**: Idee, Oberfläche, Anwendung, Backend, Integrationen, Tests, Dokumentation und Release.
 
-Mein Hintergrund ist Qualität auf Luft- und Raumfahrtniveau — technischer Service bei **SR Technics**, Qualität bei **Bureau Veritas**, zerstörungsfreie Prüfung von Raketenkomponenten bei **PLD Space** und interne ISO-9001-Audits — deshalb arbeite ich mit einer *Null-Toleranz*-Haltung: Rückverfolgbarkeit, Verifikation, reproduzierbare Ergebnisse.
+Mein Hintergrund ist Qualität auf Luft- und Raumfahrtniveau: ZfP seit 2007, **PLD Space** (Miura 1), Audits bei **Bureau Veritas** und **SR Technics** — deshalb arbeite ich mit einer *Null-Toleranz*-Haltung: Rückverfolgbarkeit, Verifikation, reproduzierbare Ergebnisse.
 
 </td>
 </tr>
@@ -69,21 +71,37 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 </table>
 
 <details open>
-<summary><b>✈️ Vor der Software — Luftfahrt-ZfP: SR Technics & PLD Space</b></summary>
+<summary><b>🧬 Vom ZfP-Prüfer zum Softwarebauer — mein Weg</b></summary>
 
 <br>
 
 <div align="center">
 
-<img src="assets/generated/de/career-0cc657cc.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/de/journey-16c55de9.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/de/cstats-1162a701.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
-Ich habe in der Luft- und Raumfahrtqualität begonnen. Bei **SR Technics** (Zürich) war ich **ZfP-Spezialist — PT, MT und VT — mit über 300 Prüfungen an Triebwerken ziviler Flugzeuge**. Bei **PLD Space** war ich **ZfP-Forscher und industrieller Schweißnaht-Radiograf (RT)** und der erste argentinische Radiograf, der eine spanische Rakete durchleuchtet hat. Diese Disziplin — prüfen, dokumentieren, zurückverfolgen, nie annehmen — ist, wie ich heute Software baue.
+Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Raketenstrukturen, in Argentinien, Spanien und der Schweiz. Bei **PLD Space** arbeitete ich an **Miura 1** — Spaniens erster im Land gebauter Rakete — und war der erste argentinische Radiograf, der sie durchleuchtete. Bei **SR Technics** führte ich **über 300 Prüfungen an kritischen Flugzeugbauteilen ohne einen Sicherheitsmangel** durch. Vor etwa einem Jahr begann ich den Wechsel zur Software: Ich brachte mir Swift und SwiftUI selbst bei und veröffentlichte **ENODEUS**, eine native iOS-App, die Prüfarbeit automatisiert, die ich früher von Hand erledigte. Gleiche Disziplin, neues Material.
 
-- Fluoreszenz-Eindring-, Magnetpulver- und Sichtprüfung von Triebwerkskomponenten
-- Industrielle Radiografie von Schweißnähten an Raketenstrukturen
-- Rückverfolgbare, normbasierte Berichte — die Wurzel von ENODEUS
+- Praxis in VT, PT, MT, RT und UT in Luftfahrt, Energie und Fertigung
+- Arbeit nach EASA, EN 4179, ISO 9001 und ASME: Berichte, Abweichungen, Ursachenanalyse, Audits
+- Jetzt: Swift, SwiftUI, Firebase und App-Store-Konformität — die Gewohnheiten, ein echtes Produkt auszuliefern
+
+<div align="center">
+
+<b>Normen & Qualifikationen</b><br>
+<img src="https://img.shields.io/badge/EASA-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_4179-161B22?style=flat-square"> <img src="https://img.shields.io/badge/EN_9100-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ISO_9001-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ASME-161B22?style=flat-square"> <img src="https://img.shields.io/badge/API-161B22?style=flat-square"> <img src="https://img.shields.io/badge/ECSS-161B22?style=flat-square"> <img src="https://img.shields.io/badge/VCA-161B22?style=flat-square"><br>
+<img src="https://img.shields.io/badge/PT-LEVEL_2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/MT-LEVEL_1%2B2-00D4FF?style=flat-square"> <img src="https://img.shields.io/badge/CSN-LICENSED_RADIATION_OPERATOR_2023--2028-00D4FF?style=flat-square">
+
+<br><br>
+
+<img src="assets/generated/de/mapping-3edf436c.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
 
 <sub>PT = Eindringprüfung · MT = Magnetpulver · VT = Sichtprüfung · RT = Durchstrahlung</sub>
 
