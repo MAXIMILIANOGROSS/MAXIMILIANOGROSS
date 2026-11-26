@@ -332,7 +332,7 @@ flowchart LR
 | [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
 | [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
 
-<sub>آخر تحديث بواسطة GitHub Actions: 2026-11-26 20:16 UTC</sub>
+<sub>آخر تحديث بواسطة GitHub Actions: 2026-11-26 20:18 UTC</sub>
 
 </details>
 
