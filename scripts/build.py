@@ -91,7 +91,7 @@ def hero():
     o.append(f'<text x="{x0}" y="278" font-family="{SANS}" font-weight="800" font-size="86" fill="url(#ac)" letter-spacing="-1">OLMOS</text>')
     o.append(f'<text x="{x0}" y="366" font-family="{SANS}" font-weight="800" font-size="86" fill="url(#ac)" letter-spacing="-1">SÁNCHEZ</text>')
     o.append(f'<rect x="{x0}" y="384" width="120" height="4" fill="{C["cyan"]}"><animate attributeName="width" values="40;420;40" dur="4s" repeatCount="indefinite"/></rect>')
-    o.append(f'<text x="{x0+2}" y="424" font-family="{MONO}" font-size="21" fill="#9fb6cc" letter-spacing="3">{esc(Xt()["sub"])}</text>')
+    o.append(f'<text x="{x0+2}" y="424" font-family="{MONO}" font-size="{min(21, (640/len(Xt()["sub"]) - 3) / 0.62):.1f}" fill="#9fb6cc" letter-spacing="3">{esc(Xt()["sub"])}</text>')
     lines = Xt()["tags"]
     for i, t in enumerate(lines):
         op = "1" if i == 0 else "0"
