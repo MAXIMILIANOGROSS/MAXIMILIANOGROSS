@@ -12,6 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: Platane/snk/svg-only@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.SNAKE_TOKEN || github.token }}
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
