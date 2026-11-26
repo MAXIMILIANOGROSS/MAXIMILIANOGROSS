@@ -18,9 +18,22 @@ Applications · desktop software · web platforms · AI & automation — from co
 <a id="about"></a>
 <img src="assets/sections/about.svg" alt="01 About" width="100%">
 
+<table>
+<tr>
+<td width="230" valign="top" align="center">
+
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="210">
+
+</td>
+<td valign="top">
+
 I'm an independent software developer and product builder. I don't ship isolated features — I ship **complete products**: idea, interface, application, backend, integrations, testing, documentation and release.
 
 My background is aerospace-grade quality — technical service at **SR Technics**, quality at **Bureau Veritas**, NDT inspection on rocket components at **PLD Space**, and ISO 9001 internal auditing — so I build with a *zero-tolerance* mindset: traceability, verification, reproducible results.
+
+</td>
+</tr>
+</table>
 
 <table>
 <tr>
