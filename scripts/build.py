@@ -50,6 +50,13 @@ def hero():
         o.append(f'<circle cx="{x}" cy="{y}" r="3" fill="{C["cyan"]}"><animate attributeName="opacity" values=".3;1;.3" dur="{3+i%4}s" begin="{i*.3}s" repeatCount="indefinite"/></circle>')
     o.append(f'<g transform="translate(95,125) scale(.95)"><polygon points="{hexpts(100,100,86)}" fill="#0b1220" stroke="url(#ac)" stroke-width="4"/><polygon points="{hexpts(100,100,72)}" fill="none" stroke="{C["cyan"]}" stroke-opacity=".35" stroke-dasharray="6 8"><animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="40s" repeatCount="indefinite"/></polygon>'
              f'<text x="100" y="118" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="58" fill="{C["txt"]}" letter-spacing="-2">M<tspan fill="{C["cyan"]}">O</tspan></text><text x="100" y="148" text-anchor="middle" font-family="{MONO}" font-size="12" fill="#65d9ff" letter-spacing="3">&lt;/BUILD&gt;</text></g>')
+    import base64
+    ph = ROOT / "assets/branding/photo.jpg"
+    if ph.exists():
+        uri = "data:image/jpeg;base64," + base64.b64encode(ph.read_bytes()).decode()
+        o.append(f'<clipPath id="hx"><polygon points="{hexpts(190,220,80)}"/></clipPath><image href="{uri}" x="100" y="130" width="180" height="180" clip-path="url(#hx)" preserveAspectRatio="xMidYMid slice"/>'
+                 f'<polygon points="{hexpts(190,220,82)}" fill="none" stroke="url(#ac)" stroke-width="4"/>'
+                 f'<text x="190" y="338" text-anchor="middle" font-family="{MONO}" font-size="13" fill="#65d9ff" letter-spacing="3">&lt;/BUILD&gt;</text>')
     x0 = 380
     o.append(f'<text x="{x0}" y="110" font-family="{MONO}" font-size="20" fill="{C["green"]}">{P["owner"].lower()}@lab:~$ <tspan fill="{C["mute"]}">whoami</tspan></text>')
     o.append(f'<text x="{x0}" y="200" font-family="{SANS}" font-weight="800" font-size="76" fill="{C["txt"]}" letter-spacing="-1">MAXIMILIANO</text>')
