@@ -23,22 +23,15 @@
 <a id="about"></a>
 <img src="assets/sections/zh/about.svg" alt="01 About" width="100%">
 
-<table>
-<tr>
-<td width="260" valign="top" align="center">
+<div align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="200">
 
-</td>
-<td valign="top">
+</div>
 
 我是独立软件开发者和产品构建者。我交付的不是零散功能，而是**完整的产品**：创意、界面、应用、后端、集成、测试、文档和发布。
 
 我的背景是航空航天级质量：2007 年起从事无损检测，经历 **PLD Space**（Miura 1）、**Bureau Veritas** 审核和 **SR Technics** —— 因此我以*零容忍*的态度做事：可追溯、可验证、结果可复现。
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>

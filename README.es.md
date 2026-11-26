@@ -23,22 +23,15 @@ Aplicaciones · software de escritorio · plataformas web · IA y automatizació
 <a id="about"></a>
 <img src="assets/sections/es/about.svg" alt="01 About" width="100%">
 
-<table>
-<tr>
-<td width="260" valign="top" align="center">
+<div align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="200">
 
-</td>
-<td valign="top">
+</div>
 
 Soy desarrollador de software independiente y creador de productos. No entrego funciones sueltas: entrego **productos completos**: idea, interfaz, aplicación, backend, integraciones, pruebas, documentación y lanzamiento.
 
 Vengo de la calidad de nivel aeroespacial: END desde 2007, **PLD Space** (Miura 1), auditorías en **Bureau Veritas** y **SR Technics** — por eso construyo con mentalidad de *tolerancia cero*: trazabilidad, verificación y resultados reproducibles.
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>

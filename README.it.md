@@ -23,22 +23,15 @@ App · software desktop · piattaforme web · IA e automazione — dal concept a
 <a id="about"></a>
 <img src="assets/sections/it/about.svg" alt="01 About" width="100%">
 
-<table>
-<tr>
-<td width="260" valign="top" align="center">
+<div align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="200">
 
-</td>
-<td valign="top">
+</div>
 
 Sono uno sviluppatore software indipendente e costruttore di prodotti. Non consegno funzioni isolate: consegno **prodotti completi**: idea, interfaccia, applicazione, backend, integrazioni, test, documentazione e rilascio.
 
 Vengo dalla qualità di livello aerospaziale: CND dal 2007, **PLD Space** (Miura 1), audit in **Bureau Veritas** e **SR Technics** — per questo lavoro con mentalità di *tolleranza zero*: tracciabilità, verifica, risultati riproducibili.
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>

@@ -23,22 +23,15 @@ Apps · Desktop-Software · Webplattformen · KI & Automatisierung — vom Konze
 <a id="about"></a>
 <img src="assets/sections/de/about.svg" alt="01 About" width="100%">
 
-<table>
-<tr>
-<td width="260" valign="top" align="center">
+<div align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="200">
 
-</td>
-<td valign="top">
+</div>
 
 Ich bin unabhängiger Softwareentwickler und Produktbauer. Ich liefere keine Einzelfunktionen, sondern **komplette Produkte**: Idee, Oberfläche, Anwendung, Backend, Integrationen, Tests, Dokumentation und Release.
 
 Mein Hintergrund ist Qualität auf Luft- und Raumfahrtniveau: ZfP seit 2007, **PLD Space** (Miura 1), Audits bei **Bureau Veritas** und **SR Technics** — deshalb arbeite ich mit einer *Null-Toleranz*-Haltung: Rückverfolgbarkeit, Verifikation, reproduzierbare Ergebnisse.
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>

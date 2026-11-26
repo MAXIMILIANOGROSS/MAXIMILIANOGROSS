@@ -23,22 +23,15 @@ Applications · logiciels de bureau · plateformes web · IA & automatisation �
 <a id="about"></a>
 <img src="assets/sections/fr/about.svg" alt="01 About" width="100%">
 
-<table>
-<tr>
-<td width="260" valign="top" align="center">
+<div align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="200">
 
-</td>
-<td valign="top">
+</div>
 
 Je suis développeur logiciel indépendant et créateur de produits. Je ne livre pas des fonctions isolées : je livre des **produits complets** : idée, interface, application, backend, intégrations, tests, documentation et mise en production.
 
 Mon parcours est celui de la qualité de niveau aérospatial : CND depuis 2007, **PLD Space** (Miura 1), audits chez **Bureau Veritas** et **SR Technics** — d'où ma mentalité de *tolérance zéro* : traçabilité, vérification, résultats reproductibles.
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>

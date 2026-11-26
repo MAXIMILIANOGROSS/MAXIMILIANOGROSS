@@ -23,22 +23,15 @@
 <a id="about"></a>
 <img src="assets/sections/ar/about.svg" alt="01 About" width="100%">
 
-<table>
-<tr>
-<td width="260" valign="top" align="center">
+<div align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="200">
 
-</td>
-<td valign="top">
+</div>
 
 أنا مطوّر برمجيات مستقل وصانع منتجات. لا أسلّم ميزات منفردة، بل **منتجات متكاملة**: الفكرة والواجهة والتطبيق والخادم والتكاملات والاختبار والتوثيق والإطلاق.
 
 خلفيتي هي الجودة بمعايير الطيران والفضاء: اختبارات غير إتلافية منذ 2007، و**PLD Space** (Miura 1)، وتدقيق في **Bureau Veritas**، و**SR Technics** — ولذلك أعمل بعقلية *عدم التسامح*: تتبّع وتحقق ونتائج قابلة للتكرار.
-
-</td>
-</tr>
-</table>
 
 <table>
 <tr>
