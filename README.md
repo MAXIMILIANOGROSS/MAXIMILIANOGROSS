@@ -71,66 +71,6 @@ Independent, documented, shipped. I learn by creating real products.
 </table>
 
 <details open>
-<summary><b>🧬 From NDT inspector to software builder — my path</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="assets/generated/journey-e2a19589.svg" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="assets/generated/cstats-b6c38dd3.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-NDT has been my craft since 2007: welds, aircraft engines and rocket structures, in Argentina, Spain and Switzerland. At **PLD Space** I worked on **Miura 1** — Spain's first domestically built rocket — and became the first Argentine radiographer to perform radiographic testing on it. At **SR Technics** I carried out **300+ inspections on critical aircraft components**. About a year ago I started the transition to software: I taught myself Swift and SwiftUI and shipped **ENODEUS**, a native iOS app that automates inspection work I used to do by hand. Same discipline, new material.
-
-- Hands-on VT, PT, MT, RT and UT across aerospace, energy and manufacturing
-- Worked under EASA, EN 4179, ISO 9001 and ASME requirements: reports, non-conformities, root-cause analysis, audits
-- Now: Swift, SwiftUI, Firebase and App Store compliance — the habits of shipping a real product
-
-<div align="center">
-
-<img src="assets/generated/standards-f4ca49e2.svg" alt="Standards & credentials" width="100%">
-
-<br><br>
-
-<img src="assets/generated/mapping-cc1a6469.svg" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>PT = liquid penetrant · MT = magnetic particle · VT = visual · RT = radiography</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>SR Technics, Zürich: fluorescent penetrant inspection of an engine component, the engine hall and the FPI line.</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>Photos from my time at PLD Space: inspecting a tank section, the workshop, and a rocket launch.</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>🌐 The Island Crew ecosystem — talent, AI office, restaurants, academy, media</b></summary>
 
 <br>
@@ -307,6 +247,69 @@ flowchart LR
 <sub>Only technologies that appear in my actual repositories.</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>🧬 From NDT inspector to software builder — my path</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/generated/journey-e2a19589.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/cstats-b6c38dd3.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+NDT has been my craft since 2007: welds, aircraft engines and rocket structures, in Argentina, Spain and Switzerland. At **PLD Space** I worked on **Miura 1** — Spain's first domestically built rocket — and became the first Argentine radiographer to perform radiographic testing on it. At **SR Technics** I carried out **300+ inspections on critical aircraft components**. About a year ago I started the transition to software: I taught myself Swift and SwiftUI and shipped **ENODEUS**, a native iOS app that automates inspection work I used to do by hand. Same discipline, new material.
+
+- Hands-on VT, PT, MT, RT and UT across aerospace, energy and manufacturing
+- Worked under EASA, EN 4179, ISO 9001 and ASME requirements: reports, non-conformities, root-cause analysis, audits
+- Now: Swift, SwiftUI, Firebase and App Store compliance — the habits of shipping a real product
+
+<div align="center">
+
+<img src="assets/generated/standards-f4ca49e2.svg" alt="Standards & credentials" width="100%">
+
+<br><br>
+
+<img src="assets/generated/mapping-cc1a6469.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>PT = liquid penetrant · MT = magnetic particle · VT = visual · RT = radiography</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zürich: fluorescent penetrant inspection of an engine component, the engine hall and the FPI line.</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Photos from my time at PLD Space: inspecting a tank section, the workshop, and a rocket launch.</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/metrics.svg" alt="07 Verified metrics" width="100%">

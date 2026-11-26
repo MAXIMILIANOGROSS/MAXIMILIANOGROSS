@@ -71,66 +71,6 @@
 </table>
 
 <details open>
-<summary><b>🧬 从无损检测员到软件构建者 —— 我的路径</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="assets/generated/zh/journey-8b45bd34.svg" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="assets/generated/zh/cstats-440880f9.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-自 2007 年起，无损检测就是我的本行：焊缝、飞机发动机和火箭结构，足迹遍及阿根廷、西班牙和瑞士。在 **PLD Space**，我参与了西班牙首枚本土制造火箭 **Miura 1**，并成为第一位对其进行射线检测的阿根廷射线检测员。在 **SR Technics**，我对关键飞机部件完成了 **300 多次检测**。大约一年前，我开始转向软件：自学 Swift 和 SwiftUI，并发布了 **ENODEUS** —— 一款原生 iOS 应用，把我过去手工完成的检测工作自动化。同样的纪律，全新的材料。
-
-- 在航空航天、能源和制造业实操 VT、PT、MT、RT 和 UT
-- 依据 EASA、EN 4179、ISO 9001 和 ASME 要求工作：报告、不合格项、根因分析、审核
-- 现在：Swift、SwiftUI、Firebase 与 App Store 合规 —— 交付真实产品的习惯
-
-<div align="center">
-
-<img src="assets/generated/zh/standards-4528c15b.svg" alt="标准与资质" width="100%">
-
-<br><br>
-
-<img src="assets/generated/zh/mapping-0ef77c10.svg" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>PT = 渗透检测 · MT = 磁粉检测 · VT = 目视检测 · RT = 射线检测</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>SR Technics，苏黎世：发动机部件的荧光渗透检测、发动机车间和 FPI 检测线。</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>我在 PLD Space 期间的照片：检查储箱段、车间和一次火箭发射。</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>🌐 Island Crew 生态系统 —— 人才、AI 办公室、餐厅、学院、媒体</b></summary>
 
 <br>
@@ -307,6 +247,69 @@ flowchart LR
 <sub>仅列出我真实仓库中出现的技术。</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>🧬 从无损检测员到软件构建者 —— 我的路径</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/generated/zh/journey-8b45bd34.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/zh/cstats-440880f9.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+自 2007 年起，无损检测就是我的本行：焊缝、飞机发动机和火箭结构，足迹遍及阿根廷、西班牙和瑞士。在 **PLD Space**，我参与了西班牙首枚本土制造火箭 **Miura 1**，并成为第一位对其进行射线检测的阿根廷射线检测员。在 **SR Technics**，我对关键飞机部件完成了 **300 多次检测**。大约一年前，我开始转向软件：自学 Swift 和 SwiftUI，并发布了 **ENODEUS** —— 一款原生 iOS 应用，把我过去手工完成的检测工作自动化。同样的纪律，全新的材料。
+
+- 在航空航天、能源和制造业实操 VT、PT、MT、RT 和 UT
+- 依据 EASA、EN 4179、ISO 9001 和 ASME 要求工作：报告、不合格项、根因分析、审核
+- 现在：Swift、SwiftUI、Firebase 与 App Store 合规 —— 交付真实产品的习惯
+
+<div align="center">
+
+<img src="assets/generated/zh/standards-4528c15b.svg" alt="标准与资质" width="100%">
+
+<br><br>
+
+<img src="assets/generated/zh/mapping-0ef77c10.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>PT = 渗透检测 · MT = 磁粉检测 · VT = 目视检测 · RT = 射线检测</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics，苏黎世：发动机部件的荧光渗透检测、发动机车间和 FPI 检测线。</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>我在 PLD Space 期间的照片：检查储箱段、车间和一次火箭发射。</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/zh/metrics.svg" alt="07 Verified metrics" width="100%">

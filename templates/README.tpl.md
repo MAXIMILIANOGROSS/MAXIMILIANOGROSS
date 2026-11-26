@@ -62,64 +62,6 @@
 </table>
 
 <details open>
-<summary><b>{{t.pld_sum}}</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="{{CAREER}}" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="{{CSTATS}}" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-{{t.pld_p}}
-
-{{t.pld_li}}
-
-<div align="center">
-
-<img src="{{STANDARDS}}" alt="{{t.std_h}}" width="100%">
-
-<br><br>
-
-<img src="{{MAPPING}}" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>{{t.pld_legend}}</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>{{t.sr_cap}}</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>{{t.pld_cap}}</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>{{t.eco_sum}}</b></summary>
 
 <br>
@@ -271,6 +213,67 @@ flowchart LR
 <sub>{{t.stack_note}}</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>{{t.pld_sum}}</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="{{CAREER}}" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="{{CSTATS}}" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+{{t.pld_p}}
+
+{{t.pld_li}}
+
+<div align="center">
+
+<img src="{{STANDARDS}}" alt="{{t.std_h}}" width="100%">
+
+<br><br>
+
+<img src="{{MAPPING}}" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>{{t.pld_legend}}</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>{{t.sr_cap}}</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>{{t.pld_cap}}</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/{{SD}}metrics.svg" alt="07 Verified metrics" width="100%">

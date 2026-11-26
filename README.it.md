@@ -71,66 +71,6 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 </table>
 
 <details open>
-<summary><b>🧬 Da ispettore CND a costruttore di software — il mio percorso</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="assets/generated/it/journey-e6219d44.svg" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="assets/generated/it/cstats-66fded47.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture di razzi, in Argentina, Spagna e Svizzera. In **PLD Space** ho lavorato su **Miura 1** — il primo razzo costruito in Spagna — e sono stato il primo radiografo argentino a eseguire controlli radiografici su di esso. In **SR Technics** ho eseguito **oltre 300 ispezioni su componenti critici di aeromobili**. Circa un anno fa ho iniziato la transizione al software: ho imparato Swift e SwiftUI da solo e ho pubblicato **ENODEUS**, un'app iOS nativa che automatizza il lavoro di ispezione che facevo a mano. Stessa disciplina, nuovo materiale.
-
-- VT, PT, MT, RT e UT sul campo, in aerospaziale, energia e manifattura
-- Lavoro secondo requisiti EASA, EN 4179, ISO 9001 e ASME: report, non conformità, analisi delle cause radice, audit
-- Ora: Swift, SwiftUI, Firebase e conformità App Store — le abitudini di rilasciare un prodotto reale
-
-<div align="center">
-
-<img src="assets/generated/it/standards-ac090a05.svg" alt="Norme e credenziali" width="100%">
-
-<br><br>
-
-<img src="assets/generated/it/mapping-3cfc3769.svg" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>PT = liquidi penetranti · MT = particelle magnetiche · VT = visivo · RT = radiografia</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>SR Technics, Zurigo: controllo con penetranti fluorescenti di un componente di motore, il reparto motori e la linea FPI.</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>Foto del mio periodo in PLD Space: ispezione di una sezione di serbatoio, l'officina e un lancio di razzo.</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>🌐 L'ecosistema Island Crew — talenti, ufficio IA, ristoranti, accademia, media</b></summary>
 
 <br>
@@ -307,6 +247,69 @@ flowchart LR
 <sub>Solo tecnologie presenti nei miei repository reali.</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>🧬 Da ispettore CND a costruttore di software — il mio percorso</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/generated/it/journey-e6219d44.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/it/cstats-66fded47.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture di razzi, in Argentina, Spagna e Svizzera. In **PLD Space** ho lavorato su **Miura 1** — il primo razzo costruito in Spagna — e sono stato il primo radiografo argentino a eseguire controlli radiografici su di esso. In **SR Technics** ho eseguito **oltre 300 ispezioni su componenti critici di aeromobili**. Circa un anno fa ho iniziato la transizione al software: ho imparato Swift e SwiftUI da solo e ho pubblicato **ENODEUS**, un'app iOS nativa che automatizza il lavoro di ispezione che facevo a mano. Stessa disciplina, nuovo materiale.
+
+- VT, PT, MT, RT e UT sul campo, in aerospaziale, energia e manifattura
+- Lavoro secondo requisiti EASA, EN 4179, ISO 9001 e ASME: report, non conformità, analisi delle cause radice, audit
+- Ora: Swift, SwiftUI, Firebase e conformità App Store — le abitudini di rilasciare un prodotto reale
+
+<div align="center">
+
+<img src="assets/generated/it/standards-ac090a05.svg" alt="Norme e credenziali" width="100%">
+
+<br><br>
+
+<img src="assets/generated/it/mapping-3cfc3769.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>PT = liquidi penetranti · MT = particelle magnetiche · VT = visivo · RT = radiografia</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zurigo: controllo con penetranti fluorescenti di un componente di motore, il reparto motori e la linea FPI.</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Foto del mio periodo in PLD Space: ispezione di una sezione di serbatoio, l'officina e un lancio di razzo.</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/it/metrics.svg" alt="07 Verified metrics" width="100%">

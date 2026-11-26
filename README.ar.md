@@ -71,66 +71,6 @@
 </table>
 
 <details open>
-<summary><b>🧬 من مفتش اختبارات غير إتلافية إلى صانع برمجيات — طريقي</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="assets/generated/ar/journey-71c847f9.svg" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="assets/generated/ar/cstats-b1375c67.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-الاختبارات غير الإتلافية هي حرفتي منذ 2007: حامات ومحركات طائرات وهياكل صواريخ، في الأرجنتين وإسبانيا وسويسرا. في **PLD Space** عملت على **Miura 1** — أول صاروخ مصنَّع محليًا في إسبانيا — وكنت أول مصوّر إشعاعي أرجنتيني يجري عليه الفحص الإشعاعي. وفي **SR Technics** نفّذت **أكثر من 300 فحص لمكونات طائرات حرجة**. قبل نحو عام بدأت الانتقال إلى البرمجيات: تعلّمت Swift وSwiftUI بنفسي ونشرت **ENODEUS**، تطبيق iOS أصلي يؤتمت أعمال الفحص التي كنت أنجزها يدويًا. الانضباط نفسه، والمادة جديدة.
-
-- خبرة ميدانية في VT وPT وMT وRT وUT في الطيران والطاقة والتصنيع
-- العمل وفق متطلبات EASA وEN 4179 وISO 9001 وASME: تقارير وحالات عدم مطابقة وتحليل جذور وتدقيق
-- الآن: Swift وSwiftUI وFirebase والامتثال لمتطلبات App Store — عادات إطلاق منتج حقيقي
-
-<div align="center">
-
-<img src="assets/generated/ar/standards-fd965a25.svg" alt="المعايير والاعتمادات" width="100%">
-
-<br><br>
-
-<img src="assets/generated/ar/mapping-ffe702c0.svg" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>PT = السوائل المتخللة · MT = الجسيمات المغناطيسية · VT = بصري · RT = التصوير الإشعاعي</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>SR Technics، زيورخ: فحص بالسوائل المتخللة الفلورية لمكوّن محرك، وقاعة المحركات، وخط FPI.</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>صور من فترة عملي في PLD Space: فحص جزء من خزان، والورشة، وإطلاق صاروخ.</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>🌐 منظومة Island Crew — المواهب، المكتب الذكي، المطاعم، الأكاديمية، الإعلام</b></summary>
 
 <br>
@@ -307,6 +247,69 @@ flowchart LR
 <sub>فقط التقنيات الموجودة في مستودعاتي الفعلية.</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>🧬 من مفتش اختبارات غير إتلافية إلى صانع برمجيات — طريقي</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/generated/ar/journey-71c847f9.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/ar/cstats-b1375c67.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+الاختبارات غير الإتلافية هي حرفتي منذ 2007: حامات ومحركات طائرات وهياكل صواريخ، في الأرجنتين وإسبانيا وسويسرا. في **PLD Space** عملت على **Miura 1** — أول صاروخ مصنَّع محليًا في إسبانيا — وكنت أول مصوّر إشعاعي أرجنتيني يجري عليه الفحص الإشعاعي. وفي **SR Technics** نفّذت **أكثر من 300 فحص لمكونات طائرات حرجة**. قبل نحو عام بدأت الانتقال إلى البرمجيات: تعلّمت Swift وSwiftUI بنفسي ونشرت **ENODEUS**، تطبيق iOS أصلي يؤتمت أعمال الفحص التي كنت أنجزها يدويًا. الانضباط نفسه، والمادة جديدة.
+
+- خبرة ميدانية في VT وPT وMT وRT وUT في الطيران والطاقة والتصنيع
+- العمل وفق متطلبات EASA وEN 4179 وISO 9001 وASME: تقارير وحالات عدم مطابقة وتحليل جذور وتدقيق
+- الآن: Swift وSwiftUI وFirebase والامتثال لمتطلبات App Store — عادات إطلاق منتج حقيقي
+
+<div align="center">
+
+<img src="assets/generated/ar/standards-fd965a25.svg" alt="المعايير والاعتمادات" width="100%">
+
+<br><br>
+
+<img src="assets/generated/ar/mapping-ffe702c0.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>PT = السوائل المتخللة · MT = الجسيمات المغناطيسية · VT = بصري · RT = التصوير الإشعاعي</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics، زيورخ: فحص بالسوائل المتخللة الفلورية لمكوّن محرك، وقاعة المحركات، وخط FPI.</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>صور من فترة عملي في PLD Space: فحص جزء من خزان، والورشة، وإطلاق صاروخ.</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/ar/metrics.svg" alt="07 Verified metrics" width="100%">

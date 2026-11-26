@@ -71,66 +71,6 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 </table>
 
 <details open>
-<summary><b>🧬 Vom ZfP-Prüfer zum Softwarebauer — mein Weg</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="assets/generated/de/journey-826a4ec6.svg" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="assets/generated/de/cstats-4440dd2e.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Raketenstrukturen, in Argentinien, Spanien und der Schweiz. Bei **PLD Space** arbeitete ich an **Miura 1** — Spaniens erster im Land gebauter Rakete — und war der erste argentinische Radiograf, der sie durchleuchtete. Bei **SR Technics** führte ich **über 300 Prüfungen an kritischen Flugzeugbauteilen** durch. Vor etwa einem Jahr begann ich den Wechsel zur Software: Ich brachte mir Swift und SwiftUI selbst bei und veröffentlichte **ENODEUS**, eine native iOS-App, die Prüfarbeit automatisiert, die ich früher von Hand erledigte. Gleiche Disziplin, neues Material.
-
-- Praxis in VT, PT, MT, RT und UT in Luftfahrt, Energie und Fertigung
-- Arbeit nach EASA, EN 4179, ISO 9001 und ASME: Berichte, Abweichungen, Ursachenanalyse, Audits
-- Jetzt: Swift, SwiftUI, Firebase und App-Store-Konformität — die Gewohnheiten, ein echtes Produkt auszuliefern
-
-<div align="center">
-
-<img src="assets/generated/de/standards-3613bc0f.svg" alt="Normen & Qualifikationen" width="100%">
-
-<br><br>
-
-<img src="assets/generated/de/mapping-3edf436c.svg" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>PT = Eindringprüfung · MT = Magnetpulver · VT = Sichtprüfung · RT = Durchstrahlung</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>SR Technics, Zürich: Fluoreszenz-Eindringprüfung eines Triebwerksbauteils, die Triebwerkshalle und die FPI-Linie.</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>Fotos aus meiner Zeit bei PLD Space: Prüfung eines Tankabschnitts, die Werkstatt und ein Raketenstart.</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>🌐 Das Island-Crew-Ökosystem — Talente, KI-Büro, Restaurants, Akademie, Medien</b></summary>
 
 <br>
@@ -307,6 +247,69 @@ flowchart LR
 <sub>Nur Technologien, die in meinen echten Repositories vorkommen.</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>🧬 Vom ZfP-Prüfer zum Softwarebauer — mein Weg</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/generated/de/journey-826a4ec6.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/de/cstats-4440dd2e.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Raketenstrukturen, in Argentinien, Spanien und der Schweiz. Bei **PLD Space** arbeitete ich an **Miura 1** — Spaniens erster im Land gebauter Rakete — und war der erste argentinische Radiograf, der sie durchleuchtete. Bei **SR Technics** führte ich **über 300 Prüfungen an kritischen Flugzeugbauteilen** durch. Vor etwa einem Jahr begann ich den Wechsel zur Software: Ich brachte mir Swift und SwiftUI selbst bei und veröffentlichte **ENODEUS**, eine native iOS-App, die Prüfarbeit automatisiert, die ich früher von Hand erledigte. Gleiche Disziplin, neues Material.
+
+- Praxis in VT, PT, MT, RT und UT in Luftfahrt, Energie und Fertigung
+- Arbeit nach EASA, EN 4179, ISO 9001 und ASME: Berichte, Abweichungen, Ursachenanalyse, Audits
+- Jetzt: Swift, SwiftUI, Firebase und App-Store-Konformität — die Gewohnheiten, ein echtes Produkt auszuliefern
+
+<div align="center">
+
+<img src="assets/generated/de/standards-3613bc0f.svg" alt="Normen & Qualifikationen" width="100%">
+
+<br><br>
+
+<img src="assets/generated/de/mapping-3edf436c.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>PT = Eindringprüfung · MT = Magnetpulver · VT = Sichtprüfung · RT = Durchstrahlung</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zürich: Fluoreszenz-Eindringprüfung eines Triebwerksbauteils, die Triebwerkshalle und die FPI-Linie.</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Fotos aus meiner Zeit bei PLD Space: Prüfung eines Tankabschnitts, die Werkstatt und ein Raketenstart.</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/de/metrics.svg" alt="07 Verified metrics" width="100%">

@@ -71,66 +71,6 @@ Indépendant, documenté, livré. J'apprends en créant de vrais produits.
 </table>
 
 <details open>
-<summary><b>🧬 D'inspecteur CND à créateur de logiciels — mon parcours</b></summary>
-
-<br>
-
-<div align="center">
-
-<img src="assets/generated/fr/journey-87655031.svg" alt="Career journey from NDT inspector to software builder" width="100%">
-
-<br>
-
-<img src="assets/generated/fr/cstats-3bfee62d.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
-
-</div>
-
-Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de fusée, en Argentine, en Espagne et en Suisse. Chez **PLD Space**, j'ai travaillé sur **Miura 1** — la première fusée construite en Espagne — et je suis le premier radiographe argentin à y avoir réalisé des contrôles radiographiques. Chez **SR Technics**, j'ai réalisé **plus de 300 inspections de composants critiques d'avions**. Il y a environ un an, j'ai entamé la transition vers le logiciel : j'ai appris Swift et SwiftUI en autodidacte et publié **ENODEUS**, une app iOS native qui automatise le travail d'inspection que je faisais à la main. Même discipline, nouveau matériau.
-
-- VT, PT, MT, RT et UT sur le terrain, en aérospatial, énergie et industrie
-- Travail selon les exigences EASA, EN 4179, ISO 9001 et ASME : rapports, non-conformités, analyse des causes racines, audits
-- Aujourd'hui : Swift, SwiftUI, Firebase et conformité App Store — les réflexes de livrer un vrai produit
-
-<div align="center">
-
-<img src="assets/generated/fr/standards-ae2b6fdf.svg" alt="Normes et habilitations" width="100%">
-
-<br><br>
-
-<img src="assets/generated/fr/mapping-a37d02b6.svg" alt="What NDT methods taught me about code" width="100%">
-
-</div>
-
-<sub>PT = ressuage · MT = magnétoscopie · VT = visuel · RT = radiographie</sub>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
-<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
-</tr>
-</table>
-
-<sub>SR Technics, Zurich : ressuage fluorescent d'un composant de moteur, le hall moteurs et la ligne FPI.</sub>
-
-<table>
-<tr>
-<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
-<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
-</tr>
-</table>
-
-<sub>Photos de mon passage chez PLD Space : inspection d'une section de réservoir, l'atelier et un lancement de fusée.</sub>
-
-</div>
-
-</details>
-
-<details open>
 <summary><b>🌐 L'écosystème Island Crew — talents, bureau IA, restaurants, académie, médias</b></summary>
 
 <br>
@@ -307,6 +247,69 @@ flowchart LR
 <sub>Uniquement des technologies présentes dans mes dépôts réels.</sub>
 
 </div>
+
+<a id="career"></a>
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
+<details open>
+<summary><b>🧬 D'inspecteur CND à créateur de logiciels — mon parcours</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/generated/fr/journey-87655031.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+
+<br>
+
+<img src="assets/generated/fr/cstats-3bfee62d.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, Miura 1, iOS app live" width="100%">
+
+</div>
+
+Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de fusée, en Argentine, en Espagne et en Suisse. Chez **PLD Space**, j'ai travaillé sur **Miura 1** — la première fusée construite en Espagne — et je suis le premier radiographe argentin à y avoir réalisé des contrôles radiographiques. Chez **SR Technics**, j'ai réalisé **plus de 300 inspections de composants critiques d'avions**. Il y a environ un an, j'ai entamé la transition vers le logiciel : j'ai appris Swift et SwiftUI en autodidacte et publié **ENODEUS**, une app iOS native qui automatise le travail d'inspection que je faisais à la main. Même discipline, nouveau matériau.
+
+- VT, PT, MT, RT et UT sur le terrain, en aérospatial, énergie et industrie
+- Travail selon les exigences EASA, EN 4179, ISO 9001 et ASME : rapports, non-conformités, analyse des causes racines, audits
+- Aujourd'hui : Swift, SwiftUI, Firebase et conformité App Store — les réflexes de livrer un vrai produit
+
+<div align="center">
+
+<img src="assets/generated/fr/standards-ae2b6fdf.svg" alt="Normes et habilitations" width="100%">
+
+<br><br>
+
+<img src="assets/generated/fr/mapping-a37d02b6.svg" alt="What NDT methods taught me about code" width="100%">
+
+</div>
+
+<sub>PT = ressuage · MT = magnétoscopie · VT = visuel · RT = radiographie</sub>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zurich : ressuage fluorescent d'un composant de moteur, le hall moteurs et la ligne FPI.</sub>
+
+<table>
+<tr>
+<td width="25%"><img src="assets/screenshots/pld-1.jpg" alt="Inspecting a rocket tank section at PLD Space" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-2.jpg" alt="At the PLD Space workshop" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-3.jpg" alt="Rocket launch" width="100%"></td>
+<td width="25%"><img src="assets/screenshots/pld-4.jpg" alt="Rocket lifting off the launch rail" width="100%"></td>
+</tr>
+</table>
+
+<sub>Photos de mon passage chez PLD Space : inspection d'une section de réservoir, l'atelier et un lancement de fusée.</sub>
+
+</div>
+
+</details>
 
 <a id="metrics"></a>
 <img src="assets/sections/fr/metrics.svg" alt="07 Verified metrics" width="100%">
