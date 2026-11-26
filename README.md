@@ -59,7 +59,7 @@ Independent, documented, shipped. I learn by creating real products.
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="assets/projects/lebenslaufy.svg" alt="LEBENSLAUFY — PUBLISHED" width="100%"><br><sub>private source</sub></td>
-<td width="50%" valign="top"><img src="assets/projects/hydrata.svg" alt="HYDRATA — PUBLISHED" width="100%"><br><sub>private source</sub></td>
+<td width="50%" valign="top"><img src="assets/projects/tomagua.svg" alt="TOMAGUA — PUBLISHED" width="100%"><br><sub>private source</sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="assets/projects/carbonuxis.svg" alt="CARBONUXIS — PUBLISHED" width="100%"><br><sub>private source</sub></td>

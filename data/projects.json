@@ -12,7 +12,7 @@
     {"id": "lebenslaufy", "name": "LEBENSLAUFY", "category": "MOBILE · DOCUMENTS", "status": "PUBLISHED", "ring": "published",
      "tagline": "Mobile app that simplifies professional CV creation and job applications.",
      "tech": ["Swift"], "url": "", "access": "iOS app · source private"},
-    {"id": "hydrata", "name": "HYDRATA", "category": "MOBILE · HEALTH UTILITY", "status": "PUBLISHED", "ring": "published",
+    {"id": "tomagua", "name": "TOMAGUA", "category": "MOBILE · HEALTH UTILITY", "status": "PUBLISHED", "ring": "published",
      "tagline": "Hydration companion that makes daily water-intake tracking simple and engaging.",
      "tech": ["Swift"], "url": "", "access": "iOS app · source private"},
     {"id": "carbonuxis", "name": "CARBONUXIS", "category": "SUSTAINABILITY", "status": "PUBLISHED", "ring": "published",
