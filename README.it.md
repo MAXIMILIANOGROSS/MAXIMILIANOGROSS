@@ -69,17 +69,35 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 </table>
 
 <details open>
-<summary><b>🚀 Prima del software — ricercatore CND in PLD Space (razzo Miura)</b></summary>
+<summary><b>✈️ Prima del software — CND aerospaziali: SR Technics e PLD Space</b></summary>
 
 <br>
 
-Prima di scrivere codice lavoravo nella qualità aerospaziale. In **PLD Space** sono stato **ricercatore in controlli non distruttivi e radiografo industriale di saldature**, e sono il primo radiografo argentino ad aver radiografato un razzo spagnolo. Quella disciplina — ispezionare, documentare, tracciare, mai supporre — è esattamente come costruisco software oggi.
+<div align="center">
 
+<img src="assets/generated/it/career-fb3c90f7.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
+Sono partito dalla qualità aerospaziale. In **SR Technics** (Zurigo) sono stato **specialista CND — PT, MT e VT — con più di 300 ispezioni su motori di aeromobili commerciali**. In **PLD Space** sono stato **ricercatore CND e radiografo industriale di saldature (RT)**, e il primo radiografo argentino ad aver radiografato un razzo spagnolo. Quella disciplina — ispezionare, documentare, tracciare, mai supporre — è come costruisco software oggi.
+
+- Controllo con liquidi penetranti fluorescenti, particelle magnetiche e visivo su componenti di motore
 - Radiografia industriale delle saldature su strutture di razzi
-- Ricerca e procedure di controlli non distruttivi
 - Report tracciabili e basati su norme — la radice di ENODEUS
 
+<sub>PT = liquidi penetranti · MT = particelle magnetiche · VT = visivo · RT = radiografia</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zurigo: controllo con penetranti fluorescenti di un componente di motore, il reparto motori e la linea FPI.</sub>
 
 <table>
 <tr>

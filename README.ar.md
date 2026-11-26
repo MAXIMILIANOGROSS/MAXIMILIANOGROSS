@@ -69,17 +69,35 @@
 </table>
 
 <details open>
-<summary><b>🚀 قبل البرمجيات — باحث اختبارات غير إتلافية في PLD Space (صاروخ Miura)</b></summary>
+<summary><b>✈️ قبل البرمجيات — الاختبارات غير الإتلافية في الطيران: SR Technics وPLD Space</b></summary>
 
 <br>
 
-قبل أن أكتب الشيفرة عملت في جودة الطيران والفضاء. في **PLD Space** كنت **باحثًا في الاختبارات غير الإتلافية ومصوّرًا إشعاعيًا صناعيًا للحامات**، وأول مصوّر إشعاعي أرجنتيني يصوّر صاروخًا إسبانيًا بالأشعة. هذا الانضباط — افحص، ووثّق، وتتبّع، ولا تفترض أبدًا — هو بالضبط طريقتي في بناء البرمجيات اليوم.
+<div align="center">
 
+<img src="assets/generated/ar/career-06189e36.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
+بدأت من جودة الطيران والفضاء. في **SR Technics** (زيورخ) عملت **أخصائي اختبارات غير إتلافية — PT وMT وVT — بأكثر من 300 فحص لمحركات طائرات تجارية**. وفي **PLD Space** كنت **باحثًا في الاختبارات غير الإتلافية ومصوّرًا إشعاعيًا صناعيًا للحامات (RT)**، وأول مصوّر إشعاعي أرجنتيني يصوّر صاروخًا إسبانيًا بالأشعة. هذا الانضباط — افحص ووثّق وتتبّع ولا تفترض أبدًا — هو طريقتي في بناء البرمجيات اليوم.
+
+- فحص بالسوائل المتخللة الفلورية والجسيمات المغناطيسية والفحص البصري لمكونات المحركات
 - التصوير الإشعاعي الصناعي للحامات في هياكل الصواريخ
-- أبحاث وإجراءات الاختبارات غير الإتلافية
 - تقارير قابلة للتتبّع ومبنية على المعايير — جذر ENODEUS
 
+<sub>PT = السوائل المتخللة · MT = الجسيمات المغناطيسية · VT = بصري · RT = التصوير الإشعاعي</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics، زيورخ: فحص بالسوائل المتخللة الفلورية لمكوّن محرك، وقاعة المحركات، وخط FPI.</sub>
 
 <table>
 <tr>

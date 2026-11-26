@@ -69,17 +69,35 @@ Indépendant, documenté, livré. J'apprends en créant de vrais produits.
 </table>
 
 <details open>
-<summary><b>🚀 Avant le logiciel — chercheur CND chez PLD Space (fusée Miura)</b></summary>
+<summary><b>✈️ Avant le logiciel — CND aérospatial : SR Technics et PLD Space</b></summary>
 
 <br>
 
-Avant de coder, je travaillais dans la qualité aérospatiale. Chez **PLD Space**, j'étais **chercheur en contrôle non destructif et radiographe industriel de soudures**, et je suis le premier radiographe argentin à avoir radiographié une fusée espagnole. Cette discipline — inspecter, documenter, tracer, ne jamais supposer — c'est exactement ma façon de construire des logiciels aujourd'hui.
+<div align="center">
 
+<img src="assets/generated/fr/career-4dd005bb.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
+J'ai commencé dans la qualité aérospatiale. Chez **SR Technics** (Zurich), j'étais **spécialiste CND — PT, MT et VT — avec plus de 300 inspections de moteurs d'avions commerciaux**. Chez **PLD Space**, j'étais **chercheur CND et radiographe industriel de soudures (RT)**, et le premier radiographe argentin à avoir radiographié une fusée espagnole. Cette discipline — inspecter, documenter, tracer, ne jamais supposer — c'est ma façon de construire des logiciels aujourd'hui.
+
+- Ressuage fluorescent, magnétoscopie et contrôle visuel de composants de moteur
 - Radiographie industrielle des soudures sur des structures de fusée
-- Recherche et procédures de contrôle non destructif
 - Rapports traçables et fondés sur des normes — la racine d'ENODEUS
 
+<sub>PT = ressuage · MT = magnétoscopie · VT = visuel · RT = radiographie</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zurich : ressuage fluorescent d'un composant de moteur, le hall moteurs et la ligne FPI.</sub>
 
 <table>
 <tr>

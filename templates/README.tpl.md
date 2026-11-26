@@ -64,11 +64,29 @@
 
 <br>
 
+<div align="center">
+
+<img src="{{CAREER}}" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
 {{t.pld_p}}
 
 {{t.pld_li}}
 
+<sub>{{t.pld_legend}}</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>{{t.sr_cap}}</sub>
 
 <table>
 <tr>

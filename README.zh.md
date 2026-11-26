@@ -69,17 +69,35 @@
 </table>
 
 <details open>
-<summary><b>🚀 软件之前 —— PLD Space 无损检测研究员（Miura 火箭）</b></summary>
+<summary><b>✈️ 软件之前 —— 航空航天无损检测：SR Technics 与 PLD Space</b></summary>
 
 <br>
 
-在写代码之前，我从事航空航天质量工作。在 **PLD Space**，我是**无损检测研究员和工业焊缝射线检测员**，也是第一位对西班牙火箭进行射线检测的阿根廷射线检测员。这种纪律——检查、记录、追溯、绝不假设——正是我今天构建软件的方式。
+<div align="center">
 
+<img src="assets/generated/zh/career-bf1a26ac.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
+我从航空航天质量工作起步。在 **SR Technics**（苏黎世），我是**无损检测专家——PT、MT 和 VT——对商用飞机发动机完成了 300 多次检测**。在 **PLD Space**，我是**无损检测研究员和工业焊缝射线检测员（RT）**，也是第一位对西班牙火箭进行射线检测的阿根廷射线检测员。这种纪律——检查、记录、追溯、绝不假设——正是我今天构建软件的方式。
+
+- 发动机部件的荧光渗透、磁粉和目视检测
 - 火箭结构焊缝的工业射线检测
-- 无损检测研究与工艺程序
 - 可追溯、基于标准的报告——ENODEUS 的根源
 
+<sub>PT = 渗透检测 · MT = 磁粉检测 · VT = 目视检测 · RT = 射线检测</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics，苏黎世：发动机部件的荧光渗透检测、发动机车间和 FPI 检测线。</sub>
 
 <table>
 <tr>

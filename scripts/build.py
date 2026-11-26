@@ -222,6 +222,38 @@ def repo_table():
         rows.append(f"| [`{r['name']}`]({r['url']}) | {r['description'] or '—'} | {r['language'] or '—'} | {rel} | {r['pushed_at'][:10]} |")
     return "\n".join(rows)
 
+
+def career(lg):
+    import textwrap as tw
+    title, roles, lines = i18n.CAREER[lg]
+    W, H = 1200, 330
+    def wr(t, n):
+        if " " not in t.strip() and any("\u4e00" <= c <= "\u9fff" for c in t): return [t[i:i+n//2] for i in range(0, len(t), n//2)]
+        return tw.wrap(t, n)
+    cards = [("SR TECHNICS · ZÜRICH", ["PT", "MT", "VT"], C["cyan"]), ("PLD SPACE", ["RT", "NDT"], "#a78bfa"), ("BUREAU VERITAS", ["ISO 9001", "QA"], C["green"]), ({"en":"NOW","es":"AHORA","de":"HEUTE","it":"OGGI","fr":"AUJOURD'HUI","zh":"现在","ar":"الآن"}[lg], ["iOS", "macOS", "AI"], C["amber"])]
+    o = [f'<defs><filter id="cg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>',
+         f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".55"/>',
+         f'<text x="30" y="40" font-family="{MONO}" font-size="15" fill="{C["cyan"]}" letter-spacing="4">{esc(title)}</text>',
+         f'<rect x="30" y="52" width="140" height="3" fill="url(#ac)"><animate attributeName="width" values="60;420;60" dur="5s" repeatCount="indefinite"/></rect>']
+    cw, gap = 262, 40
+    for i, ((org, chips, col), role, line) in enumerate(zip(cards, roles, lines)):
+        x = 30 + i * (cw + gap); y = 76
+        o.append(f'<rect x="{x}" y="{y}" width="{cw}" height="226" rx="14" fill="#0b1220" stroke="{col}" stroke-opacity="{".95" if i == 3 else ".55"}" stroke-width="2"{" stroke-dasharray=" + chr(34) + "10 6" + chr(34) if i == 3 else ""}>' + (f'<animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.6s" repeatCount="indefinite"/>' if i == 3 else "") + '</rect>')
+        o.append(f'<rect x="{x}" y="{y}" width="{cw}" height="5" rx="2" fill="{col}"/>')
+        o.append(f'<g transform="translate({x+cw-34} {y+34})"><polygon points="{hexpts(0,0,17)}" fill="none" stroke="{col}" stroke-width="2"><animateTransform attributeName="transform" type="rotate" from="0" to="{360 if i%2==0 else -360}" dur="{12+i*3}s" repeatCount="indefinite"/></polygon><circle r="4" fill="{col}" filter="url(#cg)"><animate attributeName="opacity" values="1;.3;1" dur="{2+i*.4:.1f}s" repeatCount="indefinite"/></circle></g>')
+        o.append(f'<text x="{x+18}" y="{y+36}" font-family="{MONO}" font-size="11.5" fill="{col}" letter-spacing="2">{esc(org)}</text>')
+        for k, ln in enumerate(wr(role, 21)[:3]): o.append(f'<text x="{x+18}" y="{y+68+k*24}" font-family="{SANS}" font-weight="800" font-size="19" fill="{C["txt"]}">{esc(ln)}</text>')
+        cx_ = x + 18
+        for ch in chips:
+            w = int(len(ch) * 9 + 22)
+            o.append(f'<rect x="{cx_}" y="{y+134}" width="{w}" height="24" rx="12" fill="{col}" fill-opacity=".12" stroke="{col}"><animate attributeName="fill-opacity" values=".1;.3;.1" dur="{2.4+i*.3:.1f}s" begin="{cx_%5*.2:.1f}s" repeatCount="indefinite"/></rect><text x="{cx_+w/2}" y="{y+151}" text-anchor="middle" font-family="{MONO}" font-size="12" font-weight="700" fill="#e6f6ff">{esc(ch)}</text>')
+            cx_ += w + 8
+        for k, ln in enumerate(wr(line, 30)[:3]): o.append(f'<text x="{x+18}" y="{y+184+k*19}" font-family="{SANS}" font-size="13.5" fill="#9fb6cc">{esc(ln)}</text>')
+        if i < 3:
+            ax = x + cw + 6
+            o.append(f'<line x1="{ax}" y1="{y+113}" x2="{ax+gap-12}" y2="{y+113}" stroke="{C["line"]}" stroke-width="3"/><path d="M{ax+gap-22} {y+105} l10 8 l-10 8" fill="none" stroke="{C["cyan"]}" stroke-width="3"><animate attributeName="opacity" values=".2;1;.2" dur="1.4s" begin="{i*.4}s" repeatCount="indefinite"/></path><circle r="3.5" fill="#7cecff" filter="url(#cg)"><animateMotion path="M{ax} {y+113} L{ax+gap-12} {y+113}" dur="1.4s" begin="{i*.4}s" repeatCount="indefinite"/></circle>')
+    o.append(f'<rect x="0" y="{H-4}" width="{W}" height="4" fill="url(#ac)" opacity=".5"/><rect y="{H-4}" width="240" height="4" fill="#fff" opacity=".85"><animate attributeName="x" from="-240" to="{W}" dur="4s" repeatCount="indefinite"/></rect>')
+    return svg(W, H, "".join(o), title)
 def pulse():
     W, H = 1200, 40
     d = "M0 20 H300 l10 -14 l12 28 l10 -24 l8 10 H700 l10 -14 l12 28 l10 -24 l8 10 H1200"
@@ -246,7 +278,7 @@ def main():
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
         write("assets/generated/pulse.svg", pulse())
     global LG
-    HERO, ORB = {}, {}
+    HERO, ORB, CAR = {}, {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
         import hashlib, glob
@@ -254,6 +286,7 @@ def main():
             for f in glob.glob(str(ROOT / d / (base + "*.svg"))): pathlib.Path(f).unlink()
             name = f"{base}-{hashlib.md5(content.encode()).hexdigest()[:8]}.svg"; write(d + name, content); return d + name
         HERO[lg] = hashed(bd, "hero", hero())
+        CAR[lg] = hashed(gd, "career", career(lg))
         npub = sum(1 for q in P['projects'] if q['ring'] == 'published')
         write(gd + "ticker.svg", anim.ticker([t.format(n=npub) for t in Xt()["ticker"]]))
         ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
@@ -280,7 +313,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

@@ -69,17 +69,35 @@ Independent, documented, shipped. I learn by creating real products.
 </table>
 
 <details open>
-<summary><b>🚀 Before software — NDT researcher at PLD Space (Miura rocket)</b></summary>
+<summary><b>✈️ Before software — aerospace NDT: SR Technics & PLD Space</b></summary>
 
 <br>
 
-Before writing code I worked in aerospace quality. At **PLD Space** I was a **Non-Destructive Testing researcher and industrial weld radiographer**, and I became the first Argentine radiographer to X-ray a Spanish rocket. That discipline — inspect, document, trace, never assume — is exactly how I build software today.
+<div align="center">
 
+<img src="assets/generated/career-cc28ab21.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
+I started in aerospace quality. At **SR Technics** (Zürich) I worked as an **NDT specialist — PT, MT and VT — with more than 300 inspections on commercial aircraft engines**. At **PLD Space** I was an **NDT researcher and industrial weld radiographer (RT)**, and I became the first Argentine radiographer to X-ray a Spanish rocket. That discipline — inspect, document, trace, never assume — is how I build software today.
+
+- Fluorescent penetrant, magnetic particle and visual inspection of engine components
 - Industrial radiography of welds on rocket structures
-- Non-destructive testing research and procedures
 - Traceable, standards-based reporting — the root of ENODEUS
 
+<sub>PT = liquid penetrant · MT = magnetic particle · VT = visual · RT = radiography</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zürich: fluorescent penetrant inspection of an engine component, the engine hall and the FPI line.</sub>
 
 <table>
 <tr>

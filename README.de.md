@@ -69,17 +69,35 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 </table>
 
 <details open>
-<summary><b>🚀 Vor der Software — ZfP-Forscher bei PLD Space (Miura-Rakete)</b></summary>
+<summary><b>✈️ Vor der Software — Luftfahrt-ZfP: SR Technics & PLD Space</b></summary>
 
 <br>
 
-Bevor ich Code schrieb, arbeitete ich in der Luft- und Raumfahrtqualität. Bei **PLD Space** war ich **Forscher für zerstörungsfreie Prüfung und industrieller Schweißnaht-Radiograf** und der erste argentinische Radiograf, der eine spanische Rakete durchleuchtet hat. Diese Disziplin — prüfen, dokumentieren, zurückverfolgen, nie annehmen — ist genau so, wie ich heute Software baue.
+<div align="center">
 
+<img src="assets/generated/de/career-2338e3a3.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+
+</div>
+
+Ich habe in der Luft- und Raumfahrtqualität begonnen. Bei **SR Technics** (Zürich) war ich **ZfP-Spezialist — PT, MT und VT — mit über 300 Prüfungen an Triebwerken ziviler Flugzeuge**. Bei **PLD Space** war ich **ZfP-Forscher und industrieller Schweißnaht-Radiograf (RT)** und der erste argentinische Radiograf, der eine spanische Rakete durchleuchtet hat. Diese Disziplin — prüfen, dokumentieren, zurückverfolgen, nie annehmen — ist, wie ich heute Software baue.
+
+- Fluoreszenz-Eindring-, Magnetpulver- und Sichtprüfung von Triebwerkskomponenten
 - Industrielle Radiografie von Schweißnähten an Raketenstrukturen
-- Forschung und Verfahren der zerstörungsfreien Prüfung
 - Rückverfolgbare, normbasierte Berichte — die Wurzel von ENODEUS
 
+<sub>PT = Eindringprüfung · MT = Magnetpulver · VT = Sichtprüfung · RT = Durchstrahlung</sub>
+
 <div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screenshots/sr-1.jpg" alt="Fluorescent penetrant inspection of an engine component at SR Technics" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-2.jpg" alt="At SR Technics Zürich with a jet engine" width="100%"></td>
+<td width="33%"><img src="assets/screenshots/sr-3.jpg" alt="SR Technics FPI inspection line" width="100%"></td>
+</tr>
+</table>
+
+<sub>SR Technics, Zürich: Fluoreszenz-Eindringprüfung eines Triebwerksbauteils, die Triebwerkshalle und die FPI-Linie.</sub>
 
 <table>
 <tr>
