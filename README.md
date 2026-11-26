@@ -20,9 +20,9 @@ Applications · desktop software · web platforms · AI & automation — from co
 
 <table>
 <tr>
-<td width="230" valign="top" align="center">
+<td width="260" valign="top" align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="210">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
 
 </td>
 <td valign="top">
@@ -68,10 +68,10 @@ Independent, documented, shipped. I learn by creating real products.
 <table>
 <tr>
 <td width="50%" valign="top"><img src="assets/projects/enodeus.svg" alt="ENODEUS — PUBLISHED" width="100%"><br><a href="https://enodeus.ch"><b>Open Enodeus →</b></a></td>
-<td width="50%" valign="top"><img src="assets/projects/island-crew.svg" alt="ISLAND CREW — PUBLISHED" width="100%"><br><a href="https://island-crew-web.vercel.app"><b>Open Island Crew →</b></a></td>
+<td width="50%" valign="top"><img src="assets/projects/island-crew.svg" alt="ISLAND CREW — PUBLISHED" width="100%"><br><a href="https://islandcrew.es"><b>Open Island Crew →</b></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><img src="assets/projects/lebenslaufy.svg" alt="LEBENSLAUFY — PUBLISHED" width="100%"><br><sub>private source</sub></td>
+<td width="50%" valign="top"><img src="assets/projects/lebenslaufy.svg" alt="LEBENSLAUFY — PUBLISHED" width="100%"><br><a href="https://lebenslaufy.com"><b>Open Lebenslaufy →</b></a></td>
 <td width="50%" valign="top"><img src="assets/projects/tomagua.svg" alt="TOMAGUA — PUBLISHED" width="100%"><br><sub>private source</sub></td>
 </tr>
 <tr>
@@ -233,6 +233,8 @@ Open to remote opportunities, software collaborations and interesting projects �
 <a href="https://www.linkedin.com/in/maximiliano-olmos-sanchez"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://github.com/MAXIMILIANOGROSS"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://enodeus.ch"><img src="https://img.shields.io/badge/ENODEUS-00D4FF?style=for-the-badge&logo=googlechrome&logoColor=black"></a>
+<a href="https://islandcrew.es"><img src="https://img.shields.io/badge/ISLANDCREW.ES-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00D4FF"></a>
+<a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
 <img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 

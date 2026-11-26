@@ -20,9 +20,9 @@ Applications · desktop software · web platforms · AI & automation — from co
 
 <table>
 <tr>
-<td width="230" valign="top" align="center">
+<td width="260" valign="top" align="center">
 
-<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="210">
+<img src="assets/branding/photo-about.jpg" alt="Maximiliano Olmos Sánchez" width="240">
 
 </td>
 <td valign="top">
@@ -210,6 +210,8 @@ Open to remote opportunities, software collaborations and interesting projects �
 <a href="{{LINKEDIN}}"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://github.com/{{OWNER}}"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="{{SITE}}"><img src="https://img.shields.io/badge/ENODEUS-00D4FF?style=for-the-badge&logo=googlechrome&logoColor=black"></a>
+<a href="https://islandcrew.es"><img src="https://img.shields.io/badge/ISLANDCREW.ES-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00D4FF"></a>
+<a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
 <img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
