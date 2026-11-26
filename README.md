@@ -17,6 +17,7 @@ Applications · desktop software · web platforms · AI & automation — from co
 
 <br><br>
 <img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
+<img src="assets/generated/pulse.svg" alt="" width="100%">
 
 </div>
 
@@ -82,6 +83,8 @@ Independent, documented, shipped. I learn by creating real products.
 
 </details>
 
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
 <a id="products"></a>
 <img src="assets/sections/products.svg" alt="02 Product lab" width="100%">
 
@@ -126,6 +129,8 @@ Independent, documented, shipped. I learn by creating real products.
 <img src="assets/generated/radar.svg" alt="Project radar" width="100%">
 
 </div>
+
+<img src="assets/generated/pulse.svg" alt="" width="100%">
 
 <a id="building"></a>
 <img src="assets/sections/building.svg" alt="04 Currently building" width="100%">

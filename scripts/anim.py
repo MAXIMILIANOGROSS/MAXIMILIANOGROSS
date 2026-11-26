@@ -19,8 +19,8 @@ def ticker(items):
          f'<circle cx="18" cy="22" r="5" fill="{GRN}"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>')
     return wrap(W, H, b, "Live status ticker")
 
-def pipeline():
-    W, H = 1200, 270; st = [("IDEA", "problem"), ("RESEARCH", "market"), ("DESIGN", "UX"), ("ARCHITECTURE", "stack"), ("DEVELOP", "build"), ("TEST / QA", "verify"), ("DEPLOY", "ship"), ("ITERATE", "improve")]
+def pipeline(subs=None):
+    W, H = 1200, 270; st = list(zip(["IDEA", "RESEARCH", "DESIGN", "ARCHITECTURE", "DEVELOP", "TEST / QA", "DEPLOY", "ITERATE"], subs or ["problem", "market", "UX", "stack", "build", "verify", "ship", "improve"]))
     o = [f'<rect width="{W}" height="{H}" rx="14" fill="{PANEL}" stroke="{LINE}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".6"/>']
     y = 105; x0, x1 = 75, 1125
     o.append(f'<line x1="{x0}" y1="{y}" x2="{x1}" y2="{y}" stroke="{LINE}" stroke-width="3"/><line x1="{x0}" y1="{y}" x2="{x1}" y2="{y}" stroke="url(#ac)" stroke-width="3" stroke-dasharray="10 12"><animate attributeName="stroke-dashoffset" from="0" to="-44" dur="1.2s" repeatCount="indefinite"/></line>')

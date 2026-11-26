@@ -3,7 +3,7 @@
 
 {{LANGBAR}}
 
-<img src="assets/branding/hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
+<img src="{{BD}}hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
 {{NAV}}
 
@@ -11,7 +11,8 @@
 {{t.t2}}
 
 <br><br>
-<img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
+<img src="{{GD}}ticker.svg" alt="Live status ticker" width="100%">
+<img src="assets/generated/pulse.svg" alt="" width="100%">
 
 </div>
 
@@ -73,6 +74,8 @@
 
 </details>
 
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
 <a id="products"></a>
 <img src="assets/sections/{{SD}}products.svg" alt="02 Product lab" width="100%">
 
@@ -98,16 +101,18 @@
 
 <div align="center">
 
-<img src="assets/generated/radar.svg" alt="Project radar" width="100%">
+<img src="{{GD}}radar.svg" alt="Project radar" width="100%">
 
 </div>
+
+<img src="assets/generated/pulse.svg" alt="" width="100%">
 
 <a id="building"></a>
 <img src="assets/sections/{{SD}}building.svg" alt="04 Currently building" width="100%">
 
 <div align="center">
 
-<img src="assets/generated/terminal.svg" alt="System status terminal (visual only)" width="100%">
+<img src="{{GD}}terminal.svg" alt="System status terminal (visual only)" width="100%">
 
 </div>
 
@@ -153,7 +158,7 @@
 
 <div align="center">
 
-<img src="assets/generated/pipeline.svg" alt="Animated engineering pipeline: idea to iterate" width="100%">
+<img src="{{GD}}pipeline.svg" alt="Animated engineering pipeline: idea to iterate" width="100%">
 
 </div>
 
@@ -212,7 +217,7 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/generated/stats.svg" alt="Verified GitHub metrics generated from the GitHub API" width="100%">
+<img src="{{GD}}stats.svg" alt="Verified GitHub metrics generated from the GitHub API" width="100%">
 
 {{SNAKE}}
 

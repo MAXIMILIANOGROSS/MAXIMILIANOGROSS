@@ -3,7 +3,7 @@
 
 <p>🌐 <a href="README.md"><img src="https://img.shields.io/badge/English-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="English"></a> <a href="README.es.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Español"></a> <a href="README.de.md"><img src="https://img.shields.io/badge/Deutsch-00D4FF?style=flat-square&labelColor=0D1117&logoColor=black" alt="Deutsch"></a> <a href="README.it.md"><img src="https://img.shields.io/badge/Italiano-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Italiano"></a> <a href="README.fr.md"><img src="https://img.shields.io/badge/Fran%C3%A7ais-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="Français"></a> <a href="README.zh.md"><img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="中文"></a> <a href="README.ar.md"><img src="https://img.shields.io/badge/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-161B22?style=flat-square&labelColor=0D1117&logoColor=00D4FF" alt="العربية"></a> </p>
 
-<img src="assets/branding/hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
+<img src="assets/branding/de/hero.svg" alt="Maximiliano Olmos Sánchez — Software Developer · Product Builder" width="100%">
 
 <a href="#about"><img src="https://img.shields.io/badge/%C3%9CBER%20MICH-161B22?style=for-the-badge&logo=githubsponsors&logoColor=00D4FF" alt="ÜBER MICH"></a>
 <a href="#products"><img src="https://img.shields.io/badge/PRODUKTE-00D4FF?style=for-the-badge&logo=github&logoColor=black" alt="PRODUKTE"></a>
@@ -16,7 +16,8 @@
 Apps · Desktop-Software · Webplattformen · KI & Automatisierung — vom Konzept bis zum Einsatz.
 
 <br><br>
-<img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
+<img src="assets/generated/de/ticker.svg" alt="Live status ticker" width="100%">
+<img src="assets/generated/pulse.svg" alt="" width="100%">
 
 </div>
 
@@ -82,6 +83,8 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 
 </details>
 
+<img src="assets/generated/pulse.svg" alt="" width="100%">
+
 <a id="products"></a>
 <img src="assets/sections/de/products.svg" alt="02 Product lab" width="100%">
 
@@ -123,16 +126,18 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 
 <div align="center">
 
-<img src="assets/generated/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/de/radar.svg" alt="Project radar" width="100%">
 
 </div>
+
+<img src="assets/generated/pulse.svg" alt="" width="100%">
 
 <a id="building"></a>
 <img src="assets/sections/de/building.svg" alt="04 Currently building" width="100%">
 
 <div align="center">
 
-<img src="assets/generated/terminal.svg" alt="System status terminal (visual only)" width="100%">
+<img src="assets/generated/de/terminal.svg" alt="System status terminal (visual only)" width="100%">
 
 </div>
 
@@ -184,7 +189,7 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 
 <div align="center">
 
-<img src="assets/generated/pipeline.svg" alt="Animated engineering pipeline: idea to iterate" width="100%">
+<img src="assets/generated/de/pipeline.svg" alt="Animated engineering pipeline: idea to iterate" width="100%">
 
 </div>
 
@@ -246,7 +251,7 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/generated/stats.svg" alt="Verified GitHub metrics generated from the GitHub API" width="100%">
+<img src="assets/generated/de/stats.svg" alt="Verified GitHub metrics generated from the GitHub API" width="100%">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg"><img alt="Contribution snake" src="assets/generated/snake.svg" width="100%"></picture>
 
