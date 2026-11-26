@@ -76,6 +76,9 @@ Independent, documented, shipped. I learn by creating real products.
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="assets/projects/carbonuxis.svg" alt="CARBONUXIS — PUBLISHED" width="100%"><br><sub>private source</sub></td>
+<td width="50%" valign="top"><img src="assets/projects/carta-viva.svg" alt="CARTA VIVA — BUILDING" width="100%"><br><sub>private source</sub></td>
+</tr>
+<tr>
 <td width="50%" valign="top"><img src="assets/projects/ai-office.svg" alt="ISLAND CREW IA · CALL CENTER — BUILDING" width="100%"><br><sub>private source</sub></td>
 </tr>
 </table>
@@ -107,6 +110,22 @@ Independent, documented, shipped. I learn by creating real products.
 </div>
 
 **Island Crew IA — Call Center Software & Hardware.** A phone switchboard with an AI voice receptionist: it answers calls, books appointments, drafts client emails that the owner approves, and reports through dashboards. Installers for macOS and Windows.
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%"><img src="assets/screenshots/call-center-hardware.jpg" alt="Island Crew AI Call Center: hardware concept with SIP phone and control box" width="100%"></td>
+<td width="50%"><img src="assets/screenshots/centralita-promo-en.jpg" alt="Island Crew Centralita: the next generation AI call center" width="100%"></td>
+</tr>
+<tr>
+<td colspan="2"><img src="assets/screenshots/centralita-ui.jpg" alt="Island Crew AI Office: switchboard interface with conversation, departments and live call" width="100%"></td>
+</tr>
+</table>
+
+<sub>Hardware and marketing images are design concepts; the software (interface above) is the working product.</sub>
+
+</div>
 
 <details>
 <summary><b>⚡ Areas of exploration & roadmap</b></summary>
@@ -201,7 +220,11 @@ flowchart LR
 
 <br>
 
-Music production, sound design, visual concepts and branding. Technical thinking combined with creativity.
+<img src="assets/screenshots/cabra-beats.jpg" alt="Cabra Beats mascot" width="420" align="right">
+
+Music production, sound design, visual concepts and branding — including **Cabra Beats**, an AI-assisted music creation tool for business jingles and songs. Technical thinking combined with creativity.
+
+<br clear="all">
 
 </details>
 

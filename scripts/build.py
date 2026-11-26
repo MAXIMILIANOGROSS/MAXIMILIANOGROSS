@@ -87,10 +87,16 @@ def card(p):
     W, H = 600, 270; col = STATUS_COLOR.get(p["status"], C["cyan"])
     o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".6"/>',
          f'<rect x="0" y="0" width="7" height="{H}" rx="3" fill="{col}"/>']
-    o.append(f'<polygon points="{hexpts(60,62,32)}" fill="#0b1220" stroke="{col}" stroke-width="3"/><text x="60" y="71" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="24" fill="{C["txt"]}">{esc(p["name"][0])}</text>')
+    import base64
+    ic = ROOT / f"assets/icons/{p['id']}.png"
+    if ic.exists():
+        uri = "data:image/png;base64," + base64.b64encode(ic.read_bytes()).decode()
+        o.append(f'<clipPath id="ic"><rect x="26" y="28" width="70" height="70" rx="16"/></clipPath><image href="{uri}" x="26" y="28" width="70" height="70" clip-path="url(#ic)"/><rect x="26" y="28" width="70" height="70" rx="16" fill="none" stroke="{col}" stroke-opacity=".8" stroke-width="2"/>')
+    else:
+        o.append(f'<polygon points="{hexpts(60,62,32)}" fill="#0b1220" stroke="{col}" stroke-width="3"/><text x="60" y="71" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="24" fill="{C["txt"]}">{esc(p["name"][0])}</text>')
     nm = p["name"]; fs = 30 if len(nm) <= 16 else 21
-    o.append(f'<text x="112" y="62" font-family="{SANS}" font-weight="800" font-size="{fs}" fill="{C["txt"]}">{esc(nm)}</text>')
-    o.append(f'<text x="112" y="86" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="2">{esc(p["category"])}</text>')
+    o.append(f'<text x="116" y="62" font-family="{SANS}" font-weight="800" font-size="{fs}" fill="{C["txt"]}">{esc(nm)}</text>')
+    o.append(f'<text x="116" y="86" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="2">{esc(p["category"])}</text>')
     s, w = pill(W - 24 - int(len(p["status"])*9.4+40), 22, p["status"], col, 26); o.append(s)
     for i, line in enumerate(textwrap.wrap(p["tagline"], 56)[:4]):
         o.append(f'<text x="32" y="{132+i*24}" font-family="{SANS}" font-size="16" fill="#c6d6e6">{esc(line)}</text>')

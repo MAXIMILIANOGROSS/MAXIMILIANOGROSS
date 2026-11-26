@@ -74,6 +74,21 @@
       "access": "iOS app · Android in QA · source private"
     },
     {
+      "id": "carta-viva",
+      "name": "CARTA VIVA",
+      "category": "RESTAURANT TECH",
+      "status": "BUILDING",
+      "ring": "building",
+      "tagline": "Audiovisual QR menu service for restaurants, under Island Crew Marketing. First client: Casa Cecilia.",
+      "tech": [
+        "QR",
+        "Video",
+        "Web"
+      ],
+      "url": "",
+      "access": "service · source private"
+    },
+    {
       "id": "ai-office",
       "name": "ISLAND CREW IA · CALL CENTER",
       "category": "AI · DESKTOP · TELEPHONY",
