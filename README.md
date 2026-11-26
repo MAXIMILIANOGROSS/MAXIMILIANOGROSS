@@ -13,6 +13,9 @@
 **I turn ideas into software.**<br>
 Applications · desktop software · web platforms · AI & automation — from concept to deployment.
 
+<br><br>
+<img src="assets/generated/ticker.svg" alt="Live status ticker" width="100%">
+
 </div>
 
 <a id="about"></a>
@@ -60,6 +63,21 @@ Independent, documented, shipped. I learn by creating real products.
 </tr>
 </table>
 
+<details open>
+<summary><b>🌐 The Island Crew ecosystem — talent, AI office, restaurants, academy, media</b></summary>
+
+<br>
+
+<div align="center">
+
+<img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem: Talent, Maya, Opportunity Radar, World, Business Tools, AI Office with Maxi OS, Academy, Restaurant OS, Media, Technology and Local Infrastructure" width="100%">
+
+<sub>One ecosystem for people, business and innovation in the Canary Islands — Maxi OS coordinates an AI Office of 60 agents in 16 departments.</sub>
+
+</div>
+
+</details>
+
 <a id="products"></a>
 <img src="assets/sections/products.svg" alt="02 Product lab" width="100%">
 
@@ -83,9 +101,14 @@ Independent, documented, shipped. I learn by creating real products.
 </tr>
 </table>
 
-**On the App Store** — my published iPhone & iPad apps:
+<details open>
+<summary><b>📱 On the App Store — my published iPhone & iPad apps</b></summary>
+
+<br>
 
 <img src="assets/screenshots/appstore.png" alt="App Store developer page: Island Crew, TOMAGUA, CARBONUXIS, Lebenslaufy, ENODEUS" width="720">
+
+</details>
 
 <sub>Status labels are honest: they come from <code>data/projects.json</code>. Private source means the product exists, the code is not public.</sub>
 
@@ -111,21 +134,31 @@ Independent, documented, shipped. I learn by creating real products.
 
 **Island Crew IA — Call Center Software & Hardware.** A phone switchboard with an AI voice receptionist: it answers calls, books appointments, drafts client emails that the owner approves, and reports through dashboards. Installers for macOS and Windows.
 
+<details>
+<summary><b>📸 Call-center gallery — interface, hardware concept & marketing</b></summary>
+
+<br>
+
 <div align="center">
+
+<img src="assets/screenshots/centralita-ui.jpg" alt="Island Crew AI Office: switchboard interface" width="100%">
+<img src="assets/screenshots/centralita-ui-alt.jpg" alt="Island Crew AI Office: alternative layout" width="100%">
 
 <table>
 <tr>
-<td width="50%"><img src="assets/screenshots/call-center-hardware.jpg" alt="Island Crew AI Call Center: hardware concept with SIP phone and control box" width="100%"></td>
-<td width="50%"><img src="assets/screenshots/centralita-promo-en.jpg" alt="Island Crew Centralita: the next generation AI call center" width="100%"></td>
+<td width="50%"><img src="assets/screenshots/call-center-hardware.jpg" alt="Island Crew AI Call Center hardware concept" width="100%"></td>
+<td width="50%"><img src="assets/screenshots/centralita-promo-en.jpg" alt="Island Crew Centralita promo (English)" width="100%"></td>
 </tr>
 <tr>
-<td colspan="2"><img src="assets/screenshots/centralita-ui.jpg" alt="Island Crew AI Office: switchboard interface with conversation, departments and live call" width="100%"></td>
+<td colspan="2"><img src="assets/screenshots/centralita-promo-es.jpg" alt="Island Crew Centralita promo (Spanish)" width="100%"></td>
 </tr>
 </table>
 
-<sub>Hardware and marketing images are design concepts; the software (interface above) is the working product.</sub>
+<sub>Hardware and marketing images are design concepts; the interface is the working software.</sub>
 
 </div>
+
+</details>
 
 <details>
 <summary><b>⚡ Areas of exploration & roadmap</b></summary>
@@ -145,11 +178,22 @@ Independent, documented, shipped. I learn by creating real products.
 <a id="pipeline"></a>
 <img src="assets/sections/pipeline.svg" alt="05 Engineering pipeline" width="100%">
 
+<div align="center">
+
+<img src="assets/generated/pipeline.svg" alt="Animated engineering pipeline: idea to iterate" width="100%">
+
+</div>
+
+<details>
+<summary><b>▸ Pipeline as a diagram (Mermaid)</b></summary>
+
 ```mermaid
 flowchart LR
     A([IDEA]) --> B[RESEARCH] --> C[DESIGN] --> D[ARCHITECTURE] --> E[DEVELOP] --> F[TEST / QA] --> G[DEPLOY] --> H([ITERATE])
     H -. feedback .-> A
 ```
+
+</details>
 
 <details>
 <summary><b>▸ Engineering principles</b></summary>
@@ -168,9 +212,26 @@ flowchart LR
 
 <div align="center">
 
+<img src="assets/generated/orbit.svg" alt="Technology orbit" width="100%">
+
+</div>
+
+<details>
+<summary><b>▸ Stack as icons</b></summary>
+
+<br>
+
+<div align="center">
+
 <img src="https://skillicons.dev/icons?i=swift,kotlin,python,ts,js,html&theme=dark" alt="Languages"><br>
 <img src="https://skillicons.dev/icons?i=fastapi,nextjs,firebase,supabase,sqlite,vercel&theme=dark" alt="Frameworks and services"><br>
 <img src="https://skillicons.dev/icons?i=git,github,xcode,androidstudio,vscode&theme=dark" alt="Tools">
+
+</div>
+
+</details>
+
+<div align="center">
 
 <sub>Only technologies that appear in my actual repositories.</sub>
 
@@ -220,11 +281,15 @@ flowchart LR
 
 <br>
 
-<img src="assets/screenshots/cabra-beats.jpg" alt="Cabra Beats mascot" width="420" align="right">
+<div align="center">
+
+<img src="assets/screenshots/cabra-beats.jpg" alt="Cabra Beats DJ goat in the studio" width="48%"> <img src="assets/screenshots/dj-goat.png" alt="DJ goat" width="22%"> <img src="assets/screenshots/mascot.png" alt="Island Crew call-center goat" width="22%">
+
+</div>
 
 Music production, sound design, visual concepts and branding — including **Cabra Beats**, an AI-assisted music creation tool for business jingles and songs. Technical thinking combined with creativity.
 
-<br clear="all">
+
 
 </details>
 

@@ -3,6 +3,7 @@
 import json, math, pathlib, textwrap, datetime, random
 from xml.sax.saxutils import escape as esc
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+import sys; sys.path.insert(0, str(ROOT / "scripts")); import anim
 P = json.loads((ROOT / "data/projects.json").read_text())
 try: R = json.loads((ROOT / "data/repos.json").read_text())
 except FileNotFoundError: R = {"generated": "", "public_repos": [], "languages": {}}
@@ -46,6 +47,11 @@ def hero():
     for i, (x, y) in enumerate(pts):
         for (x2, y2) in pts[i+1:]:
             if (x-x2)**2 + (y-y2)**2 < 150**2: o.append(f'<line x1="{x}" y1="{y}" x2="{x2}" y2="{y2}" stroke="{C["cyan"]}" stroke-opacity=".18"/>')
+    k = 0
+    for i, (x, y) in enumerate(pts):
+        for (x2, y2) in pts[i+1:]:
+            if (x-x2)**2 + (y-y2)**2 < 150**2 and k < 14:
+                o.append(f'<circle r="2.6" fill="#7cecff"><animateMotion path="M{x} {y} L{x2} {y2}" dur="{2+k%4}s" begin="{k*.5}s" repeatCount="indefinite"/></circle>'); k += 1
     for i, (x, y) in enumerate(pts):
         o.append(f'<circle cx="{x}" cy="{y}" r="3" fill="{C["cyan"]}"><animate attributeName="opacity" values=".3;1;.3" dur="{3+i%4}s" begin="{i*.3}s" repeatCount="indefinite"/></circle>')
     o.append(f'<g transform="translate(95,125) scale(.95)"><polygon points="{hexpts(100,100,86)}" fill="#0b1220" stroke="url(#ac)" stroke-width="4"/><polygon points="{hexpts(100,100,72)}" fill="none" stroke="{C["cyan"]}" stroke-opacity=".35" stroke-dasharray="6 8"><animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="40s" repeatCount="indefinite"/></polygon>'
@@ -79,7 +85,7 @@ def section(num, title, right):
          f'<text x="44" y="36" font-family="{MONO}" font-size="20" fill="{C["cyan"]}" letter-spacing="3">{num}</text>'
          f'<text x="96" y="36" font-family="{SANS}" font-weight="800" font-size="24" fill="{C["txt"]}" letter-spacing="2">{esc(title)}</text>'
          f'<text x="{W-16}" y="36" text-anchor="end" font-family="{MONO}" font-size="13" fill="{C["mute"]}" letter-spacing="2">{esc(right)}</text>'
-         f'<line x1="14" y1="54" x2="{W-14}" y2="54" stroke="{C["line"]}" stroke-width="2"/><rect x="14" y="52" width="220" height="4" fill="url(#ac)"/>')
+         f'<line x1="14" y1="54" x2="{W-14}" y2="54" stroke="{C["line"]}" stroke-width="2"/><rect x="14" y="52" width="220" height="4" fill="url(#ac)"/><rect x="14" y="51" width="90" height="6" rx="3" fill="#7cecff" opacity=".95"><animate attributeName="x" from="14" to="{W-104}" dur="4s" repeatCount="indefinite"/></rect><rect x="14" y="22" width="14" height="14" fill="#00d4ff"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></rect>')
     return svg(W, H, b, f"{num} {title}")
 
 # ---------- project cards ----------
@@ -106,6 +112,8 @@ def card(p):
         o.append(f'<rect x="{x}" y="{H-62}" width="{w}" height="26" rx="6" fill="#0b1220" stroke="{C["line"]}"/><text x="{x+w/2}" y="{H-44}" text-anchor="middle" font-family="{MONO}" font-size="12" fill="#9fd8ee">{esc(t)}</text>')
         x += w + 8
     o.append(f'<text x="32" y="{H-18}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{esc(p["access"])}</text>')
+    o.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{col}" stroke-width="3" stroke-dasharray="70 1700" pathLength="1770"><animate attributeName="stroke-dashoffset" from="0" to="-1770" dur="{5+len(p["id"])%4}s" repeatCount="indefinite"/></rect>')
+    o.append(f'<rect x="8" y="-40" width="{W-16}" height="40" fill="{col}" opacity=".07"><animate attributeName="y" from="-40" to="{H}" dur="5s" repeatCount="indefinite"/></rect>')
     return svg(W, H, "".join(o), f'{p["name"]} — {p["status"]}')
 
 # ---------- radar ----------
@@ -176,7 +184,7 @@ def stats():
 
 def footer():
     W, H = 1600, 120
-    b = (f'<rect width="{W}" height="{H}" fill="url(#bg)"/><rect width="{W}" height="{H}" fill="url(#grid)"/><rect width="{W}" height="4" fill="url(#ac)"/>'
+    b = (f'<rect width="{W}" height="{H}" fill="url(#bg)"/><rect width="{W}" height="{H}" fill="url(#grid)"/><rect width="{W}" height="4" fill="url(#ac)"/><rect y="0" width="260" height="4" fill="#7cecff"><animate attributeName="x" from="-260" to="{W}" dur="5s" repeatCount="indefinite"/></rect>'
          f'<text x="{W/2}" y="62" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="30" fill="url(#ac)" letter-spacing="8">THINK · BUILD · SHIP · EVOLVE</text>'
          f'<text x="{W/2}" y="92" text-anchor="middle" font-family="{MONO}" font-size="14" fill="{C["mute"]}" letter-spacing="3">MAXIMILIANO OLMOS SÁNCHEZ — INDEPENDENT SOFTWARE DEVELOPER</text>')
     return svg(W, H, b, "footer")
@@ -197,6 +205,8 @@ def main():
             ("07", "VERIFIED METRICS", "REAL DATA · NO VANITY", "metrics"), ("08", "OPEN SOURCE & LABS", "EXPERIMENTS", "lab"), ("09", "CONNECT", "REMOTE · COLLABORATIONS", "connect")]
     for n, t, r, f in secs: write(f"assets/sections/{f}.svg", section(n, t, r))
     for p in P["projects"]: write(f"assets/projects/{p['id']}.svg", card(p))
+    write("assets/generated/ticker.svg", anim.ticker([f"{sum(1 for q in P['projects'] if q['ring']=='published')} APPS PUBLISHED", "iOS", "ANDROID IN QA", "macOS", "WINDOWS", "AI VOICE AGENTS", "CALL-CENTER SOFTWARE & HARDWARE", "AUTOMATION", "FROM CONCEPT TO DEPLOYMENT"]))
+    write("assets/generated/pipeline.svg", anim.pipeline()); write("assets/generated/orbit.svg", anim.orbit())
     write("assets/generated/radar.svg", radar()); write("assets/generated/terminal.svg", terminal()); write("assets/generated/stats.svg", stats())
     cards = [P["projects"][i:i+2] for i in range(0, len(P["projects"]), 2)]
     grid = "<table>\n" + "".join("<tr>\n" + "".join(f'<td width="50%" valign="top"><img src="assets/projects/{p["id"]}.svg" alt="{esc(p["name"])} — {p["status"]}" width="100%"><br>{("<a href=" + chr(34) + p["url"] + chr(34) + "><b>Open " + p["name"].split(" ·")[0].title() + " →</b></a>") if p["url"] else "<sub>private source</sub>"}</td>\n' for p in row) + "</tr>\n" for row in cards) + "</table>"
