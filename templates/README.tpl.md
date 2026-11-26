@@ -67,6 +67,10 @@ Independent, documented, shipped. I learn by creating real products.
 
 {{GRID}}
 
+**On the App Store** — my published iPhone & iPad apps:
+
+<img src="assets/screenshots/appstore.png" alt="App Store developer page: Island Crew, TOMAGUA, CARBONUXIS, Lebenslaufy, ENODEUS" width="720">
+
 <sub>Status labels are honest: they come from <code>data/projects.json</code>. Private source means the product exists, the code is not public.</sub>
 
 </div>
