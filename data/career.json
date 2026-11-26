@@ -1,0 +1,11 @@
+{
+  "_source": "LinkedIn profile (Profile_8.pdf). Other CVs list different dates/roles for some stages; see notes. Edit here, then run scripts/build.py.",
+  "stages": [
+    {"id": "enod", "name": "ENOD SRL", "start": 2007.0, "end": 2010.1, "place": 0, "methods": "VT·PT·MT·UT·RT", "role": 0, "color": "amber", "row": "A"},
+    {"id": "motomecanica", "name": "MOTOMECÁNICA", "start": 2010.1, "end": 2016.2, "place": 0, "methods": "VT·MT", "role": 1, "color": "green", "row": "B", "note": "LinkedIn: Feb 2010 – Mar 2016. English CV: 01.2011 – 03.2016."},
+    {"id": "conuar", "name": "CONUAR", "start": 2016.2, "end": 2019.2, "place": 0, "methods": "PT·MT", "role": 2, "color": "#60a5fa", "row": "A", "note": "LinkedIn: Mar 2016 – Feb 2019. English CV: 04.2016 – 12.2022."},
+    {"id": "pld", "name": "PLD SPACE", "start": 2019.2, "end": 2023.1, "place": 1, "methods": "RT·PT·VT", "role": 3, "color": "#a78bfa", "row": "B", "extra": "miura", "note": "LinkedIn: Mar 2019 – Feb 2023. English CV: 04.2023 – 02.2024."},
+    {"id": "bv", "name": "BUREAU VERITAS", "start": 2023.1, "end": 2024.9, "place": 1, "methods": "QA·AUDIT", "role": 4, "color": "#fb7185", "row": "B", "note": "LinkedIn: Feb 2023 – Nov 2024. English CV: 02.2024 – 09.2024."},
+    {"id": "sr", "name": "SR TECHNICS", "start": 2024.9, "end": 2026.4, "place": 2, "methods": "PT·MT·VT", "role": 5, "color": "cyan", "row": "A", "extra": "sr", "note": "LinkedIn: Nov 2024 – May 2026. English CV: 11.2024 – 10.2025."}
+  ]
+}

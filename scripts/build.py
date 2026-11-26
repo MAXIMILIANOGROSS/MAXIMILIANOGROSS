@@ -333,12 +333,9 @@ def journey(lg):
     title, nt, st, roles, places, sw1, sw2, miura, srx = i18n.J[lg]; st = i18n.IND[lg]
     W, H = 1200, 450
     X = lambda y: 70 + (y - 2007) / 19.95 * 1060
-    segs = [("ENOD SRL", 2007.0, 2010.1, places[0], "VT·PT·MT·UT·RT", roles[0], C["amber"], "A", None),
-            ("MOTOMECÁNICA", 2010.1, 2016.2, places[0], "VT·MT", roles[1], C["green"], "B", None),
-            ("CONUAR", 2016.2, 2019.2, places[0], "PT·MT", roles[2], "#60a5fa", "A", None),
-            ("PLD SPACE", 2019.2, 2023.1, places[1], "RT·PT·VT", roles[3], "#a78bfa", "B", miura),
-            ("BUREAU VERITAS", 2023.1, 2024.9, places[1], "QA·AUDIT", roles[4], "#fb7185", "B", None),
-            ("SR TECHNICS", 2024.9, 2026.4, places[2], "PT·MT·VT", roles[5], C["cyan"], "A", srx)]
+    _cj = _json.loads((ROOT / "data/career.json").read_text(encoding="utf-8"))
+    _extra = {"miura": miura, "sr": srx}
+    segs = [(s["name"], s["start"], s["end"], places[s["place"]], s["methods"], roles[s["role"]], C.get(s["color"], s["color"]), s["row"], _extra.get(s.get("extra"))) for s in _cj["stages"]]
     o = [f'<defs><filter id="jg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><defs><clipPath id="jc"><rect width="{W}" height="{H}" rx="14"/></clipPath></defs><g clip-path="url(#jc)">',
          f'<rect width="{W}" height="{H}" fill="{C["panel"]}"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".55"/>',
          f'<text x="30" y="38" font-family="{MONO}" font-size="16" fill="{C["cyan"]}" letter-spacing="4">{esc(title)}</text><rect x="30" y="48" width="160" height="3" fill="url(#ac)"><animate attributeName="width" values="60;460;60" dur="5s" repeatCount="indefinite"/></rect>']
