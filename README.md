@@ -75,7 +75,7 @@ Independent, documented, shipped. I learn by creating real products.
 
 <div align="center">
 
-<img src="assets/generated/career-cc28ab21.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/career-f8d6a4c9.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
 
 </div>
 

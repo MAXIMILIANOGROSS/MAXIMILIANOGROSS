@@ -75,7 +75,7 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 
 <div align="center">
 
-<img src="assets/generated/de/career-2338e3a3.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/de/career-0cc657cc.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
 
 </div>
 

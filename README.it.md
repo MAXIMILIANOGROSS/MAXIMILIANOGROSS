@@ -75,7 +75,7 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 
 <div align="center">
 
-<img src="assets/generated/it/career-fb3c90f7.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/it/career-31d0088b.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
 
 </div>
 

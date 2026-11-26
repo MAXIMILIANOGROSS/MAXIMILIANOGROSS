@@ -75,7 +75,7 @@
 
 <div align="center">
 
-<img src="assets/generated/ar/career-06189e36.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
+<img src="assets/generated/ar/career-7f1178af.svg" alt="Aerospace quality career: SR Technics, PLD Space, Bureau Veritas, now software" width="100%">
 
 </div>
 

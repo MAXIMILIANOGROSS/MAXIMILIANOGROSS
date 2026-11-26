@@ -224,36 +224,74 @@ def repo_table():
 
 
 def career(lg):
-    import textwrap as tw
+    import textwrap as tw, base64, io
     title, roles, lines = i18n.CAREER[lg]
-    W, H = 1200, 330
+    W, H = 1200, 476
     def wr(t, n):
-        if " " not in t.strip() and any("\u4e00" <= c <= "\u9fff" for c in t): return [t[i:i+n//2] for i in range(0, len(t), n//2)]
+        if " " not in t.strip() and any("一" <= c <= "鿿" for c in t): return [t[i:i+n//2] for i in range(0, len(t), n//2)]
         return tw.wrap(t, n)
-    cards = [("SR TECHNICS · ZÜRICH", ["PT", "MT", "VT"], C["cyan"]), ("PLD SPACE", ["RT", "NDT"], "#a78bfa"), ("BUREAU VERITAS", ["ISO 9001", "QA"], C["green"]), ({"en":"NOW","es":"AHORA","de":"HEUTE","it":"OGGI","fr":"AUJOURD'HUI","zh":"现在","ar":"الآن"}[lg], ["iOS", "macOS", "AI"], C["amber"])]
-    o = [f'<defs><filter id="cg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>',
-         f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".55"/>',
-         f'<text x="30" y="40" font-family="{MONO}" font-size="15" fill="{C["cyan"]}" letter-spacing="4">{esc(title)}</text>',
-         f'<rect x="30" y="52" width="140" height="3" fill="url(#ac)"><animate attributeName="width" values="60;420;60" dur="5s" repeatCount="indefinite"/></rect>']
+    def thumb(name, w=420):
+        f = ROOT / "assets/screenshots" / name
+        if not f.exists(): return None
+        try:
+            from PIL import Image
+            im = Image.open(f).convert("RGB"); im.thumbnail((w, 700)); b = io.BytesIO(); im.save(b, "JPEG", quality=72); data = b.getvalue()
+        except Exception: data = f.read_bytes()
+        return "data:image/jpeg;base64," + base64.b64encode(data).decode()
+    cards = [("SR TECHNICS · ZÜRICH", ["PT", "MT", "VT"], C["cyan"], thumb("sr-1-t.jpg"), "YMid"),
+             ("PLD SPACE", ["RT", "NDT"], "#a78bfa", thumb("pld-1-t.jpg"), "YMid"),
+             ("BUREAU VERITAS", ["ISO 9001", "QA"], C["green"], None, ""),
+             ({"en": "NOW", "es": "AHORA", "de": "HEUTE", "it": "OGGI", "fr": "AUJOURD'HUI", "zh": "现在", "ar": "الآن"}[lg], ["iOS", "macOS", "AI"], C["amber"], None, "")]
+    o = [f'<defs><clipPath id="pc"><rect width="{W}" height="{H}" rx="14"/></clipPath><filter id="cg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
+         f'<linearGradient id="ov" x1="0" y1="0" x2="0" y2="1"><stop offset=".35" stop-color="#0b1220" stop-opacity="0"/><stop offset="1" stop-color="#0b1220" stop-opacity=".95"/></linearGradient>'
+         f'<linearGradient id="scn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#7cecff" stop-opacity=".35"/></linearGradient></defs><g clip-path="url(#pc)">',
+         f'<rect width="{W}" height="{H}" fill="{C["panel"]}"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".55"/>']
+    # data rain background
+    import random as _r; _r.seed(5)
+    for i in range(12):
+        x = 40 + i * 98 + _r.randint(-12, 12); ts = "".join(f'<tspan x="{x}" dy="17">{_r.choice("01")}</tspan>' for _ in range(8))
+        o.append(f'<g opacity=".07"><text font-family="{MONO}" font-size="13" fill="{C["cyan"]}">{ts}<animateTransform attributeName="transform" type="translate" from="0 -150" to="0 {H}" dur="{10+i%4*3}s" begin="-{i*1.6:.1f}s" repeatCount="indefinite"/></text></g>')
+    o.append(f'<text x="30" y="38" font-family="{MONO}" font-size="16" fill="{C["cyan"]}" letter-spacing="4">{esc(title)}</text><rect x="30" y="50" width="160" height="3" fill="url(#ac)"><animate attributeName="width" values="60;460;60" dur="5s" repeatCount="indefinite"/></rect>')
     cw, gap = 262, 40
-    for i, ((org, chips, col), role, line) in enumerate(zip(cards, roles, lines)):
-        x = 30 + i * (cw + gap); y = 76
-        o.append(f'<rect x="{x}" y="{y}" width="{cw}" height="226" rx="14" fill="#0b1220" stroke="{col}" stroke-opacity="{".95" if i == 3 else ".55"}" stroke-width="2"{" stroke-dasharray=" + chr(34) + "10 6" + chr(34) if i == 3 else ""}>' + (f'<animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.6s" repeatCount="indefinite"/>' if i == 3 else "") + '</rect>')
-        o.append(f'<rect x="{x}" y="{y}" width="{cw}" height="5" rx="2" fill="{col}"/>')
-        o.append(f'<g transform="translate({x+cw-34} {y+34})"><polygon points="{hexpts(0,0,17)}" fill="none" stroke="{col}" stroke-width="2"><animateTransform attributeName="transform" type="rotate" from="0" to="{360 if i%2==0 else -360}" dur="{12+i*3}s" repeatCount="indefinite"/></polygon><circle r="4" fill="{col}" filter="url(#cg)"><animate attributeName="opacity" values="1;.3;1" dur="{2+i*.4:.1f}s" repeatCount="indefinite"/></circle></g>')
-        o.append(f'<text x="{x+18}" y="{y+36}" font-family="{MONO}" font-size="11.5" fill="{col}" letter-spacing="2">{esc(org)}</text>')
-        for k, ln in enumerate(wr(role, 21)[:3]): o.append(f'<text x="{x+18}" y="{y+68+k*24}" font-family="{SANS}" font-weight="800" font-size="19" fill="{C["txt"]}">{esc(ln)}</text>')
+    # rail
+    o.append(f'<line x1="30" y1="78" x2="{W-30}" y2="78" stroke="{C["line"]}" stroke-width="2"/><circle r="5" cy="78" fill="#7cecff" filter="url(#cg)"><animate attributeName="cx" from="30" to="{W-30}" dur="6s" repeatCount="indefinite"/></circle>')
+    for i, ((org, chips, col, img, pos), role, line) in enumerate(zip(cards, roles, lines)):
+        x = 30 + i * (cw + gap); y = 98; ch = 360
+        o.append(f'<circle cx="{x+cw/2}" cy="78" r="6" fill="{C["panel"]}" stroke="{col}" stroke-width="2.5"/><text x="{x+cw/2}" y="66" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{col}" letter-spacing="2">0{i+1}</text>')
+        o.append(f'<rect x="{x}" y="{y}" width="{cw}" height="{ch}" rx="14" fill="#0b1220" stroke="{col}" stroke-opacity="{".95" if i == 3 else ".6"}" stroke-width="2"{" stroke-dasharray=" + chr(34) + "10 6" + chr(34) if i == 3 else ""}>' + ('<animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.6s" repeatCount="indefinite"/>' if i == 3 else "") + '</rect>')
+        # visual area
+        vx, vy, vw, vh = x + 12, y + 12, cw - 24, 128
+        o.append(f'<clipPath id="v{i}"><rect x="{vx}" y="{vy}" width="{vw}" height="{vh}" rx="10"/></clipPath>')
+        if img:
+            o.append(f'<g clip-path="url(#v{i})"><image href="{img}" x="{vx}" y="{vy-20}" width="{vw}" height="{vh+60}" preserveAspectRatio="xMid{pos} slice"/><rect x="{vx}" y="{vy}" width="{vw}" height="{vh}" fill="url(#ov)"/><rect x="{vx}" y="{vy-40}" width="{vw}" height="40" fill="url(#scn)"><animate attributeName="y" from="{vy-40}" to="{vy+vh}" dur="{3+i}s" repeatCount="indefinite"/></rect></g>')
+        else:
+            o.append(f'<rect x="{vx}" y="{vy}" width="{vw}" height="{vh}" rx="10" fill="{col}" fill-opacity=".06"/>')
+            cx0, cy0 = vx + vw / 2, vy + vh / 2
+            if i == 2:  # audit checklist
+                for k in range(3):
+                    yy = vy + 24 + k * 32
+                    o.append(f'<rect x="{vx+28}" y="{yy}" width="{vw-56}" height="22" rx="6" fill="#0b1220" stroke="{col}" stroke-opacity=".5"/><rect x="{vx+36}" y="{yy+6}" width="{[110,140,90][k]}" height="10" rx="3" fill="{col}" fill-opacity=".35"/>'
+                             f'<path d="M{vx+vw-58} {yy+11} l5 5 l10 -11" fill="none" stroke="{col}" stroke-width="3" stroke-linecap="round" stroke-dasharray="30" stroke-dashoffset="30"><animate attributeName="stroke-dashoffset" values="30;0;0;30" keyTimes="0;.2;.8;1" dur="4s" begin="{k*.7}s" repeatCount="indefinite"/></path>')
+            else:  # code core
+                for r_, d_ in [(52, 18), (36, -12)]:
+                    o.append(f'<circle cx="{cx0}" cy="{cy0}" r="{r_}" fill="none" stroke="{col}" stroke-opacity=".6" stroke-dasharray="4 8"><animateTransform attributeName="transform" type="rotate" from="0 {cx0} {cy0}" to="{360 if d_>0 else -360} {cx0} {cy0}" dur="{abs(d_)}s" repeatCount="indefinite"/></circle>')
+                o.append(f'<polygon points="{hexpts(cx0,cy0,30)}" fill="#0b1220" stroke="{col}" stroke-width="3" filter="url(#cg)"/><text x="{cx0}" y="{cy0+7}" text-anchor="middle" font-family="{MONO}" font-weight="800" font-size="20" fill="{col}">&lt;/&gt;</text><g><animateTransform attributeName="transform" type="rotate" from="0 {cx0} {cy0}" to="360 {cx0} {cy0}" dur="6s" repeatCount="indefinite"/><circle cx="{cx0+52}" cy="{cy0}" r="5" fill="#7cecff" filter="url(#cg)"/></g>')
+        o.append(f'<rect x="{vx}" y="{vy}" width="{vw}" height="{vh}" rx="10" fill="none" stroke="{col}" stroke-opacity=".5"/>')
+        o.append(f'<text x="{x+18}" y="{y+166}" font-family="{MONO}" font-size="12" fill="{col}" letter-spacing="2.5">{esc(org)}</text>')
+        for k, ln in enumerate(wr(role, 20)[:3]): o.append(f'<text x="{x+18}" y="{y+192+k*25}" font-family="{SANS}" font-weight="800" font-size="20" fill="{C["txt"]}">{esc(ln)}</text>')
         cx_ = x + 18
-        for ch in chips:
-            w = int(len(ch) * 9 + 22)
-            o.append(f'<rect x="{cx_}" y="{y+134}" width="{w}" height="24" rx="12" fill="{col}" fill-opacity=".12" stroke="{col}"><animate attributeName="fill-opacity" values=".1;.3;.1" dur="{2.4+i*.3:.1f}s" begin="{cx_%5*.2:.1f}s" repeatCount="indefinite"/></rect><text x="{cx_+w/2}" y="{y+151}" text-anchor="middle" font-family="{MONO}" font-size="12" font-weight="700" fill="#e6f6ff">{esc(ch)}</text>')
+        for chp in chips:
+            w = int(len(chp) * 9.5 + 24)
+            o.append(f'<rect x="{cx_}" y="{y+266}" width="{w}" height="26" rx="13" fill="{col}" fill-opacity=".14" stroke="{col}"><animate attributeName="fill-opacity" values=".1;.34;.1" dur="{2.4+i*.3:.1f}s" begin="{(cx_ % 5) * .2:.1f}s" repeatCount="indefinite"/></rect><text x="{cx_+w/2}" y="{y+284}" text-anchor="middle" font-family="{MONO}" font-size="12.5" font-weight="700" fill="#e6f6ff">{esc(chp)}</text>')
             cx_ += w + 8
-        for k, ln in enumerate(wr(line, 30)[:3]): o.append(f'<text x="{x+18}" y="{y+184+k*19}" font-family="{SANS}" font-size="13.5" fill="#9fb6cc">{esc(ln)}</text>')
+        for k, ln in enumerate(wr(line, 29)[:3]): o.append(f'<text x="{x+18}" y="{y+316+k*18}" font-family="{SANS}" font-size="13.5" fill="#a9bfd4">{esc(ln)}</text>')
         if i < 3:
-            ax = x + cw + 6
-            o.append(f'<line x1="{ax}" y1="{y+113}" x2="{ax+gap-12}" y2="{y+113}" stroke="{C["line"]}" stroke-width="3"/><path d="M{ax+gap-22} {y+105} l10 8 l-10 8" fill="none" stroke="{C["cyan"]}" stroke-width="3"><animate attributeName="opacity" values=".2;1;.2" dur="1.4s" begin="{i*.4}s" repeatCount="indefinite"/></path><circle r="3.5" fill="#7cecff" filter="url(#cg)"><animateMotion path="M{ax} {y+113} L{ax+gap-12} {y+113}" dur="1.4s" begin="{i*.4}s" repeatCount="indefinite"/></circle>')
-    o.append(f'<rect x="0" y="{H-4}" width="{W}" height="4" fill="url(#ac)" opacity=".5"/><rect y="{H-4}" width="240" height="4" fill="#fff" opacity=".85"><animate attributeName="x" from="-240" to="{W}" dur="4s" repeatCount="indefinite"/></rect>')
+            ax = x + cw + 5
+            o.append(f'<line x1="{ax}" y1="{y+170}" x2="{ax+gap-10}" y2="{y+170}" stroke="{C["line"]}" stroke-width="3"/><path d="M{ax+gap-20} {y+162} l10 8 l-10 8" fill="none" stroke="{C["cyan"]}" stroke-width="3"><animate attributeName="opacity" values=".2;1;.2" dur="1.4s" begin="{i*.4}s" repeatCount="indefinite"/></path><circle r="3.5" fill="#7cecff" filter="url(#cg)"><animateMotion path="M{ax} {y+170} L{ax+gap-10} {y+170}" dur="1.4s" begin="{i*.4}s" repeatCount="indefinite"/></circle>')
+    o.append(f'<rect y="{H-5}" width="{W}" height="5" fill="url(#ac)" opacity=".55"/><rect y="{H-5}" width="260" height="5" fill="#fff" opacity=".85"><animate attributeName="x" from="-260" to="{W}" dur="4s" repeatCount="indefinite"/></rect></g>')
+    o.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
     return svg(W, H, "".join(o), title)
+
 def pulse():
     W, H = 1200, 40
     d = "M0 20 H300 l10 -14 l12 28 l10 -24 l8 10 H700 l10 -14 l12 28 l10 -24 l8 10 H1200"
