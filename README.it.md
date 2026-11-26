@@ -77,7 +77,7 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 
 <div align="center">
 
-<img src="assets/generated/it/journey-e58b87a3.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/it/journey-a51730cf.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>Un ecosistema per persone, imprese e innovazione alle Canarie — Maxi OS coordina un Ufficio IA di 60 agenti in 16 reparti.</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>L'Ufficio Virtuale di Island Crew — 60 agenti IA per reparto, un centro di comando IA e approvazione umana dove serve.</sub>
 
 </div>
 

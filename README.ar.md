@@ -77,7 +77,7 @@
 
 <div align="center">
 
-<img src="assets/generated/ar/journey-8b709cfc.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/ar/journey-fd0e15fd.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>منظومة واحدة للأشخاص والأعمال والابتكار في جزر الكناري — يدير Maxi OS مكتبًا ذكيًا من 60 وكيلًا في 16 قسمًا.</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>المكتب الافتراضي لـ Island Crew — 60 وكيل ذكاء اصطناعي موزعين على الأقسام، ومركز قيادة ذكي، وموافقة بشرية حيث يلزم.</sub>
 
 </div>
 

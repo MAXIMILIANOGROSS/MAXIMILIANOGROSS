@@ -294,7 +294,7 @@ def career(lg):
 
 
 def journey(lg):
-    title, nt, st, roles, places, sw1, sw2, miura, srx = i18n.J[lg]
+    title, nt, st, roles, places, sw1, sw2, miura, srx = i18n.J[lg]; st = i18n.IND[lg]
     W, H = 1200, 450
     X = lambda y: 70 + (y - 2007) / 19.95 * 1060
     segs = [("ENOD SRL", 2007.0, 2010.1, places[0], "VT·PT·MT·UT·RT", roles[0], C["amber"], "A", None),

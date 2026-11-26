@@ -77,7 +77,7 @@ Indépendant, documenté, livré. J'apprends en créant de vrais produits.
 
 <div align="center">
 
-<img src="assets/generated/fr/journey-262f35d5.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/fr/journey-97a0663e.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>Un écosystème pour les personnes, les entreprises et l'innovation aux Canaries — Maxi OS coordonne un Bureau IA de 60 agents répartis en 16 départements.</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>Le Bureau Virtuel d'Island Crew — 60 agents IA par département, un centre de commande IA et une validation humaine là où ça compte.</sub>
 
 </div>
 

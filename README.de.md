@@ -77,7 +77,7 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 
 <div align="center">
 
-<img src="assets/generated/de/journey-16c55de9.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/de/journey-780e3c4f.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>Ein Ökosystem für Menschen, Unternehmen und Innovation auf den Kanaren — Maxi OS koordiniert ein KI-Büro mit 60 Agenten in 16 Abteilungen.</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>Das virtuelle Island-Crew-Büro — 60 KI-Agenten in Abteilungen, ein KI-Kommandozentrum und menschliche Freigabe, wo es zählt.</sub>
 
 </div>
 

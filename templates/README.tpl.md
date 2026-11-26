@@ -132,6 +132,12 @@
 
 <sub>{{t.eco_cap}}</sub>
 
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>{{t.vo_cap}}</sub>
+
 </div>
 
 </details>

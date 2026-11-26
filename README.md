@@ -77,7 +77,7 @@ Independent, documented, shipped. I learn by creating real products.
 
 <div align="center">
 
-<img src="assets/generated/journey-f60544a3.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/journey-caa22be7.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>One ecosystem for people, business and innovation in the Canary Islands — Maxi OS coordinates an AI Office of 60 agents in 16 departments.</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>The Island Crew Virtual Office — 60 AI agents across departments, an AI command center and human approval where it matters.</sub>
 
 </div>
 

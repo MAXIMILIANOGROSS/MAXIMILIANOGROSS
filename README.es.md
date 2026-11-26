@@ -77,7 +77,7 @@ Independiente, documentado, entregado. Aprendo creando productos reales.
 
 <div align="center">
 
-<img src="assets/generated/es/journey-2db95b43.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/es/journey-0a07a81d.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>Un ecosistema para personas, negocios e innovación en Canarias — Maxi OS coordina una Oficina IA de 60 agentes en 16 departamentos.</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>La Oficina Virtual de Island Crew — 60 agentes de IA por departamentos, un centro de mando de IA y aprobación humana donde importa.</sub>
 
 </div>
 

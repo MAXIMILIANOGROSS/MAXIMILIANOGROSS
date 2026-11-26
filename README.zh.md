@@ -77,7 +77,7 @@
 
 <div align="center">
 
-<img src="assets/generated/zh/journey-b9447b32.svg" alt="Career journey from NDT inspector to software builder" width="100%">
+<img src="assets/generated/zh/journey-931e02eb.svg" alt="Career journey from NDT inspector to software builder" width="100%">
 
 <br>
 
@@ -142,6 +142,12 @@
 <img src="assets/screenshots/ecosystem.jpg" alt="Island Crew ecosystem" width="100%">
 
 <sub>服务加那利群岛的人、企业与创新的一体化生态 —— Maxi OS 统筹由 60 个智能体、16 个部门组成的 AI 办公室。</sub>
+
+<br><br>
+
+<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
+
+<sub>Island Crew 虚拟办公室 —— 各部门共 60 个 AI 智能体、AI 指挥中心，并在关键环节由人工审批。</sub>
 
 </div>
 
