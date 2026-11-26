@@ -81,7 +81,7 @@ Independent, documented, shipped. I learn by creating real products.
 
 <br>
 
-<img src="assets/generated/cstats-fa814937.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/cstats-ae39c712.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
@@ -143,12 +143,6 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 
 <sub>One ecosystem for people, business and innovation in the Canary Islands — Maxi OS coordinates an AI Office of 60 agents in 16 departments.</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>The Island Crew Virtual Office — 60 AI agents across departments, an AI command center and human approval where it matters.</sub>
-
 </div>
 
 </details>
@@ -196,7 +190,7 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 
 <div align="center">
 
-<img src="assets/generated/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/radar-0baab3a3.svg" alt="Project radar" width="100%">
 
 </div>
 

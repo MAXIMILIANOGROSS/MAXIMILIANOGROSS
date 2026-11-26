@@ -81,7 +81,7 @@
 
 <br>
 
-<img src="assets/generated/ar/cstats-c04201ac.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/ar/cstats-db017716.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
@@ -143,12 +143,6 @@
 
 <sub>منظومة واحدة للأشخاص والأعمال والابتكار في جزر الكناري — يدير Maxi OS مكتبًا ذكيًا من 60 وكيلًا في 16 قسمًا.</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>المكتب الافتراضي لـ Island Crew — 60 وكيل ذكاء اصطناعي موزعين على الأقسام، ومركز قيادة ذكي، وموافقة بشرية حيث يلزم.</sub>
-
 </div>
 
 </details>
@@ -196,7 +190,7 @@
 
 <div align="center">
 
-<img src="assets/generated/ar/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/ar/radar-12c497e0.svg" alt="Project radar" width="100%">
 
 </div>
 
@@ -351,10 +345,10 @@ flowchart LR
 
 | المشروع | الحالة | ما هو | |
 |---|---|---|---|
-| **ENODEUS** | `SaaS SUITE` | حزمة SaaS للشركات: ترقمن العمليات وفحوص الجودة في 15 مجالًا صناعيًا. | [الموقع](https://enodeus.ch) |
-| **MyBrain** | `OPEN SOURCE · MIT` | ذات ثانية: تراقب البيانات الحقيقية وتقترح إجراءً واحدًا يوميًا وتنتظر الموافقة وتتعلم. | [المستودع](https://github.com/MAXIMILIANOGROSS/MyBrain) |
-| **Virtual Office** | `OPEN SOURCE` | مكتب افتراضي ثلاثي الأبعاد بـ 43 وكيل ذكاء اصطناعي. قالب فارغ على Next.js + Supabase. | [المستودع](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `RELEASE` | حزمة تسويق ذاتية التثبيت لنظامي Mac وWindows للمطاعم. التنزيلات منشورة كإصدارات. | [المستودع](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+| **ENODEUS** | `منصة SaaS` | حزمة SaaS للشركات: ترقمن العمليات وفحوص الجودة في 15 مجالًا صناعيًا. | [الموقع](https://enodeus.ch) |
+| **MyBrain** | `مفتوح المصدر · MIT` | ذات ثانية: تراقب البيانات الحقيقية وتقترح إجراءً واحدًا يوميًا وتنتظر الموافقة وتتعلم. | [المستودع](https://github.com/MAXIMILIANOGROSS/MyBrain) |
+| **Virtual Office** | `مفتوح المصدر` | مكتب افتراضي ثلاثي الأبعاد بـ 43 وكيل ذكاء اصطناعي. قالب فارغ على Next.js + Supabase. | [المستودع](https://github.com/MAXIMILIANOGROSS/virtual-office) |
+| **Island Crew Suite** | `إصدار` | حزمة تسويق ذاتية التثبيت لنظامي Mac وWindows للمطاعم. التنزيلات منشورة كإصدارات. | [المستودع](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
 <details>
 <summary><b>🎧 ما وراء البرمجيات</b></summary>
@@ -405,7 +399,7 @@ Access granted.
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
-<img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
+<img src="assets/branding/ar/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
 

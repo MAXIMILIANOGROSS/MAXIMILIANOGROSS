@@ -127,8 +127,8 @@ def card(p):
         o.append(f'<polygon points="{hexpts(60,62,32)}" fill="#0b1220" stroke="{col}" stroke-width="3"/><text x="60" y="71" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="24" fill="{C["txt"]}">{esc(p["name"][0])}</text>')
     nm = p["name"]; fs = 30 if len(nm) <= 16 else 21
     o.append(f'<text x="116" y="62" font-family="{SANS}" font-weight="800" font-size="{fs}" fill="{C["txt"]}">{esc(nm)}</text>')
-    o.append(f'<text x="116" y="86" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="2">{esc(p["category"])}</text>')
-    s, w = pill(W - 24 - int(len(p["status"])*9.4+40), 22, p["status"], col, 26); o.append(s)
+    o.append(f'<text x="116" y="86" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="2">{esc(i18n.CAT.get(p["category"],{}).get(LG,p["category"]))}</text>')
+    _st = i18n.ST.get(p["status"],{}).get(LG,p["status"]); s, w = pill(W - 24 - int(len(_st)*9.4+40), 22, _st, col, 26); o.append(s)
     for i, line in enumerate(textwrap.wrap(p["tagline"], 56)[:4]):
         o.append(f'<text x="32" y="{132+i*24}" font-family="{SANS}" font-size="16" fill="#c6d6e6">{esc(line)}</text>')
     x = 32
@@ -143,31 +143,65 @@ def card(p):
 
 # ---------- radar ----------
 def radar():
-    W, H = 1000, 560; cx, cy = 345, 280
-    rings = [(k, Xt()["rings"][i], r, c) for i, (k, r, c) in enumerate([("building", 70, C["cyan"]), ("published", 135, C["green"]), ("open", 200, C["vio"]), ("next", 255, C["mute"])])]
+    W, H = 1200, 640; cx, cy = 368, 322; DUR = 10
+    X_ = Xt()
+    rings = [(k, X_["rings"][i], r, c) for i, (k, r, c) in enumerate([("building", 82, C["cyan"]), ("published", 150, C["green"]), ("open", 218, C["vio"]), ("next", 282, C["mute"])])]
     items = {k: [] for k, *_ in rings}
     for p in P["projects"]: items[p["ring"]].append(p["name"].split(" ·")[0])
     for p in P["radar_extra"]: items[p["ring"]].append(p["name"])
-    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".5"/>']
-    for k, lab, r, c in rings: o.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{c}" stroke-opacity=".35" stroke-dasharray="3 6"/>')
-    o.append(f'<line x1="{cx-262}" y1="{cy}" x2="{cx+262}" y2="{cy}" stroke="{C["line"]}"/><line x1="{cx}" y1="{cy-262}" x2="{cx}" y2="{cy+262}" stroke="{C["line"]}"/>')
-    o.append(f'<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{C["cyan"]}" stop-opacity="0"/><stop offset="1" stop-color="{C["cyan"]}" stop-opacity=".35"/></linearGradient>'
-             f'<g><path d="M{cx} {cy} L{cx+255} {cy} A255 255 0 0 0 {cx+255*math.cos(math.radians(-35)):.1f} {cy+255*math.sin(math.radians(-35)):.1f} Z" fill="url(#sw)"/><animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="12s" repeatCount="indefinite"/></g>')
-    o.append(f'<circle cx="{cx}" cy="{cy}" r="5" fill="{C["cyan"]}"/>')
-    ang0 = {"building": -90, "published": -80, "open": -60, "next": -45}
+    total = sum(len(v) for v in items.values()) or 1
+    o = [f'<defs><clipPath id="rc"><rect width="{W}" height="{H}" rx="14"/></clipPath><filter id="rg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
+         f'<radialGradient id="rbg" cx="{cx/W:.3f}" cy="{cy/H:.3f}" r=".5"><stop offset="0" stop-color="#0d2236"/><stop offset="1" stop-color="{C["panel"]}"/></radialGradient>'
+         f'<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{C["cyan"]}" stop-opacity="0"/><stop offset="1" stop-color="{C["cyan"]}" stop-opacity=".45"/></linearGradient></defs><g clip-path="url(#rc)">',
+         f'<rect width="{W}" height="{H}" fill="url(#rbg)"/><rect width="{W}" height="{H}" fill="url(#grid)" opacity=".5"/>']
+    # outer tick ring (rotating slowly)
+    R0 = 305
+    ticks = "".join(f'<line x1="{cx+R0*math.cos(math.radians(a)):.1f}" y1="{cy+R0*math.sin(math.radians(a)):.1f}" x2="{cx+(R0+(12 if a%30==0 else 6))*math.cos(math.radians(a)):.1f}" y2="{cy+(R0+(12 if a%30==0 else 6))*math.sin(math.radians(a)):.1f}" stroke="{C["cyan"]}" stroke-opacity="{.8 if a%30==0 else .35}"/>' for a in range(0, 360, 5))
+    o.append(f'<g>{ticks}<animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="-360 {cx} {cy}" dur="90s" repeatCount="indefinite"/></g>')
+    o.append(f'<circle cx="{cx}" cy="{cy}" r="{R0}" fill="none" stroke="{C["cyan"]}" stroke-opacity=".25"/>')
     for k, lab, r, c in rings:
-        n = len(items[k]); 
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{c}" fill-opacity=".035" stroke="{c}" stroke-opacity=".55" stroke-dasharray="2 7"/>')
+        # ring label on the vertical axis
+        o.append(f'<text x="{cx-6}" y="{cy-r+13}" text-anchor="end" font-family="{MONO}" font-size="9.5" fill="{c}" fill-opacity=".85" letter-spacing="2">{esc(lab)}</text>')
+    o.append(f'<line x1="{cx-R0}" y1="{cy}" x2="{cx+R0}" y2="{cy}" stroke="{C["line"]}"/><line x1="{cx}" y1="{cy-R0}" x2="{cx}" y2="{cy+R0}" stroke="{C["line"]}"/>')
+    for d in (45, 135):
+        a = math.radians(d); o.append(f'<line x1="{cx-R0*math.cos(a):.1f}" y1="{cy-R0*math.sin(a):.1f}" x2="{cx+R0*math.cos(a):.1f}" y2="{cy+R0*math.sin(a):.1f}" stroke="{C["line"]}" stroke-opacity=".5" stroke-dasharray="2 8"/>')
+    # sweep (wedge + leading beam)
+    sw = 290; a2 = math.radians(-50)
+    o.append(f'<g><path d="M{cx} {cy} L{cx+sw} {cy} A{sw} {sw} 0 0 0 {cx+sw*math.cos(a2):.1f} {cy+sw*math.sin(a2):.1f} Z" fill="url(#sw)"/><line x1="{cx}" y1="{cy}" x2="{cx+sw}" y2="{cy}" stroke="#7cecff" stroke-width="2" filter="url(#rg)"/><animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="{DUR}s" repeatCount="indefinite"/></g>')
+    ang0 = {"building": -100, "published": -72, "open": -35, "next": -20}
+    blips = []
+    for k, lab, r, c in rings:
+        n = len(items[k])
         for i, name in enumerate(items[k]):
-            a = math.radians(ang0[k] + i * (360 / max(n, 1)))
+            deg = ang0[k] + i * (360 / max(n, 1)); a = math.radians(deg)
             x, y = cx + r * math.cos(a), cy + r * math.sin(a)
-            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="{c}"><animate attributeName="opacity" values="1;.4;1" dur="{2+i%3}s" repeatCount="indefinite"/></circle>')
-            anchor, dx = ("start", 12) if math.cos(a) >= -0.05 else ("end", -12)
-            o.append(f'<text x="{x+dx:.1f}" y="{y+4:.1f}" text-anchor="{anchor}" font-family="{MONO}" font-size="11.5" fill="#cfe6f7">{esc(name)}</text>')
-    lx = 690; o.append(f'<text x="{lx}" y="60" font-family="{MONO}" font-size="14" fill="{C["cyan"]}" letter-spacing="3">{esc(Xt()["r_title"])}</text>')
+            t = ((deg % 360) / 360) * DUR
+            o.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="{c}" stroke-opacity=".10"/>')
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="none" stroke="{c}" stroke-width="2" opacity="0"><animate attributeName="r" values="7;26" dur="{DUR}s" begin="{t:.2f}s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0.9;0;0" keyTimes="0;.18;1" dur="{DUR}s" begin="{t:.2f}s" repeatCount="indefinite"/></circle>')
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6.5" fill="{c}" filter="url(#rg)"><animate attributeName="opacity" values="1;.55;1" dur="{2+i%3}s" repeatCount="indefinite"/></circle><circle cx="{x:.1f}" cy="{y:.1f}" r="2.5" fill="#fff"/>')
+            w = int(len(name) * 6.9 + 16); right = math.cos(a) >= -0.05
+            bx = x + 13 if right else x - 13 - w
+            blips.append(f'<g><rect x="{bx:.1f}" y="{y-10:.1f}" width="{w}" height="20" rx="6" fill="#07111d" fill-opacity=".92" stroke="{c}" stroke-opacity=".55"/><text x="{bx+w/2:.1f}" y="{y+4:.1f}" text-anchor="middle" font-family="{MONO}" font-size="11" font-weight="700" fill="#e6f6ff">{esc(name)}</text></g>')
+    o += blips
+    o.append(f'<circle cx="{cx}" cy="{cy}" r="9" fill="{C["cyan"]}" filter="url(#rg)"/><circle cx="{cx}" cy="{cy}" r="16" fill="none" stroke="{C["cyan"]}" stroke-opacity=".6"><animate attributeName="r" values="9;30;9" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>')
+    # HUD brackets
+    for bx, by, sx_, sy_ in ((14, 14, 1, 1), (W-14, 14, -1, 1), (14, H-14, 1, -1), (W-14, H-14, -1, -1)):
+        o.append(f'<path d="M{bx} {by+sy_*26} L{bx} {by} L{bx+sx_*26} {by}" fill="none" stroke="{C["cyan"]}" stroke-width="2.5" opacity=".8"/>')
+    # right dashboard
+    lx = 735
+    o.append(f'<line x1="{lx-34}" y1="40" x2="{lx-34}" y2="{H-40}" stroke="{C["line"]}"/>')
+    o.append(f'<text x="{lx}" y="62" font-family="{MONO}" font-size="15" fill="{C["cyan"]}" letter-spacing="4">{esc(X_["r_title"])}</text><circle cx="{W-52}" cy="57" r="5" fill="{C["green"]}" filter="url(#rg)"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle><text x="{W-62}" y="62" text-anchor="end" font-family="{MONO}" font-size="11" fill="{C["green"]}" letter-spacing="3">LIVE</text>')
+    o.append(f'<text x="{lx}" y="118" font-family="{SANS}" font-weight="800" font-size="54" fill="{C["txt"]}">{total}</text><text x="{lx+92}" y="118" font-family="{MONO}" font-size="12" fill="{C["mute"]}" letter-spacing="3">{esc(X_["items"]).upper()}</text>')
+    bw = 380
     for i, (k, lab, r, c) in enumerate(rings):
-        y = 110 + i * 70
-        o.append(f'<circle cx="{lx+8}" cy="{y}" r="7" fill="{c}"/><text x="{lx+28}" y="{y+5}" font-family="{SANS}" font-weight="700" font-size="17" fill="{C["txt"]}">{esc(lab)}</text><text x="{lx+28}" y="{y+26}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{len(items[k])} {Xt()["item"] if len(items[k])==1 else Xt()["items"]}</text>')
-    o.append(f'<text x="{lx}" y="{H-70}" font-family="{MONO}" font-size="11.5" fill="{C["mute"]}">{esc(Xt()["r_s1"])}</text><text x="{lx}" y="{H-50}" font-family="{MONO}" font-size="11.5" fill="{C["mute"]}">{esc(Xt()["r_s2"])}</text>')
+        y = 168 + i * 88; n = len(items[k]); pct = round(100 * n / total)
+        o.append(f'<rect x="{lx}" y="{y-24}" width="{bw+40}" height="72" rx="12" fill="#0b1220" stroke="{c}" stroke-opacity=".45"/><rect x="{lx}" y="{y-24}" width="5" height="72" rx="2" fill="{c}"/>')
+        o.append(f'<circle cx="{lx+26}" cy="{y}" r="7" fill="{c}" filter="url(#rg)"/><text x="{lx+44}" y="{y+5}" font-family="{SANS}" font-weight="800" font-size="17" fill="{C["txt"]}">{esc(lab)}</text>')
+        o.append(f'<text x="{lx+bw+22}" y="{y+5}" text-anchor="end" font-family="{MONO}" font-weight="700" font-size="16" fill="{c}">{n} · {pct}%</text>')
+        o.append(f'<rect x="{lx+26}" y="{y+20}" width="{bw-10}" height="8" rx="4" fill="{C["line"]}"/><rect x="{lx+26}" y="{y+20}" width="0" height="8" rx="4" fill="{c}" filter="url(#rg)"><animate attributeName="width" from="0" to="{(bw-10)*n/total:.0f}" dur="1.4s" begin="{i*.2:.1f}s" fill="freeze"/></rect>')
+    o.append(f'<text x="{lx}" y="{H-54}" font-family="{MONO}" font-size="11.5" fill="{C["mute"]}">{esc(X_["r_s1"])}</text><text x="{lx}" y="{H-36}" font-family="{MONO}" font-size="11.5" fill="{C["mute"]}">{esc(X_["r_s2"])}</text>')
+    o.append(f'<rect y="{H-5}" width="{W}" height="5" fill="url(#ac)" opacity=".55"/><rect y="{H-5}" width="260" height="5" fill="#fff" opacity=".85"><animate attributeName="x" from="-260" to="{W}" dur="4s" repeatCount="indefinite"/></rect></g><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="none" stroke="{C["line"]}" stroke-width="2"/>')
     return svg(W, H, "".join(o), "Project radar")
 
 # ---------- terminal ----------
@@ -207,11 +241,11 @@ def stats():
     o.append(f'<text x="40" y="{H-14}" font-family="{MONO}" font-size="11" fill="{C["mute"]}">{esc(Xt()["s_note"])} {esc(R.get("generated",""))}</text>')
     return svg(W, H, "".join(o), "Verified GitHub metrics")
 
-def footer():
-    W, H = 1600, 120
+def footer(lg="en"):
+    W, H = 1600, 120; ft = i18n.FT[lg]
     b = (f'<rect width="{W}" height="{H}" fill="url(#bg)"/><rect width="{W}" height="{H}" fill="url(#grid)"/><rect width="{W}" height="4" fill="url(#ac)"/><rect y="0" width="260" height="4" fill="#7cecff"><animate attributeName="x" from="-260" to="{W}" dur="5s" repeatCount="indefinite"/></rect>'
-         f'<text x="{W/2}" y="62" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="30" fill="url(#ac)" letter-spacing="8">THINK · BUILD · SHIP · EVOLVE</text>'
-         f'<text x="{W/2}" y="92" text-anchor="middle" font-family="{MONO}" font-size="14" fill="{C["mute"]}" letter-spacing="3">MAXIMILIANO OLMOS SÁNCHEZ — INDEPENDENT SOFTWARE DEVELOPER</text>')
+         f'<text x="{W/2}" y="62" text-anchor="middle" font-family="{SANS}" font-weight="800" font-size="30" fill="url(#ac)" letter-spacing="{8 if lg in ("en","es","it","fr","de") and len(ft[0])<36 else 4}" textLength="{min(1200, max(520, len(ft[0])*22))}" lengthAdjust="spacingAndGlyphs">{esc(ft[0])}</text>'
+         f'<text x="{W/2}" y="92" text-anchor="middle" font-family="{MONO}" font-size="14" fill="{C["mute"]}" letter-spacing="3">MAXIMILIANO OLMOS SÁNCHEZ — {esc(ft[1])}</text>')
     return svg(W, H, b, "footer")
 
 def repo_table():
@@ -392,9 +426,11 @@ def pulse():
          f'<circle r="5" fill="#7cecff"><animateMotion path="{d}" dur="4s" repeatCount="indefinite"/></circle>')
     return svg(W, H, b, "pulse divider")
 def main():
+    global LG
     from urllib.parse import quote
     write("assets/branding/logo.svg", logo(False)); write("assets/branding/logo-animated.svg", logo(True))
     write("assets/branding/footer.svg", footer())
+    for _lg, _, _ in i18n.LANGS: write(f"assets/branding/{_lg}/footer.svg", footer(_lg))
     order = [("01", "about"), ("02", "products"), ("03", "radar"), ("04", "building"), ("05", "pipeline"), ("06", "stack"), ("07", "metrics"), ("08", "lab"), ("09", "connect")]
     for lg, _, _ in i18n.LANGS:
         for n, k in order:
@@ -403,12 +439,11 @@ def main():
     base_p = [dict(p) for p in P["projects"]]
     for lg, _, _ in i18n.LANGS:
         for p in base_p:
-            q = dict(p)
+            q = dict(p); LG = lg
             if lg != "en" and p["id"] in i18n.PROJ: q["tagline"], q["access"] = i18n.PROJ[p["id"]][lg]
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
         write("assets/generated/pulse.svg", pulse())
-    global LG
-    HERO, ORB, CAR, MAP, CST = {}, {}, {}, {}, {}
+    HERO, ORB, CAR, MAP, CST, RAD = {}, {}, {}, {}, {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
         import hashlib, glob
@@ -421,7 +456,7 @@ def main():
         write(gd + "ticker.svg", anim.ticker([t.format(n=npub) for t in Xt()["ticker"]]))
         ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
         write(gd + "pipeline.svg", anim.pipeline(Xt()["p_subs"]))
-        write(gd + "radar.svg", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
+        RAD[lg] = hashed(gd, "radar", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
     snake = ""
     if (ROOT / "assets/generated/snake.svg").exists() and (ROOT / "assets/generated/snake-dark.svg").exists():
         snake = '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg"><img alt="Contribution snake" src="assets/generated/snake.svg" width="100%"></picture>'
@@ -433,7 +468,7 @@ def main():
             link = (f'<a href="{p["url"]}"><b>{T["open"].format(p["name"].split(" ·")[0].title())}</b></a>') if p["url"] else f'<sub>{T["private"]}</sub>'
             return f'<td width="50%" valign="top"><img src="assets/projects/{pd}{p["id"]}.svg" alt="{esc(p["name"])} — {p["status"]}" width="100%"><br>{link}</td>\n'
         grid = "<table>\n" + "".join("<tr>\n" + "".join(cell(p) for p in row) + "</tr>\n" for row in cards) + "</table>"
-        lab = "\n".join(f"| **{l['name']}** | `{l['status']}` | {i18n.LABT.get(l['name'], {}).get(lg, l['text'])} | [{T['site'] if l.get('url') else T['repo']}]({l.get('url') or 'https://github.com/' + P['owner'] + '/' + l['repo']}) |" for l in P["lab"])
+        lab = "\n".join(f"| **{l['name']}** | `{i18n.ST.get(l['status'],{}).get(lg,l['status'])}` | {i18n.LABT.get(l['name'], {}).get(lg, l['text'])} | [{T['site'] if l.get('url') else T['repo']}]({l.get('url') or 'https://github.com/' + P['owner'] + '/' + l['repo']}) |" for l in P["lab"])
         navk = [("about", "n_about", "161B22", "githubsponsors", "00D4FF"), ("products", "n_products", "00D4FF", "github", "black"), ("radar", "n_radar", "161B22", "target", "00D4FF"), ("building", "n_building", "161B22", "rocket", "00D4FF"), ("metrics", "n_metrics", "161B22", "graphql", "00D4FF"), ("connect", "n_connect", "161B22", "linkedin", "00D4FF")]
         nav = "\n".join(f'<a href="#{a}"><img src="https://img.shields.io/badge/{quote(T[k].replace("-", "--").replace("_", "__"))}-{bg}?style=for-the-badge&logo={lo}&logoColor={lc}" alt="{T[k]}"></a>' for a, k, bg, lo, lc in navk)
         bar = ["<p>🌐"]
@@ -443,7 +478,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

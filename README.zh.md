@@ -81,7 +81,7 @@
 
 <br>
 
-<img src="assets/generated/zh/cstats-d54a6c38.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/zh/cstats-b16e88cc.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
@@ -143,12 +143,6 @@
 
 <sub>服务加那利群岛的人、企业与创新的一体化生态 —— Maxi OS 统筹由 60 个智能体、16 个部门组成的 AI 办公室。</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>Island Crew 虚拟办公室 —— 各部门共 60 个 AI 智能体、AI 指挥中心，并在关键环节由人工审批。</sub>
-
 </div>
 
 </details>
@@ -196,7 +190,7 @@
 
 <div align="center">
 
-<img src="assets/generated/zh/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/zh/radar-8d70218b.svg" alt="Project radar" width="100%">
 
 </div>
 
@@ -351,10 +345,10 @@ flowchart LR
 
 | 项目 | 状态 | 简介 | |
 |---|---|---|---|
-| **ENODEUS** | `SaaS SUITE` | 面向企业的 SaaS 套件：为 15 个工业领域的流程与质量检测实现数字化。 | [网站](https://enodeus.ch) |
-| **MyBrain** | `OPEN SOURCE · MIT` | 第二个自己：观察真实数据，每天提出一项行动，等待批准并持续学习。 | [仓库](https://github.com/MAXIMILIANOGROSS/MyBrain) |
-| **Virtual Office** | `OPEN SOURCE` | 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 | [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `RELEASE` | 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 | [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+| **ENODEUS** | `SaaS 套件` | 面向企业的 SaaS 套件：为 15 个工业领域的流程与质量检测实现数字化。 | [网站](https://enodeus.ch) |
+| **MyBrain** | `开源 · MIT` | 第二个自己：观察真实数据，每天提出一项行动，等待批准并持续学习。 | [仓库](https://github.com/MAXIMILIANOGROSS/MyBrain) |
+| **Virtual Office** | `开源` | 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 | [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office) |
+| **Island Crew Suite** | `发行版` | 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 | [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
 <details>
 <summary><b>🎧 软件之外</b></summary>
@@ -405,7 +399,7 @@ Access granted.
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
-<img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
+<img src="assets/branding/zh/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
 

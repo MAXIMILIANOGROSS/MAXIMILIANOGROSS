@@ -81,7 +81,7 @@ Indépendant, documenté, livré. J'apprends en créant de vrais produits.
 
 <br>
 
-<img src="assets/generated/fr/cstats-61951caa.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/fr/cstats-a0f7f09e.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
@@ -143,12 +143,6 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 
 <sub>Un écosystème pour les personnes, les entreprises et l'innovation aux Canaries — Maxi OS coordonne un Bureau IA de 60 agents répartis en 16 départements.</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>Le Bureau Virtuel d'Island Crew — 60 agents IA par département, un centre de commande IA et une validation humaine là où ça compte.</sub>
-
 </div>
 
 </details>
@@ -196,7 +190,7 @@ Le CND est mon métier depuis 2007 : soudures, moteurs d'avions et structures de
 
 <div align="center">
 
-<img src="assets/generated/fr/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/fr/radar-7bf5f35f.svg" alt="Project radar" width="100%">
 
 </div>
 
@@ -351,10 +345,10 @@ flowchart LR
 
 | Projet | Statut | De quoi s'agit-il | |
 |---|---|---|---|
-| **ENODEUS** | `SaaS SUITE` | Suite SaaS pour entreprises : numérise processus et inspections qualité pour 15 domaines industriels. | [site](https://enodeus.ch) |
+| **ENODEUS** | `SUITE SaaS` | Suite SaaS pour entreprises : numérise processus et inspections qualité pour 15 domaines industriels. | [site](https://enodeus.ch) |
 | **MyBrain** | `OPEN SOURCE · MIT` | Un second soi : observe des données réelles, propose une action par jour, attend la validation et apprend. | [dépôt](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `OPEN SOURCE` | Bureau virtuel 3D avec 43 agents IA. Modèle vierge sur Next.js + Supabase. | [dépôt](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `RELEASE` | Suite marketing auto-installable Mac / Windows pour restaurants. Téléchargements publiés en releases. | [dépôt](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+| **Island Crew Suite** | `VERSION` | Suite marketing auto-installable Mac / Windows pour restaurants. Téléchargements publiés en releases. | [dépôt](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
 <details>
 <summary><b>🎧 Au-delà du logiciel</b></summary>
@@ -405,7 +399,7 @@ Ouvert aux opportunités à distance, aux collaborations logicielles et aux proj
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
-<img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
+<img src="assets/branding/fr/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
 

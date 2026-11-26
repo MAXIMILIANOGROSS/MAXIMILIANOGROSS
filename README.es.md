@@ -81,7 +81,7 @@ Independiente, documentado, entregado. Aprendo creando productos reales.
 
 <br>
 
-<img src="assets/generated/es/cstats-865b3072.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/es/cstats-aa9a7ddb.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
@@ -143,12 +143,6 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 
 <sub>Un ecosistema para personas, negocios e innovación en Canarias — Maxi OS coordina una Oficina IA de 60 agentes en 16 departamentos.</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>La Oficina Virtual de Island Crew — 60 agentes de IA por departamentos, un centro de mando de IA y aprobación humana donde importa.</sub>
-
 </div>
 
 </details>
@@ -196,7 +190,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 
 <div align="center">
 
-<img src="assets/generated/es/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/es/radar-740e2f17.svg" alt="Project radar" width="100%">
 
 </div>
 
@@ -351,10 +345,10 @@ flowchart LR
 
 | Proyecto | Estado | Qué es | |
 |---|---|---|---|
-| **ENODEUS** | `SaaS SUITE` | Suite SaaS para empresas: digitaliza procesos e inspecciones de calidad para 15 campos de la industria. | [web](https://enodeus.ch) |
-| **MyBrain** | `OPEN SOURCE · MIT` | Un segundo yo: observa datos reales, propone una acción al día, espera aprobación y aprende. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
-| **Virtual Office** | `OPEN SOURCE` | Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco sobre Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `RELEASE` | Suite de marketing autoinstalable para Mac / Windows para restaurantes. Descargas publicadas como releases. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
+| **ENODEUS** | `SUITE SaaS` | Suite SaaS para empresas: digitaliza procesos e inspecciones de calidad para 15 campos de la industria. | [web](https://enodeus.ch) |
+| **MyBrain** | `CÓDIGO ABIERTO · MIT` | Un segundo yo: observa datos reales, propone una acción al día, espera aprobación y aprende. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
+| **Virtual Office** | `CÓDIGO ABIERTO` | Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco sobre Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
+| **Island Crew Suite** | `VERSIÓN` | Suite de marketing autoinstalable para Mac / Windows para restaurantes. Descargas publicadas como releases. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
 <details>
 <summary><b>🎧 Más allá del software</b></summary>
@@ -405,7 +399,7 @@ Abierto a oportunidades en remoto, colaboraciones de software y proyectos intere
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
-<img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
+<img src="assets/branding/es/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
 

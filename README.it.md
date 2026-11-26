@@ -81,7 +81,7 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 
 <br>
 
-<img src="assets/generated/it/cstats-aaf806a7.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
+<img src="assets/generated/it/cstats-7665f42e.svg" alt="Career numbers: 19+ years in NDT, 300+ aircraft inspections, 0 safety escapes, Miura 1, iOS app live" width="100%">
 
 </div>
 
@@ -143,12 +143,6 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 
 <sub>Un ecosistema per persone, imprese e innovazione alle Canarie — Maxi OS coordina un Ufficio IA di 60 agenti in 16 reparti.</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>L'Ufficio Virtuale di Island Crew — 60 agenti IA per reparto, un centro di comando IA e approvazione umana dove serve.</sub>
-
 </div>
 
 </details>
@@ -196,7 +190,7 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 
 <div align="center">
 
-<img src="assets/generated/it/radar.svg" alt="Project radar" width="100%">
+<img src="assets/generated/it/radar-876a3714.svg" alt="Project radar" width="100%">
 
 </div>
 
@@ -351,7 +345,7 @@ flowchart LR
 
 | Progetto | Stato | Cos'è | |
 |---|---|---|---|
-| **ENODEUS** | `SaaS SUITE` | Suite SaaS per aziende: digitalizza processi e ispezioni di qualità per 15 settori industriali. | [sito](https://enodeus.ch) |
+| **ENODEUS** | `SUITE SaaS` | Suite SaaS per aziende: digitalizza processi e ispezioni di qualità per 15 settori industriali. | [sito](https://enodeus.ch) |
 | **MyBrain** | `OPEN SOURCE · MIT` | Un secondo io: osserva dati reali, propone un'azione al giorno, attende l'approvazione, impara. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
 | **Virtual Office** | `OPEN SOURCE` | Ufficio virtuale 3D con 43 agenti IA. Modello vuoto su Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
 | **Island Crew Suite** | `RELEASE` | Suite di marketing autoinstallante per Mac / Windows per ristoranti. Download pubblicati come release. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
@@ -405,7 +399,7 @@ Aperto a opportunità da remoto, collaborazioni software e progetti interessanti
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
-<img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
+<img src="assets/branding/it/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
 

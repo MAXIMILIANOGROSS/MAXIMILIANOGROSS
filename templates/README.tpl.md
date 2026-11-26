@@ -132,12 +132,6 @@
 
 <sub>{{t.eco_cap}}</sub>
 
-<br><br>
-
-<img src="assets/screenshots/virtual-office.jpg" alt="Island Crew Virtual Office" width="70%">
-
-<sub>{{t.vo_cap}}</sub>
-
 </div>
 
 </details>
@@ -169,7 +163,7 @@
 
 <div align="center">
 
-<img src="{{GD}}radar.svg" alt="Project radar" width="100%">
+<img src="{{RADAR}}" alt="Project radar" width="100%">
 
 </div>
 
@@ -357,7 +351,7 @@ Access granted.
 <a href="https://www.youtube.com/@IslandCrewYT"><img src="https://img.shields.io/badge/YOUTUBE-@IslandCrewYT-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://lebenslaufy.com"><img src="https://img.shields.io/badge/LEBENSLAUFY.COM-D32F2F?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
 
-<img src="assets/branding/footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
+<img src="{{BD}}footer.svg" alt="Think. Build. Ship. Evolve." width="100%">
 
 </div>
 
