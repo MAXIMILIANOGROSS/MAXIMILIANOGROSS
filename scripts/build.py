@@ -54,9 +54,9 @@ def hero():
     ph = ROOT / "assets/branding/photo.jpg"
     if ph.exists():
         uri = "data:image/jpeg;base64," + base64.b64encode(ph.read_bytes()).decode()
-        o.append(f'<clipPath id="hx"><polygon points="{hexpts(190,220,80)}"/></clipPath><image href="{uri}" x="100" y="130" width="180" height="180" clip-path="url(#hx)" preserveAspectRatio="xMidYMid slice"/>'
-                 f'<polygon points="{hexpts(190,220,82)}" fill="none" stroke="url(#ac)" stroke-width="4"/>'
-                 f'<text x="190" y="338" text-anchor="middle" font-family="{MONO}" font-size="13" fill="#65d9ff" letter-spacing="3">&lt;/BUILD&gt;</text>')
+        o.append(f'<clipPath id="hx"><rect x="62" y="58" width="266" height="332" rx="16"/></clipPath><image href="{uri}" x="62" y="58" width="266" height="332" clip-path="url(#hx)" preserveAspectRatio="xMidYMid slice"/>'
+                 f'<rect x="62" y="58" width="266" height="332" rx="16" fill="none" stroke="url(#ac)" stroke-width="4"/>'
+                 f'<text x="195" y="420" text-anchor="middle" font-family="{MONO}" font-size="13" fill="#65d9ff" letter-spacing="3">&lt;/BUILD&gt;</text>')
     x0 = 380
     o.append(f'<text x="{x0}" y="110" font-family="{MONO}" font-size="20" fill="{C["green"]}">{P["owner"].lower()}@lab:~$ <tspan fill="{C["mute"]}">whoami</tspan></text>')
     o.append(f'<text x="{x0}" y="200" font-family="{SANS}" font-weight="800" font-size="76" fill="{C["txt"]}" letter-spacing="-1">MAXIMILIANO</text>')
