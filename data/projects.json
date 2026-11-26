@@ -77,8 +77,8 @@
       "id": "carta-viva",
       "name": "CARTA VIVA",
       "category": "RESTAURANT TECH",
-      "status": "BUILDING",
-      "ring": "building",
+      "status": "FINISHED",
+      "ring": "published",
       "tagline": "Audiovisual QR menu service for restaurants, under Island Crew Marketing. First client: Casa Cecilia.",
       "tech": [
         "QR",

@@ -94,7 +94,7 @@ Independent, documented, shipped. I learn by creating real products.
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="assets/projects/carbonuxis.svg" alt="CARBONUXIS — PUBLISHED" width="100%"><br><sub>private source</sub></td>
-<td width="50%" valign="top"><img src="assets/projects/carta-viva.svg" alt="CARTA VIVA — BUILDING" width="100%"><br><sub>private source</sub></td>
+<td width="50%" valign="top"><img src="assets/projects/carta-viva.svg" alt="CARTA VIVA — FINISHED" width="100%"><br><sub>private source</sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="assets/projects/ai-office.svg" alt="ISLAND CREW IA · CALL CENTER — BUILDING" width="100%"><br><sub>private source</sub></td>

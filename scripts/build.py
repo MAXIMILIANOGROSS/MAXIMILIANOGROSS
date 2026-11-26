@@ -10,7 +10,7 @@ except FileNotFoundError: R = {"generated": "", "public_repos": [], "languages":
 MONO = "'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'DejaVu Sans Mono',monospace"
 SANS = "'Segoe UI',Helvetica,Arial,sans-serif"
 C = dict(bg="#070b12", panel="#0c1420", line="#1b2a3d", cyan="#00d4ff", vio="#7c3aed", green="#34d399", amber="#fbbf24", txt="#eaf6ff", mute="#8aa4bd")
-STATUS_COLOR = {"PUBLISHED": C["green"], "BUILDING": C["cyan"], "IN TESTING": C["amber"], "OPEN SOURCE": C["vio"], "EXPERIMENT": C["vio"]}
+STATUS_COLOR = {"PUBLISHED": C["green"], "FINISHED": C["green"], "BUILDING": C["cyan"], "IN TESTING": C["amber"], "OPEN SOURCE": C["vio"], "EXPERIMENT": C["vio"]}
 DEFS = f'''<defs>
 <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{C['cyan']}"/><stop offset="1" stop-color="{C['vio']}"/></linearGradient>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b12"/><stop offset=".55" stop-color="#0c1726"/><stop offset="1" stop-color="#070b12"/></linearGradient>
