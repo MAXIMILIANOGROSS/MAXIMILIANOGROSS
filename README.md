@@ -326,7 +326,7 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Last refreshed by GitHub Actions: 2026-11-27 00:19 UTC</sub>
+<sub>Last refreshed by GitHub Actions: 2026-11-27 00:20 UTC</sub>
 
 </details>
 
@@ -343,7 +343,7 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 
 <picture><source media="(max-width: 700px)" srcset="assets/generated/devlog-n-763b0ed3.svg"><img src="assets/generated/devlog-2505ef65.svg" alt="Development log" width="100%"></picture>
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/telemetry-n-6914da48.svg"><img src="assets/generated/telemetry-dabd6f6f.svg" alt="Development telemetry" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/telemetry-n-6914da48.svg"><img src="assets/generated/telemetry-073ecb49.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Beyond software</b></summary>

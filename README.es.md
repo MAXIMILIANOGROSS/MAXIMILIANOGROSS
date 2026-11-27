@@ -326,7 +326,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Última actualización por GitHub Actions: 2026-11-27 00:19 UTC</sub>
+<sub>Última actualización por GitHub Actions: 2026-11-27 00:20 UTC</sub>
 
 </details>
 
@@ -343,7 +343,7 @@ El END es mi oficio desde 2007: soldaduras, motores de aeronaves y estructuras d
 
 <picture><source media="(max-width: 700px)" srcset="assets/generated/es/devlog-n-e29cadb5.svg"><img src="assets/generated/es/devlog-58a3f6bd.svg" alt="Development log" width="100%"></picture>
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/es/telemetry-n-e3e15edb.svg"><img src="assets/generated/es/telemetry-830b22b2.svg" alt="Development telemetry" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/es/telemetry-n-e3e15edb.svg"><img src="assets/generated/es/telemetry-7fe07cb6.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Más allá del software</b></summary>

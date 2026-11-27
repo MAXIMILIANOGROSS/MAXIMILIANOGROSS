@@ -326,7 +326,7 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-27 00:19 UTC</sub>
+<sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-27 00:20 UTC</sub>
 
 </details>
 
@@ -343,7 +343,7 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 
 <picture><source media="(max-width: 700px)" srcset="assets/generated/de/devlog-n-d5b8829a.svg"><img src="assets/generated/de/devlog-edb45d04.svg" alt="Development log" width="100%"></picture>
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/de/telemetry-n-2cb27c3f.svg"><img src="assets/generated/de/telemetry-76217a53.svg" alt="Development telemetry" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/de/telemetry-n-2cb27c3f.svg"><img src="assets/generated/de/telemetry-3e4f55b8.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Jenseits der Software</b></summary>
