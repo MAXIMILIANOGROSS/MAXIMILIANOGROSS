@@ -326,7 +326,7 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Ultimo aggiornamento da GitHub Actions: 2026-11-26 20:56 UTC</sub>
+<sub>Ultimo aggiornamento da GitHub Actions: 2026-11-27 00:10 UTC</sub>
 
 </details>
 
@@ -343,7 +343,7 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 
 <img src="assets/generated/it/devlog-805033c7.svg" alt="Development log" width="100%">
 
-<img src="assets/generated/it/telemetry-25555a4b.svg" alt="Development telemetry" width="100%">
+<img src="assets/generated/it/telemetry-87baf896.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 Oltre il software</b></summary>

@@ -326,7 +326,7 @@ flowchart LR
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>GitHub Actions 最近更新： 2026-11-26 20:56 UTC</sub>
+<sub>GitHub Actions 最近更新： 2026-11-27 00:10 UTC</sub>
 
 </details>
 
@@ -343,7 +343,7 @@ flowchart LR
 
 <img src="assets/generated/zh/devlog-f8a509b3.svg" alt="Development log" width="100%">
 
-<img src="assets/generated/zh/telemetry-30394c0d.svg" alt="Development telemetry" width="100%">
+<img src="assets/generated/zh/telemetry-68458e74.svg" alt="Development telemetry" width="100%">
 
 <details>
 <summary><b>🎧 软件之外</b></summary>
