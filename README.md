@@ -326,7 +326,7 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Last refreshed by GitHub Actions: 2026-11-27 00:20 UTC</sub>
+<sub>Last refreshed by GitHub Actions: 2026-11-27 14:24 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ NDT has been my craft since 2007: welds, aircraft engines and rocket structures,
 - **Virtual Office** `OPEN SOURCE` — 3D virtual office with 43 AI agents. Blank template on Next.js + Supabase. · [repo](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `RELEASE` — Self-installing Mac / Windows marketing suite for restaurants. Downloads published as releases. · [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/gravity-n-4dc86e71.svg"><img src="assets/generated/gravity-17265a16.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/gravity-n-18f4693d.svg"><img src="assets/generated/gravity-8d0edd03.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
 <picture><source media="(max-width: 700px)" srcset="assets/generated/devlog-n-763b0ed3.svg"><img src="assets/generated/devlog-2505ef65.svg" alt="Development log" width="100%"></picture>
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/telemetry-n-6914da48.svg"><img src="assets/generated/telemetry-073ecb49.svg" alt="Development telemetry" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/telemetry-n-6914da48.svg"><img src="assets/generated/telemetry-b8018ae2.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Beyond software</b></summary>

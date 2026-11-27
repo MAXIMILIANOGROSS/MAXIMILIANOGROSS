@@ -326,7 +326,7 @@ flowchart LR
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>GitHub Actions 最近更新： 2026-11-27 00:20 UTC</sub>
+<sub>GitHub Actions 最近更新： 2026-11-27 14:24 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ flowchart LR
 - **Virtual Office** `开源` — 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 · [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `发行版` — 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 · [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/gravity-n-39bb0e3a.svg"><img src="assets/generated/zh/gravity-df35c3bf.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/gravity-n-83b4fe07.svg"><img src="assets/generated/zh/gravity-ab28766b.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
 <picture><source media="(max-width: 700px)" srcset="assets/generated/zh/devlog-n-059b7f4c.svg"><img src="assets/generated/zh/devlog-f8a509b3.svg" alt="Development log" width="100%"></picture>
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/telemetry-n-bfab0d7a.svg"><img src="assets/generated/zh/telemetry-18c58761.svg" alt="Development telemetry" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/telemetry-n-bfab0d7a.svg"><img src="assets/generated/zh/telemetry-8f2f1f66.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 软件之外</b></summary>

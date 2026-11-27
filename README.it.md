@@ -326,7 +326,7 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Ultimo aggiornamento da GitHub Actions: 2026-11-27 00:20 UTC</sub>
+<sub>Ultimo aggiornamento da GitHub Actions: 2026-11-27 14:24 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 - **Virtual Office** `OPEN SOURCE` — Ufficio virtuale 3D con 43 agenti IA. Modello vuoto su Next.js + Supabase. · [repo](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `RELEASE` — Suite di marketing autoinstallante per Mac / Windows per ristoranti. Download pubblicati come release. · [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/it/gravity-n-0bceba19.svg"><img src="assets/generated/it/gravity-37c4b7d8.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/gravity-n-95b8cddd.svg"><img src="assets/generated/it/gravity-0108b8c7.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
 <picture><source media="(max-width: 700px)" srcset="assets/generated/it/devlog-n-816a2177.svg"><img src="assets/generated/it/devlog-805033c7.svg" alt="Development log" width="100%"></picture>
 
-<picture><source media="(max-width: 700px)" srcset="assets/generated/it/telemetry-n-ca7072e0.svg"><img src="assets/generated/it/telemetry-59676886.svg" alt="Development telemetry" width="100%"></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/telemetry-n-ca7072e0.svg"><img src="assets/generated/it/telemetry-afbd7ff5.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Oltre il software</b></summary>
