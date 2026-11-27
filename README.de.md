@@ -98,6 +98,9 @@ Unabhängig, dokumentiert, ausgeliefert. Ich lerne, indem ich echte Produkte bau
 </tr>
 </table>
 
+<p align="center"><sub><b>PRODUKTWELTEN · ECHTE SCREENSHOTS LIVE-SEITEN</b></sub></p>
+<table><tr><td width="50%"><a href="https://enodeus.ch"><img src="assets/products/world-enodeus-c86d3a4f.svg" alt="ENODEUS" width="100%"></a></td><td width="50%"><a href="https://islandcrew.es"><img src="assets/products/world-islandcrew-b9e3cdad.svg" alt="ISLAND CREW" width="100%"></a></td></tr><tr><td><a href="https://enodeus.ch"><img src="assets/products/world-carbonuxis-2dbc994f.svg" alt="CARBONUXIS" width="100%"></a></td><td><a href="https://lebenslaufy.com"><img src="assets/products/world-lebenslaufy-4c142fe9.svg" alt="LEBENSLAUFY" width="100%"></a></td></tr></table>
+
 <details open>
 <summary><b>📱 Im App Store — meine veröffentlichten iPhone- & iPad-Apps</b></summary>
 
@@ -315,15 +318,13 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 
 <br>
 
-| Repository | What it is | Language | Latest release | Updated |
-|---|---|---|---|---|
-| [`island-crew-downloads`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) | island-crew-downloads | HTML | [island-crew-suite-v1.0.0-macos-arm64](https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64) | 2026-11-23 |
-| [`islandcrewsuite`](https://github.com/MAXIMILIANOGROSS/islandcrewsuite) | suite marketing | Python | — | 2026-11-15 |
-| [`meeting-booker-repo`](https://github.com/MAXIMILIANOGROSS/meeting-booker-repo) | — | JavaScript | — | 2026-11-01 |
-| [`MyBrain`](https://github.com/MAXIMILIANOGROSS/MyBrain) | Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT | TypeScript | — | 2026-10-28 |
-| [`virtual-office`](https://github.com/MAXIMILIANOGROSS/virtual-office) | Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase. | TypeScript | — | 2026-10-23 |
-| [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
-| [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
+- [`island-crew-downloads`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) <sub>HTML · [`island-crew-suite-v1.0.0-macos`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64) · 2026-11-23</sub>
+- [`islandcrewsuite`](https://github.com/MAXIMILIANOGROSS/islandcrewsuite) — suite marketing <sub>Python · 2026-11-15</sub>
+- [`meeting-booker-repo`](https://github.com/MAXIMILIANOGROSS/meeting-booker-repo) <sub>JavaScript · 2026-11-01</sub>
+- [`MyBrain`](https://github.com/MAXIMILIANOGROSS/MyBrain) — Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT <sub>TypeScript · 2026-10-28</sub>
+- [`virtual-office`](https://github.com/MAXIMILIANOGROSS/virtual-office) — Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase. <sub>TypeScript · 2026-10-23</sub>
+- [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
+- [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
 <sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-26 20:56 UTC</sub>
 
@@ -332,14 +333,13 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 <a id="lab"></a>
 <img src="assets/sections/de/lab.svg" alt="08 Open source and labs" width="100%">
 
-| Projekt | Status | Was es ist | |
-|---|---|---|---|
-| **ENODEUS** | `SaaS-SUITE` | SaaS-Suite für Unternehmen: digitalisiert Prozesse und Qualitätsprüfungen für 15 Industriefelder. | [Website](https://enodeus.ch) |
-| **MyBrain** | `OPEN SOURCE · MIT` | Ein zweites Ich: beobachtet echte Daten, schlägt täglich eine Aktion vor, wartet auf Freigabe, lernt. | [Repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
-| **Virtual Office** | `OPEN SOURCE` | 3D-Virtualbüro mit 43 KI-Agenten. Leere Vorlage auf Next.js + Supabase. | [Repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `RELEASE` | Selbstinstallierende Marketing-Suite für Mac / Windows für Restaurants. Downloads als Releases. | [Repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
-<img src="assets/generated/de/gravity-a4970201.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+- **ENODEUS** `SaaS-SUITE` — SaaS-Suite für Unternehmen: digitalisiert Prozesse und Qualitätsprüfungen für 15 Industriefelder. · [Website](https://enodeus.ch)
+- **MyBrain** `OPEN SOURCE · MIT` — Ein zweites Ich: beobachtet echte Daten, schlägt täglich eine Aktion vor, wartet auf Freigabe, lernt. · [Repo](https://github.com/MAXIMILIANOGROSS/MyBrain)
+- **Virtual Office** `OPEN SOURCE` — 3D-Virtualbüro mit 43 KI-Agenten. Leere Vorlage auf Next.js + Supabase. · [Repo](https://github.com/MAXIMILIANOGROSS/virtual-office)
+- **Island Crew Suite** `RELEASE` — Selbstinstallierende Marketing-Suite für Mac / Windows für Restaurants. Downloads als Releases. · [Repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
+
+<img src="assets/generated/de/gravity-fdad2248.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
 
 <img src="assets/generated/de/devlog-edb45d04.svg" alt="Development log" width="100%">
 

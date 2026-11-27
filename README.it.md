@@ -98,6 +98,9 @@ Indipendente, documentato, consegnato. Imparo creando prodotti reali.
 </tr>
 </table>
 
+<p align="center"><sub><b>MONDI DI PRODOTTO · SCREENSHOT REALI DI SITI ATTIVI</b></sub></p>
+<table><tr><td width="50%"><a href="https://enodeus.ch"><img src="assets/products/world-enodeus-c86d3a4f.svg" alt="ENODEUS" width="100%"></a></td><td width="50%"><a href="https://islandcrew.es"><img src="assets/products/world-islandcrew-b9e3cdad.svg" alt="ISLAND CREW" width="100%"></a></td></tr><tr><td><a href="https://enodeus.ch"><img src="assets/products/world-carbonuxis-2dbc994f.svg" alt="CARBONUXIS" width="100%"></a></td><td><a href="https://lebenslaufy.com"><img src="assets/products/world-lebenslaufy-4c142fe9.svg" alt="LEBENSLAUFY" width="100%"></a></td></tr></table>
+
 <details open>
 <summary><b>📱 Sull'App Store — le mie app pubblicate per iPhone e iPad</b></summary>
 
@@ -315,15 +318,13 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 
 <br>
 
-| Repository | What it is | Language | Latest release | Updated |
-|---|---|---|---|---|
-| [`island-crew-downloads`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) | island-crew-downloads | HTML | [island-crew-suite-v1.0.0-macos-arm64](https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64) | 2026-11-23 |
-| [`islandcrewsuite`](https://github.com/MAXIMILIANOGROSS/islandcrewsuite) | suite marketing | Python | — | 2026-11-15 |
-| [`meeting-booker-repo`](https://github.com/MAXIMILIANOGROSS/meeting-booker-repo) | — | JavaScript | — | 2026-11-01 |
-| [`MyBrain`](https://github.com/MAXIMILIANOGROSS/MyBrain) | Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT | TypeScript | — | 2026-10-28 |
-| [`virtual-office`](https://github.com/MAXIMILIANOGROSS/virtual-office) | Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase. | TypeScript | — | 2026-10-23 |
-| [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
-| [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
+- [`island-crew-downloads`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) <sub>HTML · [`island-crew-suite-v1.0.0-macos`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64) · 2026-11-23</sub>
+- [`islandcrewsuite`](https://github.com/MAXIMILIANOGROSS/islandcrewsuite) — suite marketing <sub>Python · 2026-11-15</sub>
+- [`meeting-booker-repo`](https://github.com/MAXIMILIANOGROSS/meeting-booker-repo) <sub>JavaScript · 2026-11-01</sub>
+- [`MyBrain`](https://github.com/MAXIMILIANOGROSS/MyBrain) — Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT <sub>TypeScript · 2026-10-28</sub>
+- [`virtual-office`](https://github.com/MAXIMILIANOGROSS/virtual-office) — Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase. <sub>TypeScript · 2026-10-23</sub>
+- [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
+- [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
 <sub>Ultimo aggiornamento da GitHub Actions: 2026-11-26 20:56 UTC</sub>
 
@@ -332,14 +333,13 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 <a id="lab"></a>
 <img src="assets/sections/it/lab.svg" alt="08 Open source and labs" width="100%">
 
-| Progetto | Stato | Cos'è | |
-|---|---|---|---|
-| **ENODEUS** | `SUITE SaaS` | Suite SaaS per aziende: digitalizza processi e ispezioni di qualità per 15 settori industriali. | [sito](https://enodeus.ch) |
-| **MyBrain** | `OPEN SOURCE · MIT` | Un secondo io: osserva dati reali, propone un'azione al giorno, attende l'approvazione, impara. | [repo](https://github.com/MAXIMILIANOGROSS/MyBrain) |
-| **Virtual Office** | `OPEN SOURCE` | Ufficio virtuale 3D con 43 agenti IA. Modello vuoto su Next.js + Supabase. | [repo](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `RELEASE` | Suite di marketing autoinstallante per Mac / Windows per ristoranti. Download pubblicati come release. | [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
-<img src="assets/generated/it/gravity-076b4f46.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+- **ENODEUS** `SUITE SaaS` — Suite SaaS per aziende: digitalizza processi e ispezioni di qualità per 15 settori industriali. · [sito](https://enodeus.ch)
+- **MyBrain** `OPEN SOURCE · MIT` — Un secondo io: osserva dati reali, propone un'azione al giorno, attende l'approvazione, impara. · [repo](https://github.com/MAXIMILIANOGROSS/MyBrain)
+- **Virtual Office** `OPEN SOURCE` — Ufficio virtuale 3D con 43 agenti IA. Modello vuoto su Next.js + Supabase. · [repo](https://github.com/MAXIMILIANOGROSS/virtual-office)
+- **Island Crew Suite** `RELEASE` — Suite di marketing autoinstallante per Mac / Windows per ristoranti. Download pubblicati come release. · [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
+
+<img src="assets/generated/it/gravity-37c4b7d8.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
 
 <img src="assets/generated/it/devlog-805033c7.svg" alt="Development log" width="100%">
 

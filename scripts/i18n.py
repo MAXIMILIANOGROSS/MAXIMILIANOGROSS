@@ -19,7 +19,7 @@ T["en"] = dict(
  prin="- **Verify, don't assume.** Every claim is tested before I report it as done.\n- **Traceability.** From the NDT world: every output can be traced to its source.\n- **Human in the loop.** Automation proposes; the owner approves what leaves the building.\n- **Ship small, ship real.** A working release beats a perfect plan.",
  icons_sum="▸ Stack as icons", stack_note="Only technologies that appear in my actual repositories.",
  repos_sum="📦 Public repositories (auto-generated)", refreshed="Last refreshed by GitHub Actions:",
- lab_hdr="| Project | Status | What it is | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 Beyond software", beyond_p="Music production, sound design, visual concepts and branding — including **Cabra Beats**, an AI-assisted music creation tool for business jingles and songs. Technical thinking combined with creativity.",
  yt_note="Automated channel — songs and jingles published by Cabra Beats.", c_q="Interested in building something meaningful together?", c_p="Open to remote opportunities, software collaborations and interesting projects — Greece / EU.",
  open="Open {} →", private="private source", site="site", repo="repo", lang_label="Language")
@@ -40,7 +40,7 @@ T["es"] = dict(
  prin="- **Verificar, no suponer.** Cada afirmación se prueba antes de darla por hecha.\n- **Trazabilidad.** Del mundo END: cada resultado se puede rastrear hasta su origen.\n- **Una persona al mando.** La automatización propone; el dueño aprueba lo que sale.\n- **Lanzar poco y real.** Una versión que funciona vale más que un plan perfecto.",
  icons_sum="▸ Stack en iconos", stack_note="Solo tecnologías que aparecen en mis repositorios reales.",
  repos_sum="📦 Repositorios públicos (generado automáticamente)", refreshed="Última actualización por GitHub Actions:",
- lab_hdr="| Proyecto | Estado | Qué es | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 Más allá del software", beyond_p="Producción musical, diseño sonoro, conceptos visuales y marca — incluido **Cabra Beats**, una herramienta de creación musical con IA para jingles y canciones de negocios. Pensamiento técnico unido a creatividad.",
  yt_note="Canal automatizado — canciones y jingles publicados por Cabra Beats.", c_q="¿Quieres que construyamos algo importante juntos?", c_p="Abierto a oportunidades en remoto, colaboraciones de software y proyectos interesantes — Grecia / UE.",
  open="Abrir {} →", private="código privado", site="web", repo="repo", lang_label="Idioma")
@@ -61,7 +61,7 @@ T["de"] = dict(
  prin="- **Prüfen statt annehmen.** Jede Aussage wird getestet, bevor ich sie als erledigt melde.\n- **Rückverfolgbarkeit.** Aus der ZfP-Welt: Jedes Ergebnis lässt sich bis zur Quelle zurückverfolgen.\n- **Mensch im Loop.** Die Automatisierung schlägt vor; der Inhaber gibt frei, was das Haus verlässt.\n- **Klein und echt ausliefern.** Ein funktionierendes Release schlägt einen perfekten Plan.",
  icons_sum="▸ Stack als Icons", stack_note="Nur Technologien, die in meinen echten Repositories vorkommen.",
  repos_sum="📦 Öffentliche Repositories (automatisch erzeugt)", refreshed="Zuletzt aktualisiert durch GitHub Actions:",
- lab_hdr="| Projekt | Status | Was es ist | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 Jenseits der Software", beyond_p="Musikproduktion, Sounddesign, visuelle Konzepte und Branding — darunter **Cabra Beats**, ein KI-gestütztes Musikwerkzeug für Jingles und Songs von Unternehmen. Technisches Denken trifft Kreativität.",
  yt_note="Automatisierter Kanal — von Cabra Beats veröffentlichte Songs und Jingles.", c_q="Lust, gemeinsam etwas Bedeutendes zu bauen?", c_p="Offen für Remote-Stellen, Software-Kooperationen und spannende Projekte — Griechenland / EU.",
  open="{} öffnen →", private="privater Code", site="Website", repo="Repo", lang_label="Sprache")
@@ -82,7 +82,7 @@ T["it"] = dict(
  prin="- **Verificare, non supporre.** Ogni affermazione viene testata prima di darla per fatta.\n- **Tracciabilità.** Dal mondo dei CND: ogni risultato è riconducibile alla sua origine.\n- **Una persona al comando.** L'automazione propone; il titolare approva ciò che esce.\n- **Rilasciare poco e vero.** Una versione funzionante batte un piano perfetto.",
  icons_sum="▸ Stack in icone", stack_note="Solo tecnologie presenti nei miei repository reali.",
  repos_sum="📦 Repository pubblici (generato automaticamente)", refreshed="Ultimo aggiornamento da GitHub Actions:",
- lab_hdr="| Progetto | Stato | Cos'è | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 Oltre il software", beyond_p="Produzione musicale, sound design, concept visivi e branding — incluso **Cabra Beats**, uno strumento di creazione musicale assistito da IA per jingle e canzoni aziendali. Pensiero tecnico unito alla creatività.",
  yt_note="Canale automatizzato — canzoni e jingle pubblicati da Cabra Beats.", c_q="Ti va di costruire qualcosa di importante insieme?", c_p="Aperto a opportunità da remoto, collaborazioni software e progetti interessanti — Grecia / UE.",
  open="Apri {} →", private="codice privato", site="sito", repo="repo", lang_label="Lingua")
@@ -103,7 +103,7 @@ T["fr"] = dict(
  prin="- **Vérifier, ne pas supposer.** Chaque affirmation est testée avant d'être déclarée terminée.\n- **Traçabilité.** Issue du monde du CND : chaque résultat remonte à sa source.\n- **L'humain dans la boucle.** L'automatisation propose ; le propriétaire valide ce qui sort.\n- **Livrer petit, livrer vrai.** Une version qui fonctionne vaut mieux qu'un plan parfait.",
  icons_sum="▸ Stack en icônes", stack_note="Uniquement des technologies présentes dans mes dépôts réels.",
  repos_sum="📦 Dépôts publics (généré automatiquement)", refreshed="Dernière mise à jour par GitHub Actions :",
- lab_hdr="| Projet | Statut | De quoi s'agit-il | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 Au-delà du logiciel", beyond_p="Production musicale, design sonore, concepts visuels et branding — dont **Cabra Beats**, un outil de création musicale assisté par IA pour jingles et chansons d'entreprise. La pensée technique alliée à la créativité.",
  yt_note="Chaîne automatisée — chansons et jingles publiés par Cabra Beats.", c_q="Envie de construire quelque chose d'important ensemble ?", c_p="Ouvert aux opportunités à distance, aux collaborations logicielles et aux projets intéressants — Grèce / UE.",
  open="Ouvrir {} →", private="code privé", site="site", repo="dépôt", lang_label="Langue")
@@ -124,7 +124,7 @@ T["zh"] = dict(
  prin="- **验证，而非假设。** 每个结论都先测试，再宣布完成。\n- **可追溯。** 源自无损检测领域：每个输出都能追溯到来源。\n- **人在回路。** 自动化提出建议；店主批准对外发出的内容。\n- **小步发布，真实交付。** 一个可用的版本胜过完美的计划。",
  icons_sum="▸ 技术栈图标", stack_note="仅列出我真实仓库中出现的技术。",
  repos_sum="📦 公开仓库（自动生成）", refreshed="GitHub Actions 最近更新：",
- lab_hdr="| 项目 | 状态 | 简介 | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 软件之外", beyond_p="音乐制作、声音设计、视觉概念与品牌 —— 包括 **Cabra Beats**，一款面向企业广告歌和歌曲的 AI 辅助音乐创作工具。技术思维与创造力结合。",
  yt_note="自动化频道 —— 由 Cabra Beats 发布的歌曲和广告歌。", c_q="想一起做点有意义的事吗？", c_p="欢迎远程工作机会、软件合作和有趣的项目 —— 希腊 / 欧盟。",
  open="打开 {} →", private="私有代码", site="网站", repo="仓库", lang_label="语言")
@@ -145,7 +145,7 @@ T["ar"] = dict(
  prin="- **تحقّق ولا تفترض.** كل ادعاء يُختبر قبل أن أعلن إنجازه.\n- **التتبّع.** من عالم الاختبارات غير الإتلافية: كل مخرَج يمكن تتبّعه إلى مصدره.\n- **الإنسان في الحلقة.** الأتمتة تقترح، والمالك يوافق على ما يخرج.\n- **أطلق قليلًا وبصدق.** إصدار يعمل أفضل من خطة مثالية.",
  icons_sum="▸ التقنيات كأيقونات", stack_note="فقط التقنيات الموجودة في مستودعاتي الفعلية.",
  repos_sum="📦 المستودعات العامة (تُولَّد تلقائيًا)", refreshed="آخر تحديث بواسطة GitHub Actions:",
- lab_hdr="| المشروع | الحالة | ما هو | |\n|---|---|---|---|",
+ lab_hdr="",
  beyond_sum="🎧 ما وراء البرمجيات", beyond_p="إنتاج موسيقي وتصميم صوتي ومفاهيم بصرية وهوية — ومنها **Cabra Beats**، أداة لإنشاء الموسيقى بمساعدة الذكاء الاصطناعي لأغاني وجينغلات الأعمال. تفكير تقني مقرون بالإبداع.",
  yt_note="قناة آلية — أغانٍ وجينغلات تنشرها Cabra Beats.", c_q="هل تود أن نبني شيئًا ذا قيمة معًا؟", c_p="منفتح على فرص العمل عن بُعد والتعاون البرمجي والمشاريع المثيرة — اليونان / الاتحاد الأوروبي.",
  open="افتح {} ←", private="شيفرة خاصة", site="الموقع", repo="المستودع", lang_label="اللغة")

@@ -98,6 +98,9 @@
 </tr>
 </table>
 
+<p align="center"><sub><b>产品世界 · 在线网站真实截图</b></sub></p>
+<table><tr><td width="50%"><a href="https://enodeus.ch"><img src="assets/products/world-enodeus-c86d3a4f.svg" alt="ENODEUS" width="100%"></a></td><td width="50%"><a href="https://islandcrew.es"><img src="assets/products/world-islandcrew-b9e3cdad.svg" alt="ISLAND CREW" width="100%"></a></td></tr><tr><td><a href="https://enodeus.ch"><img src="assets/products/world-carbonuxis-2dbc994f.svg" alt="CARBONUXIS" width="100%"></a></td><td><a href="https://lebenslaufy.com"><img src="assets/products/world-lebenslaufy-4c142fe9.svg" alt="LEBENSLAUFY" width="100%"></a></td></tr></table>
+
 <details open>
 <summary><b>📱 App Store 上 —— 我已发布的 iPhone 和 iPad 应用</b></summary>
 
@@ -315,15 +318,13 @@ flowchart LR
 
 <br>
 
-| Repository | What it is | Language | Latest release | Updated |
-|---|---|---|---|---|
-| [`island-crew-downloads`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) | island-crew-downloads | HTML | [island-crew-suite-v1.0.0-macos-arm64](https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64) | 2026-11-23 |
-| [`islandcrewsuite`](https://github.com/MAXIMILIANOGROSS/islandcrewsuite) | suite marketing | Python | — | 2026-11-15 |
-| [`meeting-booker-repo`](https://github.com/MAXIMILIANOGROSS/meeting-booker-repo) | — | JavaScript | — | 2026-11-01 |
-| [`MyBrain`](https://github.com/MAXIMILIANOGROSS/MyBrain) | Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT | TypeScript | — | 2026-10-28 |
-| [`virtual-office`](https://github.com/MAXIMILIANOGROSS/virtual-office) | Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase. | TypeScript | — | 2026-10-23 |
-| [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) | carbonáis para android | — | — | 2026-09-24 |
-| [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) | — | — | — | 2026-09-21 |
+- [`island-crew-downloads`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) <sub>HTML · [`island-crew-suite-v1.0.0-macos`](https://github.com/MAXIMILIANOGROSS/island-crew-downloads/releases/tag/island-crew-suite-v1.0.0-macos-arm64) · 2026-11-23</sub>
+- [`islandcrewsuite`](https://github.com/MAXIMILIANOGROSS/islandcrewsuite) — suite marketing <sub>Python · 2026-11-15</sub>
+- [`meeting-booker-repo`](https://github.com/MAXIMILIANOGROSS/meeting-booker-repo) <sub>JavaScript · 2026-11-01</sub>
+- [`MyBrain`](https://github.com/MAXIMILIANOGROSS/MyBrain) — Your second self: observes real data, proposes one action a day, waits for your approval, and learns. Free, MIT <sub>TypeScript · 2026-10-28</sub>
+- [`virtual-office`](https://github.com/MAXIMILIANOGROSS/virtual-office) — Oficina virtual 3D con 43 agentes de IA. Plantilla en blanco, Next.js + Supabase. <sub>TypeScript · 2026-10-23</sub>
+- [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
+- [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
 <sub>GitHub Actions 最近更新： 2026-11-26 20:56 UTC</sub>
 
@@ -332,14 +333,13 @@ flowchart LR
 <a id="lab"></a>
 <img src="assets/sections/zh/lab.svg" alt="08 Open source and labs" width="100%">
 
-| 项目 | 状态 | 简介 | |
-|---|---|---|---|
-| **ENODEUS** | `SaaS 套件` | 面向企业的 SaaS 套件：为 15 个工业领域的流程与质量检测实现数字化。 | [网站](https://enodeus.ch) |
-| **MyBrain** | `开源 · MIT` | 第二个自己：观察真实数据，每天提出一项行动，等待批准并持续学习。 | [仓库](https://github.com/MAXIMILIANOGROSS/MyBrain) |
-| **Virtual Office** | `开源` | 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 | [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office) |
-| **Island Crew Suite** | `发行版` | 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 | [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads) |
 
-<img src="assets/generated/zh/gravity-e24c3089.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+- **ENODEUS** `SaaS 套件` — 面向企业的 SaaS 套件：为 15 个工业领域的流程与质量检测实现数字化。 · [网站](https://enodeus.ch)
+- **MyBrain** `开源 · MIT` — 第二个自己：观察真实数据，每天提出一项行动，等待批准并持续学习。 · [仓库](https://github.com/MAXIMILIANOGROSS/MyBrain)
+- **Virtual Office** `开源` — 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 · [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office)
+- **Island Crew Suite** `发行版` — 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 · [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
+
+<img src="assets/generated/zh/gravity-df35c3bf.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
 
 <img src="assets/generated/zh/devlog-f8a509b3.svg" alt="Development log" width="100%">
 

@@ -78,6 +78,8 @@
 
 {{GRID}}
 
+{{WORLDS}}
+
 <details open>
 <summary><b>{{t.store_sum}}</b></summary>
 
