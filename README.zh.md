@@ -265,11 +265,11 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/generated/zh/standards-4528c15b.svg" alt="标准与资质" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/standards-n-ab5c1dcb.svg"><img src="assets/generated/zh/standards-4528c15b.svg" alt="标准与资质" width="100%"></picture>
 
 <br><br>
 
-<img src="assets/generated/zh/mapping-0ef77c10.svg" alt="What NDT methods taught me about code" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/mapping-n-820424f0.svg"><img src="assets/generated/zh/mapping-0ef77c10.svg" alt="What NDT methods taught me about code" width="100%"></picture>
 
 </div>
 
@@ -326,7 +326,7 @@ flowchart LR
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>GitHub Actions 最近更新： 2026-11-27 00:10 UTC</sub>
+<sub>GitHub Actions 最近更新： 2026-11-27 00:19 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ flowchart LR
 - **Virtual Office** `开源` — 拥有 43 个 AI 智能体的 3D 虚拟办公室。基于 Next.js + Supabase 的空白模板。 · [仓库](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `发行版` — 面向餐厅的 Mac / Windows 自安装营销套件。下载以 release 形式发布。 · [仓库](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<img src="assets/generated/zh/gravity-df35c3bf.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/gravity-n-39bb0e3a.svg"><img src="assets/generated/zh/gravity-df35c3bf.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
-<img src="assets/generated/zh/devlog-f8a509b3.svg" alt="Development log" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/devlog-n-059b7f4c.svg"><img src="assets/generated/zh/devlog-f8a509b3.svg" alt="Development log" width="100%"></picture>
 
-<img src="assets/generated/zh/telemetry-68458e74.svg" alt="Development telemetry" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/zh/telemetry-n-bfab0d7a.svg"><img src="assets/generated/zh/telemetry-7784c5b4.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 软件之外</b></summary>

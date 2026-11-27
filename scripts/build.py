@@ -531,6 +531,115 @@ def worlds(lg):
         pth = f"assets/products/world-{k}-{hashlib.md5(content.encode()).hexdigest()[:8]}.svg"; write(pth, content)
         rows.append(f'<a href="{url}"><img src="{pth}" alt="{nm}" width="100%"></a>')
     return rows
+# ---- narrow (mobile) variants, 600 wide, large type -------------------------------------------------
+def _wrapn(t, n): return textwrap.wrap(t, n) or [t]
+def mapping_n(lg):
+    title, hl, hr, L, Rr = i18n.M[lg]; W = 600; rh = 74; H = 92 + len(L) * rh + 14
+    cols = [C["cyan"], C["green"], "#a78bfa", C["amber"], "#fb7185", "#60a5fa", C["cyan"]]
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".5"/>']
+    for k, ln in enumerate(_wrapn(title, 34)[:2]): o.append(f'<text x="24" y="{34+k*22}" font-family="{MONO}" font-weight="700" font-size="17" fill="{C["cyan"]}" letter-spacing="2">{esc(ln)}</text>')
+    for i, l in enumerate(L):
+        y = 86 + i * rh; col = cols[i]
+        o.append(f'<rect x="16" y="{y}" width="{W-32}" height="64" rx="12" fill="#0b1220" stroke="{col}" stroke-opacity=".5" stroke-width="1.5"/><rect x="16" y="{y}" width="6" height="64" rx="3" fill="{col}"/>'
+                 f'<text x="38" y="{y+27}" font-family="{MONO}" font-weight="700" font-size="19" fill="#e6f6ff">{esc(l)}</text>'
+                 f'<text x="38" y="{y+53}" font-family="{SANS}" font-weight="800" font-size="19" fill="{col}">→ {esc(Rr[i])}</text>')
+    return svg(W, H, "".join(o), title)
+def standards_n(lg):
+    W = 600; QL = {"en": "QUALIFICATIONS", "es": "CUALIFICACIONES", "de": "QUALIFIKATIONEN", "it": "QUALIFICHE", "fr": "QUALIFICATIONS", "zh": "资质", "ar": "المؤهلات"}
+    rows = [(i18n.T[lg]["std_h"].upper(), ["EASA", "EN 4179", "EN 9100", "ISO 9001", "ASME", "VCA"], C["mute"]), (QL[lg], ["PT L2", "MT L1+2", "CSN RADIATION OPERATOR 2023–2028"], C["cyan"])]
+    o = []; y = 34
+    for lab, chips, col in rows:
+        o.append(f'<text x="22" y="{y}" font-family="{MONO}" font-size="15" fill="{col}" letter-spacing="2">{esc(lab[:40])}</text>'); y += 14; x = 22
+        for ch in chips:
+            w = int(len(ch) * 11.5 + 28)
+            if x + w > W - 16: x = 22; y += 46
+            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="36" rx="9" fill="#0b1220" stroke="{col}" stroke-opacity=".8"/><text x="{x+w/2}" y="{y+24}" text-anchor="middle" font-family="{MONO}" font-weight="700" font-size="18" fill="#e6f6ff">{esc(ch)}</text>'); x += w + 10
+        y += 76
+    H = y - 16
+    return svg(W, H, f'<rect width="{W}" height="{H}" rx="12" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/>' + "".join(o), "qualifications")
+def devlog_n(lg):
+    ev = []
+    for r in R.get("public_repos", []):
+        for c in r.get("recent") or []: ev.append((c["date"], "c", r["name"], c["msg"], c["url"]))
+        if r.get("release"): ev.append((r["release"]["date"], "r", r["name"], r["release"]["name"], r["release"]["url"]))
+    ev = sorted(set(ev), reverse=True)[:5]; t = DL[lg]; W = 600; rh = 92; H = 76 + rh * max(1, len(ev))
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/>']
+    for k, ln in enumerate(_wrapn(t[0], 30)[:2]): o.append(f'<text x="22" y="{34+k*22}" font-family="{MONO}" font-weight="700" font-size="16" fill="{C["cyan"]}" letter-spacing="2">{esc(ln)}</text>')
+    for i, (d, k, n, m, u) in enumerate(ev):
+        y = 84 + i * rh; col = C["amber"] if k == "r" else C["cyan"]
+        o.append(f'<a href="{esc(u)}"><circle cx="30" cy="{y+8}" r="7" fill="{col}"/><text x="50" y="{y+13}" font-family="{MONO}" font-size="16" fill="{C["mute"]}">{esc(d[:10])} · {esc(t[2] if k == "r" else t[1])}</text>'
+                 f'<text x="50" y="{y+38}" font-family="{MONO}" font-weight="700" font-size="19" fill="#e6f6ff">{esc(n[:30])}</text><text x="50" y="{y+62}" font-family="{MONO}" font-size="15" fill="#b8cde0">{esc(m if len(m) <= 44 else m[:43] + "…")}</text></a>')
+    return svg(W, H, "".join(o), t[0])
+def telemetry_n(lg):
+    W, H = 600, 596; t = TL[lg]; repos = R.get("public_repos", [])
+    wk = [sum((r.get("weekly") or [0]*12)[i] for r in repos) for i in range(12)]; mx = max(wk + [1]); now = _dt.datetime.now(_dt.timezone.utc)
+    active = sum(1 for r in repos if (now - _dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))).days <= 30); rels = sum(1 for r in repos if r.get("release"))
+    langs = list(R.get("languages", {}).items())[:4]; tot = sum(R.get("languages", {}).values()) or 1
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/>']
+    for k, ln in enumerate(_wrapn(t[0], 26)[:2]): o.append(f'<text x="22" y="{34+k*24}" font-family="{MONO}" font-weight="700" font-size="19" fill="{C["cyan"]}" letter-spacing="2">{esc(ln)}</text>')
+    for j, (lab, val, col) in enumerate([(t[2], active, C["green"]), (t[3], rels, C["amber"])]):
+        x = 16 + j * 288
+        o.append(f'<rect x="{x}" y="76" width="280" height="86" rx="12" fill="#0b1220" stroke="{col}" stroke-opacity=".7" stroke-width="2"/><text x="{x+16}" y="130" font-family="{SANS}" font-weight="800" font-size="46" fill="{col}">{val}</text><text x="{x+86}" y="126" font-family="{MONO}" font-size="14" fill="#9fb6cc">{esc(lab[:20])}</text>')
+    o.append(f'<text x="22" y="196" font-family="{MONO}" font-size="14" fill="{C["mute"]}" letter-spacing="1">{esc(t[1])}</text>')
+    bw, gap, base, ch = 34, 12, 372, 140
+    for i, v in enumerate(wk):
+        h = max(3, v / mx * ch) if v else 3; x = 22 + i * (bw + gap) * 0.98 * 0.97
+        o.append(f'<rect x="{x:.0f}" y="{base-h:.0f}" width="{bw*0.9:.0f}" height="{h:.0f}" rx="4" fill="{C["cyan"] if v else C["line"]}"/>' + (f'<text x="{x+bw*0.45:.0f}" y="{base-h-6:.0f}" text-anchor="middle" font-family="{MONO}" font-weight="700" font-size="15" fill="#e6f6ff">{v}</text>' if v else ""))
+    for j, (n, v) in enumerate(langs):
+        y = 410 + j * 36; pct = v / tot
+        o.append(f'<text x="22" y="{y+14}" font-family="{MONO}" font-size="16" fill="#cfe6f7">{esc(n)}</text><rect x="150" y="{y}" width="340" height="16" rx="8" fill="{C["line"]}"/><rect x="150" y="{y}" width="{max(5, pct*340):.0f}" height="16" rx="8" fill="url(#ac)"/><text x="{W-22}" y="{y+14}" text-anchor="end" font-family="{MONO}" font-size="16" fill="{C["mute"]}">{pct*100:.0f}%</text>')
+    o.append(f'<text x="22" y="{H-14}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{esc(t[5][:44])}</text>')
+    return svg(W, H, "".join(o), t[0])
+def gravity_n(lg):
+    import hashlib
+    W, H = 600, 640; cx, cy = 300, 330; repos = R.get("public_repos", []); now = _dt.datetime.now(_dt.timezone.utc)
+    alll = list(R.get("languages", {}).keys()); col = {k: LCOL[i % len(LCOL)] for i, k in enumerate(alll)}
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="#060a11" stroke="{C["line"]}" stroke-width="2"/>']
+    for k, ln in enumerate(_wrapn(GT[lg], 36)[:2]): o.append(f'<text x="20" y="{32+k*22}" font-family="{MONO}" font-weight="700" font-size="15" fill="{C["cyan"]}" letter-spacing="2">{esc(ln)}</text>')
+    days = [max(0, (now - _dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))).days) for r in repos]; dmax = max(days + [1]); n = max(1, len(repos))
+    for rr in (80, 140, 200): o.append(f'<circle cx="{cx}" cy="{cy}" r="{rr}" fill="none" stroke="{C["line"]}" stroke-dasharray="3 7"/>')
+    o.append(f'<circle cx="{cx}" cy="{cy}" r="26" fill="url(#ac)"/><text x="{cx}" y="{cy+5}" text-anchor="middle" font-family="{MONO}" font-weight="800" font-size="14" fill="#04101a">MG</text>')
+    for i, r in enumerate(sorted(range(n), key=lambda k: days[k])):
+        p = repos[r]; seed = int(hashlib.md5(p["name"].encode()).hexdigest()[:6], 16)
+        ring = 60 + (days[r] / dmax) ** .6 * 120; ang = (i / n) * 2 * math.pi + (seed % 100) / 100 * .4 - 1.2
+        pr = 9 + min(sum(p.get("weekly") or [0]), 40) ** .5 * 2; px, py = cx + ring * math.cos(ang), cy + ring * math.sin(ang)
+        left = px < cx; lx = px - (pr + 8) if left else px + pr + 8; nm_ = p["name"] if len(p["name"]) <= 15 else p["name"][:14] + "…"
+        o.append(f'<a href="{esc(p["url"])}"><circle cx="{px:.0f}" cy="{py:.0f}" r="{pr:.0f}" fill="#0b1626" stroke="{C["cyan"]}" stroke-width="2.5"/><circle cx="{px:.0f}" cy="{py:.0f}" r="{pr*.45:.0f}" fill="{C["cyan"]}"/><text x="{(max(10, px - len(nm_) * 4.3) if (left and lx - len(nm_) * 8.6 < 10) else lx):.0f}" y="{(py + pr + 22 if (left and lx - len(nm_) * 8.6 < 10) else py + 5):.0f}" text-anchor="{"start" if (left and lx - len(nm_) * 8.6 < 10) else ("end" if left else "start")}" font-family="{MONO}" font-size="14" font-weight="700" fill="#e6f6ff" stroke="#060a11" stroke-width="4" paint-order="stroke">{esc(nm_)}</text></a>')
+    for k, (nm, c_) in enumerate(list(col.items())[:4]):
+        o.append(f'<circle cx="{W-30-k*100}" cy="{H-26}" r="4" fill="{c_}"/><text x="{W-40-k*100}" y="{H-22}" text-anchor="end" font-family="{MONO}" font-size="11" fill="#9fb6cc">{esc(nm)}</text>')
+    return svg(W, H, "".join(o), GT[lg])
+DL = {"en": ("DEVELOPMENT LOG · LATEST REAL SIGNALS", "COMMIT", "RELEASE"), "es": ("REGISTRO DE DESARROLLO · ÚLTIMAS SEÑALES REALES", "COMMIT", "RELEASE"), "de": ("ENTWICKLUNGSPROTOKOLL · AKTUELLE ECHTE SIGNALE", "COMMIT", "RELEASE"), "it": ("REGISTRO DI SVILUPPO · ULTIMI SEGNALI REALI", "COMMIT", "RELEASE"), "fr": ("JOURNAL DE DÉVELOPPEMENT · DERNIERS SIGNAUX RÉELS", "COMMIT", "RELEASE"), "zh": ("开发日志 · 最新真实信号", "提交", "发布"), "ar": ("سجل التطوير · أحدث الإشارات الحقيقية", "التزام", "إصدار")}
+def devlog(lg):
+    ev = []
+    for r in R.get("public_repos", []):
+        for c in r.get("recent") or []: ev.append((c["date"], "c", r["name"], c["msg"], c["url"]))
+        if r.get("release"): ev.append((r["release"]["date"], "r", r["name"], r["release"]["name"][:90], r["release"]["url"]))
+    ev = sorted(set(ev), reverse=True)[:7]; t = DL[lg]; W = 1200; H = 80 + 44 * max(1, len(ev))
+    o = [f'<rect width="{W}" height="{H}" rx="14" fill="{C["panel"]}" stroke="{C["line"]}" stroke-width="2"/><text x="30" y="40" font-family="{MONO}" font-weight="700" font-size="15" fill="{C["cyan"]}" letter-spacing="3">{esc(t[0])}</text>',
+         f'<line x1="44" y1="64" x2="44" y2="{H-24}" stroke="{C["line"]}" stroke-width="2"/><circle r="5" fill="#fff"><animateMotion dur="6s" repeatCount="indefinite" path="M44 64 V{H-24}"/></circle>']
+    for i, (d, k, n, m, u) in enumerate(ev):
+        y = 90 + i * 44; col = C["amber"] if k == "r" else C["cyan"]
+        o.append(f'<a href="{esc(u)}"><circle cx="44" cy="{y}" r="6" fill="{col}"/><text x="68" y="{y+5}" font-family="{MONO}" font-size="12" fill="{C["mute"]}">{esc(d[:10])}</text><rect x="160" y="{y-11}" width="82" height="22" rx="6" fill="none" stroke="{col}" stroke-opacity=".7"/><text x="201" y="{y+4}" text-anchor="middle" font-family="{MONO}" font-size="11" font-weight="700" fill="{col}">{esc(t[2] if k == "r" else t[1])}</text><text x="260" y="{y+5}" font-family="{MONO}" font-size="13" font-weight="700" fill="#e6f6ff">{esc(n)}</text><text x="500" y="{y+5}" font-family="{MONO}" font-size="13" fill="#b8cde0">{esc(m if len(m) <= 68 else m[:67] + "…")}</text></a>')
+    return svg(W, H, "".join(o), t[0])
+WH = {"en": "PRODUCT WORLDS · REAL SCREENSHOTS OF LIVE SITES", "es": "MUNDOS DE PRODUCTO · CAPTURAS REALES DE SITIOS EN VIVO", "de": "PRODUKTWELTEN · ECHTE SCREENSHOTS LIVE-SEITEN", "it": "MONDI DI PRODOTTO · SCREENSHOT REALI DI SITI ATTIVI", "fr": "MONDES PRODUIT · CAPTURES RÉELLES DE SITES EN LIGNE", "zh": "产品世界 · 在线网站真实截图", "ar": "عوالم المنتجات · لقطات حقيقية لمواقع حية"}
+WORLDS = [("enodeus", "ENODEUS", "enodeus.ch", "#fbbf24", "https://enodeus.ch"), ("islandcrew", "ISLAND CREW", "islandcrew.es", "#facc15", "https://islandcrew.es"),
+          ("carbonuxis", "CARBONUXIS", "enodeus.ch · carbonuxis", "#34d399", "https://enodeus.ch"), ("lebenslaufy", "LEBENSLAUFY", "lebenslaufy.com", "#ef4444", "https://lebenslaufy.com")]
+def worlds(lg):
+    import base64, hashlib, glob
+    rows = []
+    for k, nm, dom, col, url in WORLDS:
+        img = base64.b64encode((ROOT / f"assets/products/src/{k}.jpg").read_bytes()).decode()
+        W, H = 600, 420
+        body = (f'<rect width="{W}" height="{H}" rx="14" fill="#060a11" stroke="{col}" stroke-opacity=".7" stroke-width="2"/>'
+                f'<rect x="1" y="1" width="{W-2}" height="40" rx="13" fill="#0c1420"/><circle cx="22" cy="21" r="5" fill="#ef4444"/><circle cx="40" cy="21" r="5" fill="#fbbf24"/><circle cx="58" cy="21" r="5" fill="#34d399"/>'
+                f'<rect x="84" y="9" width="{W-110}" height="24" rx="12" fill="#0b1626" stroke="{C["line"]}"/><text x="{W/2+0:.0f}" y="26" text-anchor="middle" font-family="{MONO}" font-size="12" fill="#9fb6cc">{esc(dom)}</text>'
+                f'<clipPath id="wc{k}"><rect x="1" y="41" width="{W-2}" height="{H-41-48}"/></clipPath><image href="data:image/jpeg;base64,{img}" x="1" y="41" width="{W-2}" height="{(W-2)*0.5406:.0f}" preserveAspectRatio="xMidYMin slice" clip-path="url(#wc{k})"/>'
+                f'<rect x="1" y="41" width="{W-2}" height="2" fill="{col}" opacity=".8"><animate attributeName="y" values="41;{H-48-2};41" dur="7s" repeatCount="indefinite"/></rect>'
+                f'<rect x="1" y="{H-48}" width="{W-2}" height="47" rx="13" fill="#0c1420"/><text x="22" y="{H-19}" font-family="{MONO}" font-weight="800" font-size="16" fill="{col}" letter-spacing="2">{esc(nm)}</text>')
+        content = svg(W, H, body, nm); [pathlib.Path(f).unlink() for f in glob.glob(str(ROOT / "assets/products" / (f"world-{k}-*.svg")))]
+        pth = f"assets/products/world-{k}-{hashlib.md5(content.encode()).hexdigest()[:8]}.svg"; write(pth, content)
+        rows.append(f'<a href="{url}"><img src="{pth}" alt="{nm}" width="100%"></a>')
+    return rows
 def navchip(label, num, col):
     w = max(120, int(len(label) * 10.5 + 70)) if all(ord(c) < 0x2e80 for c in label) else max(120, len(label) * 20 + 70)
     h = 44
@@ -573,7 +682,7 @@ def main():
             if lg != "en" and p["id"] in i18n.PROJ: q["tagline"], q["access"] = i18n.PROJ[p["id"]][lg]
             write(("assets/projects/" if lg == "en" else f"assets/projects/{lg}/") + f"{p['id']}.svg", card(q))
         write("assets/generated/pulse.svg", pulse())
-    HERO, ORB, CAR, MAP, CST, RAD, STD, TEL, GRV, DLG = {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
+    HERO, ORB, CAR, MAP, CST, RAD, STD, TEL, GRV, DLG, NAR = {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
     for lg, _, _ in i18n.LANGS:
         LG = lg; bd = "assets/branding/" + ("" if lg == "en" else lg + "/"); gd = "assets/generated/" + ("" if lg == "en" else lg + "/")
         import hashlib, glob
@@ -586,7 +695,7 @@ def main():
         write(gd + "ticker.svg", anim.ticker([t.format(n=METRICS["appstore_apps"]) for t in Xt()["ticker"]]))
         ORB[lg] = hashed(gd, "orbit", anim.orbit(Xt()["o_sub"], Xt()["o_cap"]))
         write(gd + "pipeline.svg", anim.pipeline(Xt()["p_subs"]))
-        TEL[lg] = hashed(gd, "telemetry", telemetry(lg)); GRV[lg] = hashed(gd, "gravity", gravity(lg)); DLG[lg] = hashed(gd, "devlog", devlog(lg)); RAD[lg] = hashed(gd, "radar", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
+        TEL[lg] = hashed(gd, "telemetry", telemetry(lg)); GRV[lg] = hashed(gd, "gravity", gravity(lg)); DLG[lg] = hashed(gd, "devlog", devlog(lg)); NAR[lg] = {"MAPPING_N": hashed(gd, "mapping-n", mapping_n(lg)), "STANDARDS_N": hashed(gd, "standards-n", standards_n(lg)), "DEVLOG_N": hashed(gd, "devlog-n", devlog_n(lg)), "TELE_N": hashed(gd, "telemetry-n", telemetry_n(lg)), "GRAV_N": hashed(gd, "gravity-n", gravity_n(lg))}; RAD[lg] = hashed(gd, "radar", radar()); write(gd + "terminal.svg", terminal()); write(gd + "stats.svg", stats())
     WORLD_ROWS = worlds('en')
     snake = ""
     if (ROOT / "assets/generated/snake.svg").exists() and (ROOT / "assets/generated/snake-dark.svg").exists():
@@ -615,7 +724,7 @@ def main():
         bar.append("</p>")
         rtl = lg == "ar"
         out = tpl0
-        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{TELE}}": TEL[lg], "{{GRAV}}": GRV[lg], "{{WORLDS}}": "<p align=\"center\"><sub><b>" + WH[lg] + "</b></sub></p>\n<table><tr><td width=\"50%\">" + WORLD_ROWS[0] + "</td><td width=\"50%\">" + WORLD_ROWS[1] + "</td></tr><tr><td>" + WORLD_ROWS[2] + "</td><td>" + WORLD_ROWS[3] + "</td></tr></table>", "{{DEVLOG}}": DLG[lg], "{{STANDARDS}}": STD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
+        for k, v in {"{{LANGBAR}}": " ".join(bar), "{{NAV}}": nav, "{{DIR_OPEN}}": '<div dir="rtl">' if rtl else "", "{{DIR_CLOSE}}": "</div>" if rtl else "", "{{SD}}": "" if lg == "en" else lg + "/", "{{HERO}}": HERO[lg], "{{CAREER}}": CAR[lg], "{{RADAR}}": RAD[lg], "{{TELE}}": TEL[lg], "{{GRAV}}": GRV[lg], **{"{{" + k + "}}": v for k, v in NAR[lg].items()}, "{{WORLDS}}": "<p align=\"center\"><sub><b>" + WH[lg] + "</b></sub></p>\n<table><tr><td width=\"50%\">" + WORLD_ROWS[0] + "</td><td width=\"50%\">" + WORLD_ROWS[1] + "</td></tr><tr><td>" + WORLD_ROWS[2] + "</td><td>" + WORLD_ROWS[3] + "</td></tr></table>", "{{DEVLOG}}": DLG[lg], "{{STANDARDS}}": STD[lg], "{{MAPPING}}": MAP[lg], "{{CSTATS}}": CST[lg], "{{ORBIT}}": ORB[lg], "{{BD}}": "assets/branding/" + ("" if lg == "en" else lg + "/"), "{{GD}}": "assets/generated/" + ("" if lg == "en" else lg + "/"),
                      "{{GRID}}": grid, "{{LAB}}": lab, "{{REPOS}}": repo_table(), "{{SNAKE}}": snake, "{{UPDATED}}": R.get("generated", "pending first workflow run"), "{{OWNER}}": P["owner"],
                      "{{LINKEDIN}}": P["contact"]["linkedin"], "{{SITE}}": P["contact"]["site"]}.items(): out = out.replace(k, v)
         out = re.sub(r"\{\{t\.(\w+)\}\}", lambda m: T[m.group(1)], out)

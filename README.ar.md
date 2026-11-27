@@ -265,11 +265,11 @@ flowchart LR
 
 <div align="center">
 
-<img src="assets/generated/ar/standards-fd965a25.svg" alt="المعايير والاعتمادات" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/ar/standards-n-6d56bc59.svg"><img src="assets/generated/ar/standards-fd965a25.svg" alt="المعايير والاعتمادات" width="100%"></picture>
 
 <br><br>
 
-<img src="assets/generated/ar/mapping-ffe702c0.svg" alt="What NDT methods taught me about code" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/ar/mapping-n-d51fbe4a.svg"><img src="assets/generated/ar/mapping-ffe702c0.svg" alt="What NDT methods taught me about code" width="100%"></picture>
 
 </div>
 
@@ -326,7 +326,7 @@ flowchart LR
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>آخر تحديث بواسطة GitHub Actions: 2026-11-27 00:10 UTC</sub>
+<sub>آخر تحديث بواسطة GitHub Actions: 2026-11-27 00:19 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ flowchart LR
 - **Virtual Office** `مفتوح المصدر` — مكتب افتراضي ثلاثي الأبعاد بـ 43 وكيل ذكاء اصطناعي. قالب فارغ على Next.js + Supabase. · [المستودع](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `إصدار` — حزمة تسويق ذاتية التثبيت لنظامي Mac وWindows للمطاعم. التنزيلات منشورة كإصدارات. · [المستودع](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<img src="assets/generated/ar/gravity-34c34f57.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/ar/gravity-n-86de12a2.svg"><img src="assets/generated/ar/gravity-34c34f57.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
-<img src="assets/generated/ar/devlog-0f0d20a0.svg" alt="Development log" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/ar/devlog-n-25af1707.svg"><img src="assets/generated/ar/devlog-0f0d20a0.svg" alt="Development log" width="100%"></picture>
 
-<img src="assets/generated/ar/telemetry-7af6bba3.svg" alt="Development telemetry" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/ar/telemetry-n-d1427a37.svg"><img src="assets/generated/ar/telemetry-7c4a5b3b.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 ما وراء البرمجيات</b></summary>

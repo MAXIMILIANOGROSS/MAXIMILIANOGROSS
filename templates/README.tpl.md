@@ -233,11 +233,11 @@ flowchart LR
 
 <div align="center">
 
-<img src="{{STANDARDS}}" alt="{{t.std_h}}" width="100%">
+<picture><source media="(max-width: 700px)" srcset="{{STANDARDS_N}}"><img src="{{STANDARDS}}" alt="{{t.std_h}}" width="100%"></picture>
 
 <br><br>
 
-<img src="{{MAPPING}}" alt="What NDT methods taught me about code" width="100%">
+<picture><source media="(max-width: 700px)" srcset="{{MAPPING_N}}"><img src="{{MAPPING}}" alt="What NDT methods taught me about code" width="100%"></picture>
 
 </div>
 
@@ -298,11 +298,11 @@ flowchart LR
 {{t.lab_hdr}}
 {{LAB}}
 
-<img src="{{GRAV}}" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+<picture><source media="(max-width: 700px)" srcset="{{GRAV_N}}"><img src="{{GRAV}}" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
-<img src="{{DEVLOG}}" alt="Development log" width="100%">
+<picture><source media="(max-width: 700px)" srcset="{{DEVLOG_N}}"><img src="{{DEVLOG}}" alt="Development log" width="100%"></picture>
 
-<img src="{{TELE}}" alt="Development telemetry" width="100%">
+<picture><source media="(max-width: 700px)" srcset="{{TELE_N}}"><img src="{{TELE}}" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>{{t.beyond_sum}}</b></summary>

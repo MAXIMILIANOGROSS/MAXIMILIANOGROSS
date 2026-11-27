@@ -265,11 +265,11 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 
 <div align="center">
 
-<img src="assets/generated/de/standards-3613bc0f.svg" alt="Normen & Qualifikationen" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/de/standards-n-c152c9b0.svg"><img src="assets/generated/de/standards-3613bc0f.svg" alt="Normen & Qualifikationen" width="100%"></picture>
 
 <br><br>
 
-<img src="assets/generated/de/mapping-3edf436c.svg" alt="What NDT methods taught me about code" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/de/mapping-n-4dccdd54.svg"><img src="assets/generated/de/mapping-3edf436c.svg" alt="What NDT methods taught me about code" width="100%"></picture>
 
 </div>
 
@@ -326,7 +326,7 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-27 00:10 UTC</sub>
+<sub>Zuletzt aktualisiert durch GitHub Actions: 2026-11-27 00:19 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ Die ZfP ist seit 2007 mein Handwerk: Schweißnähte, Flugzeugtriebwerke und Rake
 - **Virtual Office** `OPEN SOURCE` — 3D-Virtualbüro mit 43 KI-Agenten. Leere Vorlage auf Next.js + Supabase. · [Repo](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `RELEASE` — Selbstinstallierende Marketing-Suite für Mac / Windows für Restaurants. Downloads als Releases. · [Repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<img src="assets/generated/de/gravity-fdad2248.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/de/gravity-n-1fb44a5e.svg"><img src="assets/generated/de/gravity-fdad2248.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
-<img src="assets/generated/de/devlog-edb45d04.svg" alt="Development log" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/de/devlog-n-d5b8829a.svg"><img src="assets/generated/de/devlog-edb45d04.svg" alt="Development log" width="100%"></picture>
 
-<img src="assets/generated/de/telemetry-76b61756.svg" alt="Development telemetry" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/de/telemetry-n-2cb27c3f.svg"><img src="assets/generated/de/telemetry-76217a53.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Jenseits der Software</b></summary>

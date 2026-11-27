@@ -265,11 +265,11 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 
 <div align="center">
 
-<img src="assets/generated/it/standards-ac090a05.svg" alt="Norme e credenziali" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/standards-n-c490cc6f.svg"><img src="assets/generated/it/standards-ac090a05.svg" alt="Norme e credenziali" width="100%"></picture>
 
 <br><br>
 
-<img src="assets/generated/it/mapping-3cfc3769.svg" alt="What NDT methods taught me about code" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/mapping-n-c60dd690.svg"><img src="assets/generated/it/mapping-3cfc3769.svg" alt="What NDT methods taught me about code" width="100%"></picture>
 
 </div>
 
@@ -326,7 +326,7 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 - [`carbon-is-android`](https://github.com/MAXIMILIANOGROSS/carbon-is-android) — carbonáis para android <sub>— · 2026-09-24</sub>
 - [`island-crew-legal`](https://github.com/MAXIMILIANOGROSS/island-crew-legal) <sub>— · 2026-09-21</sub>
 
-<sub>Ultimo aggiornamento da GitHub Actions: 2026-11-27 00:10 UTC</sub>
+<sub>Ultimo aggiornamento da GitHub Actions: 2026-11-27 00:19 UTC</sub>
 
 </details>
 
@@ -339,11 +339,11 @@ I CND sono il mio mestiere dal 2007: saldature, motori di aeromobili e strutture
 - **Virtual Office** `OPEN SOURCE` — Ufficio virtuale 3D con 43 agenti IA. Modello vuoto su Next.js + Supabase. · [repo](https://github.com/MAXIMILIANOGROSS/virtual-office)
 - **Island Crew Suite** `RELEASE` — Suite di marketing autoinstallante per Mac / Windows per ristoranti. Download pubblicati come release. · [repo](https://github.com/MAXIMILIANOGROSS/island-crew-downloads)
 
-<img src="assets/generated/it/gravity-37c4b7d8.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/gravity-n-0bceba19.svg"><img src="assets/generated/it/gravity-37c4b7d8.svg" alt="Software gravity: public repositories as orbiting bodies" width="100%"></picture>
 
-<img src="assets/generated/it/devlog-805033c7.svg" alt="Development log" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/devlog-n-816a2177.svg"><img src="assets/generated/it/devlog-805033c7.svg" alt="Development log" width="100%"></picture>
 
-<img src="assets/generated/it/telemetry-87baf896.svg" alt="Development telemetry" width="100%">
+<picture><source media="(max-width: 700px)" srcset="assets/generated/it/telemetry-n-ca7072e0.svg"><img src="assets/generated/it/telemetry-661eeae1.svg" alt="Development telemetry" width="100%"></picture>
 
 <details>
 <summary><b>🎧 Oltre il software</b></summary>
